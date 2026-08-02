@@ -16,7 +16,7 @@ REFRESH_TOKEN = os.environ["YOUTUBE_REFRESH_TOKEN"]
 CHANNEL_ID = os.environ.get("YOUTUBE_CHANNEL_ID", "").strip() or None
 
 TOKEN_URI = "https://oauth2.googleapis.com/token"
-DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "youtube")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "data", "youtube")
 
 
 def get_credentials():
