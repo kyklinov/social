@@ -164,6 +164,13 @@
     color: var(--text-muted);
     font-size: 12px;
   }
+  .platform-panel { display: none; }
+  .platform-panel.active { display: block; }
+  .empty-note {
+    color: var(--text-muted);
+    font-size: 13px;
+    padding: 20px 0;
+  }
   @media (max-width: 800px) {
     .cards { grid-template-columns: repeat(2, 1fr); }
     .grid-2, .grid-3 { grid-template-columns: 1fr; }
@@ -176,8 +183,8 @@
   <h1>Статистика соцсетей</h1>
   <p class="subtitle">Обновляется автоматически раз в неделю</p>
   <nav class="platforms">
-    <button class="active">VK</button>
-    <button disabled title="Подключим следующим шагом">YouTube</button>
+    <button id="tab-vk" class="active" onclick="showPlatform('vk')">VK</button>
+    <button id="tab-youtube" onclick="showPlatform('youtube')">YouTube</button>
     <button disabled title="Подключим следующим шагом">Instagram</button>
     <button disabled title="Подключим следующим шагом">Facebook</button>
     <button disabled title="Подключим следующим шагом">Telegram</button>
@@ -186,40 +193,82 @@
 
 <main>
 
-  <div class="cards" id="statCards"></div>
+  <!-- ===== VK ===== -->
+  <div id="platform-vk" class="platform-panel active">
+    <div class="cards" id="vkStatCards"></div>
 
-  <div class="grid-2">
-    <div class="panel">
-      <h2>Динамика подписчиков</h2>
-      <canvas id="growthChart" height="90"></canvas>
+    <div class="grid-2">
+      <div class="panel">
+        <h2>Динамика подписчиков</h2>
+        <canvas id="vkGrowthChart" height="90"></canvas>
+      </div>
+      <div class="panel">
+        <h2>Пол аудитории</h2>
+        <canvas id="vkGenderChart" height="140"></canvas>
+      </div>
     </div>
+
+    <div class="grid-3">
+      <div class="panel">
+        <h2>Возраст аудитории</h2>
+        <div id="vkAgeBars"></div>
+      </div>
+      <div class="panel">
+        <h2>Города</h2>
+        <table><thead><tr><th>Город</th><th>%</th></tr></thead><tbody id="vkCitiesTable"></tbody></table>
+      </div>
+      <div class="panel">
+        <h2>Страны</h2>
+        <table><thead><tr><th>Страна</th><th>%</th></tr></thead><tbody id="vkCountriesTable"></tbody></table>
+      </div>
+    </div>
+
     <div class="panel">
-      <h2>Пол аудитории</h2>
-      <canvas id="genderChart" height="140"></canvas>
+      <h2>Топ публикаций</h2>
+      <table>
+        <thead><tr><th>Дата</th><th>Текст</th><th>Лайки</th><th>Репосты</th><th>Комменты</th><th>Просмотры</th></tr></thead>
+        <tbody id="vkPostsTable"></tbody>
+      </table>
     </div>
   </div>
 
-  <div class="grid-3">
-    <div class="panel">
-      <h2>Возраст аудитории</h2>
-      <div id="ageBars"></div>
-    </div>
-    <div class="panel">
-      <h2>Города</h2>
-      <table><thead><tr><th>Город</th><th>%</th></tr></thead><tbody id="citiesTable"></tbody></table>
-    </div>
-    <div class="panel">
-      <h2>Страны</h2>
-      <table><thead><tr><th>Страна</th><th>%</th></tr></thead><tbody id="countriesTable"></tbody></table>
-    </div>
-  </div>
+  <!-- ===== YouTube ===== -->
+  <div id="platform-youtube" class="platform-panel">
+    <div class="cards" id="ytStatCards"></div>
 
-  <div class="panel">
-    <h2>Топ публикаций</h2>
-    <table>
-      <thead><tr><th>Дата</th><th>Текст</th><th>Лайки</th><th>Репосты</th><th>Комменты</th><th>Просмотры</th></tr></thead>
-      <tbody id="postsTable"></tbody>
-    </table>
+    <div class="grid-2">
+      <div class="panel">
+        <h2>Динамика подписчиков</h2>
+        <canvas id="ytGrowthChart" height="90"></canvas>
+      </div>
+      <div class="panel">
+        <h2>Пол аудитории</h2>
+        <canvas id="ytGenderChart" height="140"></canvas>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="panel">
+        <h2>Возраст аудитории</h2>
+        <div id="ytAgeBars"></div>
+      </div>
+      <div class="panel">
+        <h2>География (по просмотрам)</h2>
+        <table><thead><tr><th>Страна</th><th>Просмотры</th></tr></thead><tbody id="ytGeoTable"></tbody></table>
+      </div>
+      <div class="panel">
+        <h2>Устройства</h2>
+        <table><thead><tr><th>Тип</th><th>%</th></tr></thead><tbody id="ytDeviceTable"></tbody></table>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Топ видео</h2>
+      <table>
+        <thead><tr><th>Дата</th><th>Название</th><th>Просмотры</th><th>Лайки</th><th>Комменты</th></tr></thead>
+        <tbody id="ytVideosTable"></tbody>
+      </table>
+    </div>
   </div>
 
 </main>
@@ -227,19 +276,27 @@
 <footer id="footerNote"></footer>
 
 <script>
-async function loadData() {
-  const [history, latest] = await Promise.all([
-    fetch('../data/vk/history.json').then(r => r.json()),
-    fetch('../data/vk/latest.json').then(r => r.json())
-  ]);
-  render(history, latest);
-}
-
 function fmt(n) {
   return new Intl.NumberFormat('ru-RU').format(n);
 }
 
-function render(history, latest) {
+function showPlatform(name) {
+  document.querySelectorAll('.platform-panel').forEach(el => el.classList.remove('active'));
+  document.getElementById('platform-' + name).classList.add('active');
+  document.querySelectorAll('nav.platforms button').forEach(btn => btn.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+}
+
+// ---------- VK ----------
+async function loadVK() {
+  const [history, latest] = await Promise.all([
+    fetch('../data/vk/history.json').then(r => r.json()),
+    fetch('../data/vk/latest.json').then(r => r.json())
+  ]);
+  renderVK(history, latest);
+}
+
+function renderVK(history, latest) {
   const first = history[0].members_count;
   const last = history[history.length - 1].members_count;
   const growthPct = (((last - first) / first) * 100).toFixed(1);
@@ -254,7 +311,7 @@ function render(history, latest) {
     { label: 'Просмотры за неделю', value: fmt(latest.stats.visitors.views), delta: `${fmt(latest.stats.visitors.visitors)} уникальных посетителей` },
     { label: 'С мобильных', value: mobileShare + '%', delta: 'от общих просмотров' }
   ];
-  document.getElementById('statCards').innerHTML = cards.map(c => `
+  document.getElementById('vkStatCards').innerHTML = cards.map(c => `
     <div class="card">
       <div class="label">${c.label}</div>
       <div class="value">${c.value}</div>
@@ -262,7 +319,7 @@ function render(history, latest) {
     </div>
   `).join('');
 
-  new Chart(document.getElementById('growthChart'), {
+  new Chart(document.getElementById('vkGrowthChart'), {
     type: 'line',
     data: {
       labels: history.map(h => h.date),
@@ -286,7 +343,7 @@ function render(history, latest) {
   });
 
   const genderMap = { f: 'Женщины', m: 'Мужчины' };
-  new Chart(document.getElementById('genderChart'), {
+  new Chart(document.getElementById('vkGenderChart'), {
     type: 'doughnut',
     data: {
       labels: latest.stats.sex.map(s => genderMap[s.value] || s.value),
@@ -300,7 +357,7 @@ function render(history, latest) {
   });
 
   const maxAge = Math.max(...latest.stats.age.map(a => a.count));
-  document.getElementById('ageBars').innerHTML = latest.stats.age.map(a => `
+  document.getElementById('vkAgeBars').innerHTML = latest.stats.age.map(a => `
     <div class="bar-row">
       <div class="bar-label">${a.value}</div>
       <div class="bar-track"><div class="bar-fill" style="width:${(a.count / maxAge) * 100}%"></div></div>
@@ -308,15 +365,15 @@ function render(history, latest) {
     </div>
   `).join('');
 
-  document.getElementById('citiesTable').innerHTML = latest.stats.cities.map(c => `
+  document.getElementById('vkCitiesTable').innerHTML = latest.stats.cities.map(c => `
     <tr><td>${c.name}</td><td>${c.count}%</td></tr>
   `).join('');
 
-  document.getElementById('countriesTable').innerHTML = latest.stats.countries.map(c => `
+  document.getElementById('vkCountriesTable').innerHTML = latest.stats.countries.map(c => `
     <tr><td>${c.name}</td><td>${c.count}%</td></tr>
   `).join('');
 
-  document.getElementById('postsTable').innerHTML = latest.top_posts.map(p => `
+  document.getElementById('vkPostsTable').innerHTML = latest.top_posts.map(p => `
     <tr>
       <td>${new Date(p.date).toLocaleDateString('ru-RU')}</td>
       <td class="post-text">${p.text}<br><a class="post-link" href="${p.url}" target="_blank">Открыть →</a></td>
@@ -328,12 +385,130 @@ function render(history, latest) {
   `).join('');
 
   document.getElementById('footerNote').textContent =
-    'Данные обновлены: ' + new Date(latest.date).toLocaleDateString('ru-RU');
+    'VK обновлено: ' + new Date(latest.date).toLocaleDateString('ru-RU');
 }
 
-loadData().catch(err => {
-  document.querySelector('main').innerHTML =
-    '<p style="color:#B4552F">Не удалось загрузить данные: ' + err.message + '</p>';
+// ---------- YouTube ----------
+async function loadYouTube() {
+  const [history, latest] = await Promise.all([
+    fetch('../data/youtube/history.json').then(r => r.json()),
+    fetch('../data/youtube/latest.json').then(r => r.json())
+  ]);
+  renderYouTube(history, latest);
+}
+
+function renderYouTube(history, latest) {
+  const first = history[0].subscriber_count;
+  const last = history[history.length - 1].subscriber_count;
+  const growthPct = first ? (((last - first) / first) * 100).toFixed(1) : '0.0';
+
+  const cards = [
+    { label: 'Подписчиков', value: fmt(latest.subscriber_count), delta: `+${growthPct}% за период` },
+    { label: 'Просмотров всего', value: fmt(latest.view_count), delta: 'за всё время канала' },
+    { label: 'Видео на канале', value: fmt(latest.video_count), delta: '' },
+    { label: 'Топ страна по просмотрам', value: (latest.analytics.geography[0] || [])[0] || '—', delta: 'за последние 28 дней' }
+  ];
+  document.getElementById('ytStatCards').innerHTML = cards.map(c => `
+    <div class="card">
+      <div class="label">${c.label}</div>
+      <div class="value">${c.value}</div>
+      <div class="delta">${c.delta}</div>
+    </div>
+  `).join('');
+
+  new Chart(document.getElementById('ytGrowthChart'), {
+    type: 'line',
+    data: {
+      labels: history.map(h => h.date),
+      datasets: [{
+        data: history.map(h => h.subscriber_count),
+        borderColor: '#B4552F',
+        backgroundColor: 'rgba(180,85,47,0.08)',
+        fill: true,
+        tension: 0.25,
+        pointRadius: 0,
+        borderWidth: 2
+      }]
+    },
+    options: {
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { ticks: { maxTicksLimit: 8 }, grid: { display: false } },
+        y: { grid: { color: '#EEEEE9' } }
+      }
+    }
+  });
+
+  // age_gender rows: [ageGroup, gender, viewerPercentage]
+  const ageGenderRows = latest.analytics.age_gender || [];
+  const genderTotals = {};
+  const ageTotals = {};
+  ageGenderRows.forEach(row => {
+    const [ageGroup, gender, pct] = row;
+    genderTotals[gender] = (genderTotals[gender] || 0) + pct;
+    ageTotals[ageGroup] = (ageTotals[ageGroup] || 0) + pct;
+  });
+
+  const genderMap = { male: 'Мужчины', female: 'Женщины' };
+  const genderLabels = Object.keys(genderTotals);
+  new Chart(document.getElementById('ytGenderChart'), {
+    type: 'doughnut',
+    data: {
+      labels: genderLabels.map(g => genderMap[g] || g),
+      datasets: [{
+        data: genderLabels.map(g => genderTotals[g].toFixed(1)),
+        backgroundColor: ['#2F6F5E', '#B4552F', '#8C8A7E'],
+        borderWidth: 0
+      }]
+    },
+    options: { plugins: { legend: { position: 'bottom' } } }
+  });
+
+  const ageLabelMap = { 'age13-17': '13–17', 'age18-24': '18–24', 'age25-34': '25–34', 'age35-44': '35–44', 'age45-54': '45–54', 'age55-64': '55–64', 'age65-': '65+' };
+  const ageKeys = Object.keys(ageTotals).sort();
+  const maxAge = Math.max(...Object.values(ageTotals), 1);
+  document.getElementById('ytAgeBars').innerHTML = ageKeys.map(k => `
+    <div class="bar-row">
+      <div class="bar-label">${ageLabelMap[k] || k}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(ageTotals[k] / maxAge) * 100}%"></div></div>
+      <div class="bar-value">${ageTotals[k].toFixed(1)}%</div>
+    </div>
+  `).join('') || '<p class="empty-note">Недостаточно данных за период</p>';
+
+  // geography rows: [country, views]
+  const geoRows = latest.analytics.geography || [];
+  document.getElementById('ytGeoTable').innerHTML = geoRows.map(row => `
+    <tr><td>${row[0]}</td><td>${fmt(row[1])}</td></tr>
+  `).join('') || '<tr><td colspan="2" class="empty-note">Нет данных</td></tr>';
+
+  // devices rows: [deviceType, views]
+  const deviceRows = latest.analytics.devices || [];
+  const deviceTotal = deviceRows.reduce((sum, r) => sum + r[1], 0) || 1;
+  const deviceLabelMap = { MOBILE: 'Мобильные', DESKTOP: 'Компьютер', TABLET: 'Планшет', TV: 'Телевизор', GAME_CONSOLE: 'Игровая консоль', UNKNOWN_PLATFORM: 'Неизвестно' };
+  document.getElementById('ytDeviceTable').innerHTML = deviceRows.map(row => `
+    <tr><td>${deviceLabelMap[row[0]] || row[0]}</td><td>${Math.round((row[1] / deviceTotal) * 100)}%</td></tr>
+  `).join('') || '<tr><td colspan="2" class="empty-note">Нет данных</td></tr>';
+
+  document.getElementById('ytVideosTable').innerHTML = latest.top_videos.map(v => `
+    <tr>
+      <td>${new Date(v.published_at).toLocaleDateString('ru-RU')}</td>
+      <td class="post-text">${v.title}<br><a class="post-link" href="${v.url}" target="_blank">Открыть →</a></td>
+      <td>${fmt(v.views)}</td>
+      <td>${fmt(v.likes)}</td>
+      <td>${fmt(v.comments)}</td>
+    </tr>
+  `).join('');
+}
+
+// ---------- Загрузка ----------
+loadVK().catch(err => {
+  document.getElementById('platform-vk').innerHTML =
+    '<p class="empty-note" style="color:#B4552F">Не удалось загрузить данные VK: ' + err.message + '</p>';
+});
+
+loadYouTube().catch(err => {
+  document.getElementById('platform-youtube').innerHTML =
+    '<p class="empty-note" style="color:#B4552F">Не удалось загрузить данные YouTube: ' + err.message + '</p>';
 });
 </script>
 
