@@ -290,8 +290,8 @@ function showPlatform(name) {
 // ---------- VK ----------
 async function loadVK() {
   const [history, latest] = await Promise.all([
-    fetch('../data/vk/history.json').then(r => r.json()),
-    fetch('../data/vk/latest.json').then(r => r.json())
+    fetch('data/vk/history.json').then(r => r.json()),
+    fetch('data/vk/latest.json').then(r => r.json())
   ]);
   renderVK(history, latest);
 }
@@ -391,8 +391,8 @@ function renderVK(history, latest) {
 // ---------- YouTube ----------
 async function loadYouTube() {
   const [history, latest] = await Promise.all([
-    fetch('../data/youtube/history.json').then(r => r.json()),
-    fetch('../data/youtube/latest.json').then(r => r.json())
+    fetch('data/youtube/history.json').then(r => r.json()),
+    fetch('data/youtube/latest.json').then(r => r.json())
   ]);
   renderYouTube(history, latest);
 }
