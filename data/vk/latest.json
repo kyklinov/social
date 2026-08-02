@@ -1,0 +1,156 @@
+{
+  "date": "2026-08-02",
+  "members_count": 13866,
+  "stats": {
+    "reach": {
+      "reach": 154320,
+      "reach_subscribers": 98210,
+      "mobile_reach": 121400
+    },
+    "visitors": {
+      "views": 210500,
+      "visitors": 87650,
+      "mobile_views": 165200
+    },
+    "sex": [
+      {
+        "value": "f",
+        "count": 61
+      },
+      {
+        "value": "m",
+        "count": 39
+      }
+    ],
+    "age": [
+      {
+        "value": "12-18",
+        "count": 6
+      },
+      {
+        "value": "18-21",
+        "count": 14
+      },
+      {
+        "value": "21-24",
+        "count": 22
+      },
+      {
+        "value": "24-27",
+        "count": 19
+      },
+      {
+        "value": "27-30",
+        "count": 15
+      },
+      {
+        "value": "30-35",
+        "count": 13
+      },
+      {
+        "value": "35-45",
+        "count": 8
+      },
+      {
+        "value": "45-100",
+        "count": 3
+      }
+    ],
+    "cities": [
+      {
+        "name": "Москва",
+        "count": 24
+      },
+      {
+        "name": "Санкт-Петербург",
+        "count": 14
+      },
+      {
+        "name": "Новосибирск",
+        "count": 6
+      },
+      {
+        "name": "Екатеринбург",
+        "count": 5
+      },
+      {
+        "name": "Казань",
+        "count": 4
+      }
+    ],
+    "countries": [
+      {
+        "name": "Россия",
+        "count": 78
+      },
+      {
+        "name": "Беларусь",
+        "count": 8
+      },
+      {
+        "name": "Казахстан",
+        "count": 7
+      },
+      {
+        "name": "Украина",
+        "count": 4
+      },
+      {
+        "name": "Другие",
+        "count": 3
+      }
+    ]
+  },
+  "top_posts": [
+    {
+      "id": 4821,
+      "date": "2026-07-18T09:30:00",
+      "text": "Итоги полугодия: что мы сделали и куда движемся дальше",
+      "likes": 842,
+      "reposts": 156,
+      "comments": 94,
+      "views": 21400,
+      "url": "https://vk.com/wall-000000_4821"
+    },
+    {
+      "id": 4790,
+      "date": "2026-07-02T12:00:00",
+      "text": "Анонс большого обновления продукта",
+      "likes": 701,
+      "reposts": 203,
+      "comments": 68,
+      "views": 19800,
+      "url": "https://vk.com/wall-000000_4790"
+    },
+    {
+      "id": 4756,
+      "date": "2026-06-15T15:20:00",
+      "text": "Розыгрыш призов среди подписчиков",
+      "likes": 655,
+      "reposts": 340,
+      "comments": 210,
+      "views": 25600,
+      "url": "https://vk.com/wall-000000_4756"
+    },
+    {
+      "id": 4701,
+      "date": "2026-05-28T10:10:00",
+      "text": "Интервью с командой разработки",
+      "likes": 512,
+      "reposts": 88,
+      "comments": 51,
+      "views": 14200,
+      "url": "https://vk.com/wall-000000_4701"
+    },
+    {
+      "id": 4650,
+      "date": "2026-05-10T08:00:00",
+      "text": "Подборка полезных материалов за месяц",
+      "likes": 430,
+      "reposts": 95,
+      "comments": 30,
+      "views": 12100,
+      "url": "https://vk.com/wall-000000_4650"
+    }
+  ]
+}
