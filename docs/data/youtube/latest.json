@@ -17,7 +17,7 @@
       "id": "N2Vu8zM0xbY",
       "title": "CarX Street Mobile - Official Trailer",
       "published_at": "2026-07-28T14:11:50Z",
-      "views": 46924,
+      "views": 46956,
       "likes": 1349,
       "comments": 547,
       "url": "https://youtube.com/watch?v=N2Vu8zM0xbY"
@@ -62,7 +62,7 @@
       "id": "eaz004MHA0s",
       "title": "CarX Drift Racing Online 2 – Gunma Cycle Sport Center Circuit Official Trailer",
       "published_at": "2026-07-24T11:12:41Z",
-      "views": 18936,
+      "views": 18940,
       "likes": 969,
       "comments": 128,
       "url": "https://youtube.com/watch?v=eaz004MHA0s"
@@ -71,8 +71,8 @@
       "id": "ZfWa-5Dc7WA",
       "title": "CarX Street Wangan Highway Network: From Concept to Release",
       "published_at": "2026-07-23T15:00:06Z",
-      "views": 16336,
-      "likes": 1019,
+      "views": 16352,
+      "likes": 1020,
       "comments": 314,
       "url": "https://youtube.com/watch?v=ZfWa-5Dc7WA"
     },
@@ -105,7 +105,7 @@
       [
         "age13-17",
         "male",
-        9
+        8.9
       ],
       [
         "age13-17",
@@ -120,7 +120,7 @@
       [
         "age18-24",
         "male",
-        22.9
+        22.8
       ],
       [
         "age18-24",
@@ -130,7 +130,7 @@
       [
         "age25-34",
         "female",
-        3
+        3.2
       ],
       [
         "age25-34",
@@ -145,7 +145,7 @@
       [
         "age35-44",
         "female",
-        4.2
+        4.3
       ],
       [
         "age35-44",
@@ -180,67 +180,67 @@
       [
         "age65-",
         "male",
-        0.5
+        0.4
       ]
     ],
     "geography": [
       [
         "IN",
-        35795
+        38268
       ],
       [
         "US",
-        16395
+        16715
       ],
       [
         "JP",
-        15292
+        15590
       ],
       [
         "RU",
-        14412
+        14636
       ],
       [
         "ID",
-        11898
+        12239
       ],
       [
         "BR",
-        9164
-      ],
-      [
-        "DE",
-        4312
+        9311
       ],
       [
         "PH",
-        4278
+        4426
+      ],
+      [
+        "DE",
+        4386
       ],
       [
         "MY",
-        4050
+        4141
       ],
       [
         "TH",
-        3975
+        4048
       ]
     ],
     "devices": [
       [
         "DESKTOP",
-        29893
+        30469
       ],
       [
         "TV",
-        22267
+        22752
       ],
       [
         "MOBILE",
-        231078
+        239880
       ],
       [
         "TABLET",
-        17871
+        18680
       ]
     ]
   }
