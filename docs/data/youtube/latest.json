@@ -1,15 +1,15 @@
 {
-  "date": "2026-08-18",
+  "date": "2026-08-19",
   "subscriber_count": 432000,
-  "view_count": 30287347,
+  "view_count": 30290362,
   "video_count": 405,
   "top_videos": [
     {
       "id": "o37PvvCsXu0",
       "title": "CarX Street - Wangan Highways Update Official Trailer",
       "published_at": "2026-06-05T14:00:06Z",
-      "views": 64043,
-      "likes": 2129,
+      "views": 64074,
+      "likes": 2130,
       "comments": 525,
       "url": "https://youtube.com/watch?v=o37PvvCsXu0"
     },
@@ -17,16 +17,16 @@
       "id": "N2Vu8zM0xbY",
       "title": "CarX Street Mobile - Official Trailer",
       "published_at": "2026-07-28T14:11:50Z",
-      "views": 55368,
-      "likes": 1381,
-      "comments": 552,
+      "views": 55928,
+      "likes": 1387,
+      "comments": 555,
       "url": "https://youtube.com/watch?v=N2Vu8zM0xbY"
     },
     {
       "id": "fPfxzoDdAMo",
       "title": "CarX Street Mobile - Official 1.19.1 Update Trailer",
       "published_at": "2026-05-28T07:20:43Z",
-      "views": 40150,
+      "views": 40165,
       "likes": 1207,
       "comments": 374,
       "url": "https://youtube.com/watch?v=fPfxzoDdAMo"
@@ -35,8 +35,8 @@
       "id": "QgSVRS9PJqo",
       "title": "CarX Street Mobile - Official 1.20.0 Update Trailer",
       "published_at": "2026-07-06T13:05:14Z",
-      "views": 25518,
-      "likes": 752,
+      "views": 25594,
+      "likes": 753,
       "comments": 359,
       "url": "https://youtube.com/watch?v=QgSVRS9PJqo"
     },
@@ -44,8 +44,8 @@
       "id": "BcaydtRcHeo",
       "title": "CarX Drift Racing Online 2 VS CarX Drift Racing Online - Chaser Run №2",
       "published_at": "2026-05-07T13:46:21Z",
-      "views": 25378,
-      "likes": 582,
+      "views": 25419,
+      "likes": 583,
       "comments": 22,
       "url": "https://youtube.com/watch?v=BcaydtRcHeo"
     },
@@ -53,7 +53,7 @@
       "id": "igMJEKWrevk",
       "title": "CarX Street - Sunset Speedway DLC Trailer",
       "published_at": "2026-06-22T15:11:52Z",
-      "views": 25138,
+      "views": 25153,
       "likes": 794,
       "comments": 209,
       "url": "https://youtube.com/watch?v=igMJEKWrevk"
@@ -62,8 +62,8 @@
       "id": "eaz004MHA0s",
       "title": "CarX Drift Racing Online 2 – Gunma Cycle Sport Center Circuit Official Trailer",
       "published_at": "2026-07-24T11:12:41Z",
-      "views": 19153,
-      "likes": 973,
+      "views": 19203,
+      "likes": 976,
       "comments": 129,
       "url": "https://youtube.com/watch?v=eaz004MHA0s"
     },
@@ -71,8 +71,8 @@
       "id": "ZfWa-5Dc7WA",
       "title": "CarX Street Wangan Highway Network: From Concept to Release",
       "published_at": "2026-07-23T15:00:06Z",
-      "views": 16727,
-      "likes": 1031,
+      "views": 16797,
+      "likes": 1032,
       "comments": 317,
       "url": "https://youtube.com/watch?v=ZfWa-5Dc7WA"
     },
@@ -80,7 +80,7 @@
       "id": "xLvtnhfWt4s",
       "title": "CarX Drift Racing Online 2 VS CarX Drift Racing Online - Chaser Run",
       "published_at": "2026-05-06T10:51:45Z",
-      "views": 14124,
+      "views": 14131,
       "likes": 403,
       "comments": 16,
       "url": "https://youtube.com/watch?v=xLvtnhfWt4s"
@@ -89,7 +89,7 @@
       "id": "JglisydEO1U",
       "title": "CarX Drift Racing Online 2 is here!",
       "published_at": "2026-05-18T06:52:07Z",
-      "views": 13947,
+      "views": 13964,
       "likes": 852,
       "comments": 48,
       "url": "https://youtube.com/watch?v=JglisydEO1U"
@@ -170,7 +170,7 @@
       [
         "age55-64",
         "male",
-        1
+        0.9
       ],
       [
         "age65-",
@@ -186,61 +186,61 @@
     "geography": [
       [
         "IN",
-        39611
+        39607
       ],
       [
         "US",
-        16999
+        17008
       ],
       [
         "JP",
-        16343
+        16417
       ],
       [
         "RU",
-        15107
+        15248
       ],
       [
         "ID",
-        12913
+        13051
       ],
       [
         "BR",
-        9218
+        9095
       ],
       [
         "PH",
-        5000
+        4989
       ],
       [
         "DE",
-        4449
+        4435
       ],
       [
         "MY",
-        4168
+        4134
       ],
       [
         "TH",
-        4100
+        4122
       ]
     ],
     "devices": [
       [
         "DESKTOP",
-        30613
+        30687
       ],
       [
         "TV",
-        22594
+        22589
       ],
       [
         "MOBILE",
-        244108
+        245193
       ],
       [
         "TABLET",
-        18600
+        18506
       ]
     ]
   }
