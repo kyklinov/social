@@ -1,32 +1,32 @@
 {
-  "date": "2026-08-26",
-  "subscriber_count": 434000,
-  "view_count": 30330997,
-  "video_count": 407,
+  "date": "2026-08-28",
+  "subscriber_count": 435000,
+  "view_count": 30342239,
+  "video_count": 408,
   "top_videos": [
-    {
-      "id": "o37PvvCsXu0",
-      "title": "CarX Street - Wangan Highways Update Official Trailer",
-      "published_at": "2026-06-05T14:00:06Z",
-      "views": 64337,
-      "likes": 2133,
-      "comments": 526,
-      "url": "https://youtube.com/watch?v=o37PvvCsXu0"
-    },
     {
       "id": "N2Vu8zM0xbY",
       "title": "CarX Street Mobile - Official Trailer",
       "published_at": "2026-07-28T14:11:50Z",
-      "views": 59853,
-      "likes": 1415,
-      "comments": 563,
+      "views": 64517,
+      "likes": 1432,
+      "comments": 565,
       "url": "https://youtube.com/watch?v=N2Vu8zM0xbY"
+    },
+    {
+      "id": "o37PvvCsXu0",
+      "title": "CarX Street - Wangan Highways Update Official Trailer",
+      "published_at": "2026-06-05T14:00:06Z",
+      "views": 64450,
+      "likes": 2138,
+      "comments": 526,
+      "url": "https://youtube.com/watch?v=o37PvvCsXu0"
     },
     {
       "id": "fPfxzoDdAMo",
       "title": "CarX Street Mobile - Official 1.19.1 Update Trailer",
       "published_at": "2026-05-28T07:20:43Z",
-      "views": 40277,
+      "views": 40311,
       "likes": 1206,
       "comments": 374,
       "url": "https://youtube.com/watch?v=fPfxzoDdAMo"
@@ -35,8 +35,8 @@
       "id": "QgSVRS9PJqo",
       "title": "CarX Street Mobile - Official 1.20.0 Update Trailer",
       "published_at": "2026-07-06T13:05:14Z",
-      "views": 26098,
-      "likes": 756,
+      "views": 26337,
+      "likes": 759,
       "comments": 359,
       "url": "https://youtube.com/watch?v=QgSVRS9PJqo"
     },
@@ -44,8 +44,8 @@
       "id": "BcaydtRcHeo",
       "title": "CarX Drift Racing Online 2 VS CarX Drift Racing Online - Chaser Run №2",
       "published_at": "2026-05-07T13:46:21Z",
-      "views": 25941,
-      "likes": 586,
+      "views": 26112,
+      "likes": 589,
       "comments": 22,
       "url": "https://youtube.com/watch?v=BcaydtRcHeo"
     },
@@ -53,8 +53,8 @@
       "id": "igMJEKWrevk",
       "title": "CarX Street - Sunset Speedway DLC Trailer",
       "published_at": "2026-06-22T15:11:52Z",
-      "views": 25292,
-      "likes": 796,
+      "views": 25366,
+      "likes": 795,
       "comments": 211,
       "url": "https://youtube.com/watch?v=igMJEKWrevk"
     },
@@ -62,8 +62,8 @@
       "id": "eaz004MHA0s",
       "title": "CarX Drift Racing Online 2 – Gunma Cycle Sport Center Circuit Official Trailer",
       "published_at": "2026-07-24T11:12:41Z",
-      "views": 19514,
-      "likes": 983,
+      "views": 19603,
+      "likes": 984,
       "comments": 129,
       "url": "https://youtube.com/watch?v=eaz004MHA0s"
     },
@@ -71,25 +71,25 @@
       "id": "ZfWa-5Dc7WA",
       "title": "CarX Street Wangan Highway Network: From Concept to Release",
       "published_at": "2026-07-23T15:00:06Z",
-      "views": 17279,
-      "likes": 1043,
+      "views": 17592,
+      "likes": 1045,
       "comments": 318,
       "url": "https://youtube.com/watch?v=ZfWa-5Dc7WA"
     },
     {
-      "id": "xLvtnhfWt4s",
-      "title": "CarX Drift Racing Online 2 VS CarX Drift Racing Online - Chaser Run",
-      "published_at": "2026-05-06T10:51:45Z",
-      "views": 14222,
-      "likes": 403,
-      "comments": 16,
-      "url": "https://youtube.com/watch?v=xLvtnhfWt4s"
+      "id": "MMsHKlZhLYA",
+      "title": "CarX Drift Racing Online 2 | 0.20.0 Official Trailer",
+      "published_at": "2026-08-20T15:18:41Z",
+      "views": 15047,
+      "likes": 543,
+      "comments": 114,
+      "url": "https://youtube.com/watch?v=MMsHKlZhLYA"
     },
     {
       "id": "JglisydEO1U",
       "title": "CarX Drift Racing Online 2 is here!",
       "published_at": "2026-05-18T06:52:07Z",
-      "views": 14053,
+      "views": 14073,
       "likes": 851,
       "comments": 47,
       "url": "https://youtube.com/watch?v=JglisydEO1U"
@@ -120,17 +120,17 @@
       [
         "age18-24",
         "male",
-        21.8
+        21.5
       ],
       [
         "age25-34",
         "female",
-        3.5
+        3.6
       ],
       [
         "age25-34",
         "male",
-        37.5
+        37.6
       ],
       [
         "age25-34",
@@ -140,22 +140,22 @@
       [
         "age35-44",
         "female",
-        4.6
+        4.8
       ],
       [
         "age35-44",
         "male",
-        14.4
+        14.5
       ],
       [
         "age45-54",
         "female",
-        1.3
+        1.2
       ],
       [
         "age45-54",
         "male",
-        5.4
+        5.3
       ],
       [
         "age55-64",
@@ -165,12 +165,12 @@
       [
         "age55-64",
         "male",
-        0.9
+        0.8
       ],
       [
         "age65-",
         "female",
-        0.2
+        0.1
       ],
       [
         "age65-",
@@ -181,61 +181,61 @@
     "geography": [
       [
         "IN",
-        32302
+        29358
       ],
       [
         "US",
-        14120
+        13157
       ],
       [
         "JP",
-        12164
+        11186
       ],
       [
         "RU",
-        11630
+        11071
       ],
       [
         "ID",
-        11220
+        10090
       ],
       [
         "BR",
-        7398
+        6598
       ],
       [
         "PH",
-        4337
+        3820
       ],
       [
         "PK",
-        3665
+        3358
       ],
       [
         "DE",
-        3524
+        3302
       ],
       [
         "FR",
-        3204
+        3036
       ]
     ],
     "devices": [
       [
         "DESKTOP",
-        26771
+        24278
       ],
       [
         "TV",
-        20373
+        20127
       ],
       [
         "MOBILE",
-        217821
+        210691
       ],
       [
         "TABLET",
-        16562
+        15921
       ]
     ]
   }
