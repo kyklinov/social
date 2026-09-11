@@ -1,42 +1,42 @@
 {
-  "date": "2026-09-10",
+  "date": "2026-09-11",
   "subscriber_count": 440000,
-  "view_count": 30657972,
-  "video_count": 415,
+  "view_count": 30785025,
+  "video_count": 416,
   "top_videos": [
-    {
-      "id": "2GsMSPHTEmY",
-      "title": "CarX Street - Redline Shift Update Teaser",
-      "published_at": "2026-08-28T20:56:43Z",
-      "views": 112919,
-      "likes": 1519,
-      "comments": 358,
-      "url": "https://youtube.com/watch?v=2GsMSPHTEmY"
-    },
     {
       "id": "9WJJ9BbQ9PM",
       "title": "CarX Rally - Official Announcement Trailer",
       "published_at": "2026-09-09T13:27:31Z",
-      "views": 89846,
-      "likes": 3224,
-      "comments": 696,
+      "views": 134812,
+      "likes": 4200,
+      "comments": 792,
       "url": "https://youtube.com/watch?v=9WJJ9BbQ9PM"
+    },
+    {
+      "id": "2GsMSPHTEmY",
+      "title": "CarX Street - Redline Shift Update Teaser",
+      "published_at": "2026-08-28T20:56:43Z",
+      "views": 113153,
+      "likes": 1522,
+      "comments": 359,
+      "url": "https://youtube.com/watch?v=2GsMSPHTEmY"
     },
     {
       "id": "dQI9TLB8v4o",
       "title": "CarX Street - Redline Shift Update Official Trailer",
       "published_at": "2026-09-03T12:16:21Z",
-      "views": 69568,
-      "likes": 1874,
-      "comments": 419,
+      "views": 70297,
+      "likes": 1885,
+      "comments": 423,
       "url": "https://youtube.com/watch?v=dQI9TLB8v4o"
     },
     {
       "id": "N2Vu8zM0xbY",
       "title": "CarX Street Mobile - Official Trailer",
       "published_at": "2026-07-28T14:11:50Z",
-      "views": 68580,
-      "likes": 1468,
+      "views": 68840,
+      "likes": 1472,
       "comments": 569,
       "url": "https://youtube.com/watch?v=N2Vu8zM0xbY"
     },
@@ -44,7 +44,7 @@
       "id": "o37PvvCsXu0",
       "title": "CarX Street - Wangan Highways Update Official Trailer",
       "published_at": "2026-06-05T14:00:06Z",
-      "views": 65473,
+      "views": 65530,
       "likes": 2141,
       "comments": 523,
       "url": "https://youtube.com/watch?v=o37PvvCsXu0"
@@ -53,7 +53,7 @@
       "id": "fPfxzoDdAMo",
       "title": "CarX Street Mobile - Official 1.19.1 Update Trailer",
       "published_at": "2026-05-28T07:20:43Z",
-      "views": 40709,
+      "views": 40730,
       "likes": 1208,
       "comments": 370,
       "url": "https://youtube.com/watch?v=fPfxzoDdAMo"
@@ -62,7 +62,7 @@
       "id": "QgSVRS9PJqo",
       "title": "CarX Street Mobile - Official 1.20.0 Update Trailer",
       "published_at": "2026-07-06T13:05:14Z",
-      "views": 27563,
+      "views": 27629,
       "likes": 774,
       "comments": 358,
       "url": "https://youtube.com/watch?v=QgSVRS9PJqo"
@@ -71,7 +71,7 @@
       "id": "igMJEKWrevk",
       "title": "CarX Street - Sunset Speedway DLC Trailer",
       "published_at": "2026-06-22T15:11:52Z",
-      "views": 25969,
+      "views": 26001,
       "likes": 801,
       "comments": 209,
       "url": "https://youtube.com/watch?v=igMJEKWrevk"
@@ -80,8 +80,8 @@
       "id": "jUb888cSbxc",
       "title": "CarX Drift Racing Online 2 - South Port Official Trailer",
       "published_at": "2026-09-01T15:06:45Z",
-      "views": 24017,
-      "likes": 437,
+      "views": 24217,
+      "likes": 439,
       "comments": 66,
       "url": "https://youtube.com/watch?v=jUb888cSbxc"
     },
@@ -89,8 +89,8 @@
       "id": "5YiKfb2N5Kk",
       "title": "CarX Street: Обновление Redline Shift с разработчиками",
       "published_at": "2026-09-05T04:41:31Z",
-      "views": 23003,
-      "likes": 179,
+      "views": 23848,
+      "likes": 180,
       "comments": 23,
       "url": "https://youtube.com/watch?v=5YiKfb2N5Kk"
     }
@@ -115,7 +115,7 @@
       [
         "age18-24",
         "male",
-        22.1
+        22.2
       ],
       [
         "age18-24",
@@ -140,7 +140,7 @@
       [
         "age35-44",
         "female",
-        2.8
+        2.7
       ],
       [
         "age35-44",
@@ -191,61 +191,61 @@
     "geography": [
       [
         "IN",
-        52144
+        53380
       ],
       [
         "US",
-        40816
+        41566
       ],
       [
         "ID",
-        21364
+        21996
       ],
       [
         "RU",
-        20125
+        20558
       ],
       [
         "JP",
-        18320
+        18551
       ],
       [
         "BR",
-        17943
+        18489
       ],
       [
         "DE",
-        11082
+        11222
       ],
       [
         "GB",
-        9248
+        9319
       ],
       [
         "FR",
-        9166
+        9254
       ],
       [
         "PH",
-        6435
+        6610
       ]
     ],
     "devices": [
       [
         "DESKTOP",
-        80140
+        79744
       ],
       [
         "TV",
-        42409
+        44476
       ],
       [
         "MOBILE",
-        430800
+        452514
       ],
       [
         "TABLET",
-        21192
+        21946
       ]
     ]
   }
