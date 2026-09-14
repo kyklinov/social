@@ -1,4 +1,6 @@
 """
+youtube_collector.py — v1.4
+
 Сбор статистики канала YouTube через YouTube Data API v3 + YouTube Analytics API.
 
 Что собирает:
@@ -137,6 +139,11 @@ def get_analytics(youtube_analytics, channel_id, days=28):
         metrics="views", dimensions="deviceType",
     )
 
+    operating_systems = safe_query(
+        youtube_analytics, ids=ids, startDate=start, endDate=end,
+        metrics="views", dimensions="operatingSystem", sort="-views", maxResults=15,
+    )
+
     traffic_sources = safe_query(
         youtube_analytics, ids=ids, startDate=start, endDate=end,
         metrics="views", dimensions="insightTrafficSourceType", sort="-views", maxResults=10,
@@ -161,6 +168,7 @@ def get_analytics(youtube_analytics, channel_id, days=28):
         "age_gender": age_gender.get("rows", []),
         "geography": geography.get("rows", []),
         "devices": devices.get("rows", []),
+        "operating_systems": operating_systems.get("rows", []),
         "traffic_sources": traffic_sources.get("rows", []),
         "engagement": {
             "estimated_minutes_watched": engagement_row[0],
