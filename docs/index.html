@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- docs/index.html — v1.4 -->
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -154,6 +155,32 @@
   @media (max-width: 800px) {
     .cards { grid-template-columns: repeat(2, 1fr); }
     .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  }  .pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    font-size: 13px;
+  }
+  .pagination button {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    border-radius: 6px;
+    padding: 5px 12px;
+    cursor: pointer;
+    color: var(--text);
+  }
+  .pagination button:disabled {
+    color: #C8C7C0;
+    cursor: default;
+  }
+  .pagination .page-info {
+    color: var(--text-muted);
+  }
+  .traffic-note {
+    color: var(--text-muted);
+    font-size: 12px;
+    margin: -6px 0 12px;
   }
 </style>
 </head>
@@ -186,6 +213,7 @@
   <div class="grid-2">
     <div class="panel">
       <h2>Источники трафика <span class="sub">за последние 28 дней</span></h2>
+      <p class="traffic-note">Откуда зрители переходят к просмотру ролика</p>
       <div id="ytTrafficBars"></div>
     </div>
     <div class="panel">
@@ -205,7 +233,10 @@
     </div>
     <div class="panel">
       <h2>Устройства</h2>
-      <table><thead><tr><th>Тип</th><th>%</th></tr></thead><tbody id="ytDeviceTable"></tbody></table>
+      <canvas id="ytDeviceChart" height="140"></canvas>
+      <table style="margin-top:14px;"><thead><tr><th>Тип</th><th>%</th></tr></thead><tbody id="ytDeviceTable"></tbody></table>
+      <h2 style="margin-top:18px;">Операционные системы</h2>
+      <table><thead><tr><th>ОС</th><th>%</th></tr></thead><tbody id="ytOsTable"></tbody></table>
     </div>
   </div>
 
@@ -222,6 +253,18 @@
     <table>
       <thead><tr><th>Дата</th><th>Название</th><th>Просмотры</th><th>Лайки</th><th>Комменты</th></tr></thead>
       <tbody id="ytAllTimeVideosTable"></tbody>
+    </table>
+    <div class="pagination">
+      <button id="atvPrev">← Назад</button>
+      <span class="page-info" id="atvPageInfo"></span>
+      <button id="atvNext">Вперёд →</button>
+    </div>
+  </div>  <div class="panel">
+    <h2>Индустрия: IAP-выручка мобильных игр по странам <span class="sub">2025 год, справочно</span></h2>
+    <p class="traffic-note">Статические данные, не обновляются автоматически. Выручка по странам: Allcorrect Games, «Mobile Game Market Index 2025» (App Store + Google Play, без учёта Android в Китае и D2C-платежей). Мировая IAP-выручка для расчёта доли: Sensor Tower, «State of Mobile 2026» — $81,75 млрд за 2025 год.</p>
+    <table>
+      <thead><tr><th>Страна</th><th>IAP-выручка, 2025</th><th>% от мировой IAP-выручки</th></tr></thead>
+      <tbody id="iapRevenueTable"></tbody>
     </table>
   </div>
 </main>
@@ -370,17 +413,32 @@ function renderYouTube(history, latest) {
 
   const trafficLabelMap = {
     YT_SEARCH: 'Поиск YouTube',
-    SUGGESTED_VIDEO: 'Рекомендации',
-    BROWSE: 'Главная / подписки',
-    EXTERNAL: 'Внешние сайты',
+    SUGGESTED_VIDEO: 'Рекомендации ("Далее")',
+    BROWSE: 'Главная и подписки',
+    EXTERNAL: 'Внешние сайты и приложения',
+    EXT_URL: 'Внешние сайты и приложения',
     PLAYLIST: 'Плейлисты',
     NOTIFICATION: 'Уведомления',
     CHANNEL: 'Страница канала',
-    SHORTS: 'Shorts-лента',
+    YT_CHANNEL: 'Страница канала',
+    YT_OTHER_PAGE: 'Другие страницы YouTube',
+    SHORTS: 'Лента Shorts',
     PLAYBACK_RELATED: 'Похожие видео',
-    NO_LINK_OTHER: 'Прочее',
+    RELATED_VIDEO: 'Похожие видео',
+    NO_LINK_OTHER: 'Прямой переход / приложения',
+    NO_LINK_EMBEDDED: 'Встроенный плеер (без перехода)',
     END_SCREEN: 'Конечная заставка',
-    ANNOTATION: 'Аннотации'
+    ANNOTATION: 'Аннотации',
+    SUBSCRIBER: 'Лента подписок',
+    HASHTAGS: 'Хэштеги',
+    SOUND_PAGE: 'Страница аудиодорожки',
+    LIVE_REDIRECT: 'Переход с трансляции',
+    CAMPAIGN_CARD: 'Карточка сбора средств',
+    PROMOTED: 'Продвижение (реклама)',
+    ADVERTISING: 'Реклама',
+    VIDEO_REMIXES: 'Ремиксы видео',
+    STORY: 'Истории YouTube',
+    WEB_MOBILE_SEARCH: 'Поиск в вебе / мобильном браузере'
   };
   const trafficRows = (latest.analytics.traffic_sources || []).slice(0, 8);
   const trafficTotal = trafficRows.reduce((sum, r) => sum + r[1], 0) || 1;
@@ -434,8 +492,34 @@ function renderYouTube(history, latest) {
   const deviceRows = latest.analytics.devices || [];
   const deviceTotal = deviceRows.reduce((sum, r) => sum + r[1], 0) || 1;
   const deviceLabelMap = { MOBILE: 'Мобильные', DESKTOP: 'Компьютер', TABLET: 'Планшет', TV: 'Телевизор', GAME_CONSOLE: 'Игровая консоль', UNKNOWN_PLATFORM: 'Неизвестно' };
+
+  new Chart(document.getElementById('ytDeviceChart'), {
+    type: 'doughnut',
+    data: {
+      labels: deviceRows.map(r => deviceLabelMap[r[0]] || r[0]),
+      datasets: [{
+        data: deviceRows.map(r => r[1]),
+        backgroundColor: ['#B4552F', '#2F6F5E', '#8C8A7E', '#D9A441', '#5B7FA6', '#A63D5B'],
+        borderWidth: 0
+      }]
+    },
+    options: { plugins: { legend: { position: 'bottom' } } }
+  });
+
   document.getElementById('ytDeviceTable').innerHTML = deviceRows.map(row => `
     <tr><td>${deviceLabelMap[row[0]] || row[0]}</td><td>${Math.round((row[1] / deviceTotal) * 100)}%</td></tr>
+  `).join('') || '<tr><td colspan="2" class="empty-note">Нет данных</td></tr>';
+
+  const osLabelMap = {
+    ANDROID: 'Android', IOS: 'iOS', WINDOWS: 'Windows', MACINTOSH: 'macOS',
+    LINUX: 'Linux', SMART_TV: 'Smart TV', PLAYSTATION: 'PlayStation',
+    XBOX: 'Xbox', NINTENDO: 'Nintendo', CHROMECAST: 'Chromecast',
+    TIZEN: 'Tizen (Smart TV)', WEBOS: 'webOS (LG)', OTHER: 'Другое', BADA: 'Bada'
+  };
+  const osRows = latest.analytics.operating_systems || [];
+  const osTotal = osRows.reduce((sum, r) => sum + r[1], 0) || 1;
+  document.getElementById('ytOsTable').innerHTML = osRows.map(row => `
+    <tr><td>${osLabelMap[row[0]] || row[0]}</td><td>${Math.round((row[1] / osTotal) * 100)}%</td></tr>
   `).join('') || '<tr><td colspan="2" class="empty-note">Нет данных</td></tr>';
 
   document.getElementById('ytVideosTable').innerHTML = (latest.top_videos_30d || []).map(v => `
@@ -448,24 +532,78 @@ function renderYouTube(history, latest) {
     </tr>
   `).join('') || '<tr><td colspan="5" class="empty-note">Нет роликов, опубликованных за последние 30 дней</td></tr>';
 
-  document.getElementById('ytAllTimeVideosTable').innerHTML = (latest.all_time_videos || []).map(v => `
-    <tr>
-      <td>${new Date(v.published_at).toLocaleDateString('ru-RU')}</td>
-      <td class="post-text">${v.title}<br><a class="post-link" href="${v.url}" target="_blank">Открыть →</a></td>
-      <td>${fmt(v.views)}</td>
-      <td>${fmt(v.likes)}</td>
-      <td>${fmt(v.comments)}</td>
-    </tr>
-  `).join('') || '<tr><td colspan="5" class="empty-note">Нет данных</td></tr>';
+  document.getElementById('ytAllTimeVideosTable').innerHTML = ''; // заполнится renderAllTimePage()
+  setupAllTimePagination(latest.all_time_videos || []);
 
   document.getElementById('footerNote').textContent =
     'Обновлено: ' + new Date(latest.date).toLocaleDateString('ru-RU');
+}
+
+function setupAllTimePagination(videos) {
+  const pageSize = 10;
+  let currentPage = 0;
+  const totalPages = Math.max(1, Math.ceil(videos.length / pageSize));
+
+  function renderPage() {
+    const start = currentPage * pageSize;
+    const pageItems = videos.slice(start, start + pageSize);
+    document.getElementById('ytAllTimeVideosTable').innerHTML = pageItems.map(v => `
+      <tr>
+        <td>${new Date(v.published_at).toLocaleDateString('ru-RU')}</td>
+        <td class="post-text">${v.title}<br><a class="post-link" href="${v.url}" target="_blank">Открыть →</a></td>
+        <td>${fmt(v.views)}</td>
+        <td>${fmt(v.likes)}</td>
+        <td>${fmt(v.comments)}</td>
+      </tr>
+    `).join('') || '<tr><td colspan="5" class="empty-note">Нет данных</td></tr>';
+
+    document.getElementById('atvPageInfo').textContent = `Страница ${currentPage + 1} из ${totalPages} (всего роликов: ${videos.length})`;
+    document.getElementById('atvPrev').disabled = currentPage === 0;
+    document.getElementById('atvNext').disabled = currentPage >= totalPages - 1;
+  }
+
+  document.getElementById('atvPrev').onclick = () => {
+    if (currentPage > 0) { currentPage--; renderPage(); }
+  };
+  document.getElementById('atvNext').onclick = () => {
+    if (currentPage < totalPages - 1) { currentPage++; renderPage(); }
+  };
+
+  renderPage();
 }
 
 loadYouTube().catch(err => {
   document.querySelector('main').innerHTML =
     '<p class="empty-note" style="color:#B4552F">Не удалось загрузить данные YouTube: ' + err.message + '</p>';
 });
+
+// ---- Статический справочный блок: IAP-выручка по странам, 2025 ----
+// Источник: Allcorrect Games, "Mobile Game Market Index 2025" (App Store + Google Play)
+const iapRevenueData = [
+  { country: 'США', revenueUsd: 24.2e9 },
+  { country: 'Япония', revenueUsd: 12.0e9 },
+  { country: 'Германия', revenueUsd: 2.43e9 },
+  { country: 'Великобритания', revenueUsd: 2.42e9 },
+  { country: 'Индонезия', revenueUsd: 1.61e9 },
+  { country: 'Индия', revenueUsd: 1.42e9 },
+  { country: 'Бразилия', revenueUsd: 1.41e9 },
+  { country: 'Франция', revenueUsd: 1.35e9 },
+  { country: 'Польша', revenueUsd: 0.554e9 },
+];
+
+(function renderIapRevenue() {
+  // Мировая IAP-выручка мобильных игр за 2025 год: $81,75 млрд
+  // Источник: Sensor Tower, "State of Mobile 2026" (+1,3% год к году)
+  const worldTotalUsd = 81.75e9;
+  const sorted = [...iapRevenueData].sort((a, b) => b.revenueUsd - a.revenueUsd);
+  document.getElementById('iapRevenueTable').innerHTML = sorted.map(r => `
+    <tr>
+      <td>${r.country}</td>
+      <td>$${(r.revenueUsd / 1e9).toFixed(2)} млрд</td>
+      <td>${((r.revenueUsd / worldTotalUsd) * 100).toFixed(1)}%</td>
+    </tr>
+  `).join('');
+})();
 </script>
 
 </body>
