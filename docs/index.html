@@ -411,6 +411,7 @@ function renderYouTube(history, latest) {
   });
 
   const genderMap = { male: 'Мужчины', female: 'Женщины' };
+  const genderColorMap = { male: '#552583', female: '#FDB927' };
   const genderLabels = Object.keys(genderTotals);
   new Chart(document.getElementById('ytGenderChart'), {
     type: 'doughnut',
@@ -418,7 +419,7 @@ function renderYouTube(history, latest) {
       labels: genderLabels.map(g => genderMap[g] || g),
       datasets: [{
         data: genderLabels.map(g => genderTotals[g].toFixed(1)),
-        backgroundColor: ['#552583', '#FDB927', '#8C8A7E'],
+        backgroundColor: genderLabels.map(g => genderColorMap[g] || '#8C8A7E'),
         borderWidth: 0
       }]
     },
