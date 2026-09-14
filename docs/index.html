@@ -13,10 +13,10 @@
     --border: #E3E2DD;
     --text: #1C1C1A;
     --text-muted: #6B6A63;
-    --accent: #B4552F;
-    --accent-soft: #F5E6DE;
-    --accent2: #2F6F5E;
-    --accent2-soft: #E4F0EC;
+    --accent: #552583;
+    --accent-soft: #EEE9F5;
+    --accent2: #FDB927;
+    --accent2-soft: #FBF1D8;
   }
   * { box-sizing: border-box; }
   body {
@@ -384,8 +384,8 @@ function renderYouTube(history, latest) {
       labels: history.map(h => h.date),
       datasets: [{
         data: history.map(h => h.subscriber_count),
-        borderColor: '#B4552F',
-        backgroundColor: 'rgba(180,85,47,0.08)',
+        borderColor: '#552583',
+        backgroundColor: 'rgba(85,37,131,0.08)',
         fill: true,
         tension: 0.25,
         pointRadius: 0,
@@ -418,7 +418,7 @@ function renderYouTube(history, latest) {
       labels: genderLabels.map(g => genderMap[g] || g),
       datasets: [{
         data: genderLabels.map(g => genderTotals[g].toFixed(1)),
-        backgroundColor: ['#2F6F5E', '#B4552F', '#8C8A7E'],
+        backgroundColor: ['#552583', '#FDB927', '#8C8A7E'],
         borderWidth: 0
       }]
     },
@@ -473,7 +473,7 @@ function renderYouTube(history, latest) {
       labels: ['Подписалось', 'Отписалось'],
       datasets: [{
         data: [gained, lost],
-        backgroundColor: ['#2F6F5E', '#B4552F'],
+        backgroundColor: ['#552583', '#FDB927'],
         borderRadius: 6
       }]
     },
@@ -530,7 +530,7 @@ function renderYouTube(history, latest) {
       labels: deviceRows.map(r => deviceLabelMap[r[0]] || r[0]),
       datasets: [{
         data: deviceRows.map(r => r[1]),
-        backgroundColor: ['#B4552F', '#2F6F5E', '#8C8A7E', '#D9A441', '#5B7FA6', '#A63D5B'],
+        backgroundColor: ['#552583', '#FDB927', '#8C8A7E', '#8F5FB0', '#C9A227', '#3C1259'],
         borderWidth: 0
       }]
     },
@@ -605,7 +605,7 @@ function setupAllTimePagination(videos) {
 
 loadYouTube().catch(err => {
   document.querySelector('main').innerHTML =
-    '<p class="empty-note" style="color:#B4552F">Не удалось загрузить данные YouTube: ' + err.message + '</p>';
+    '<p class="empty-note" style="color:#A33">Не удалось загрузить данные YouTube: ' + err.message + '</p>';
 });
 
 </script>
