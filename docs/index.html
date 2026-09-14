@@ -222,6 +222,17 @@
     </div>
   </div>
 
+  <div class="grid-2">
+    <div class="panel">
+      <h2>Подписчики vs новые зрители <span class="sub">за последние 28 дней</span></h2>
+      <canvas id="ytSubStatusChart" height="140"></canvas>
+    </div>
+    <div class="panel">
+      <h2>Куда репостят видео <span class="sub">за последние 28 дней</span></h2>
+      <div id="ytSharingBars"></div>
+    </div>
+  </div>
+
   <div class="panel">
     <h2>География и индустрия платежей <span class="sub">просмотры за 28 дней + IAP-рынок 2025</span></h2>
     <p class="traffic-note">Колонка «Просмотры» — данные YouTube Analytics, обновляется автоматически. Колонки IAP — статические справочные данные, не обновляются автоматически. Выручка по странам: Allcorrect Games, «Mobile Game Market Index 2025» (App Store + Google Play, без учёта Android в Китае и D2C-платежей). Мировая IAP-выручка для расчёта доли: Sensor Tower, «State of Mobile 2026» — $81,75 млрд за 2025 год. Прочерк — данные по IAP для страны недоступны или несопоставимы с остальными (например, Россия исключена из-за ограничений App Store/Google Play с 2022 года).</p>
@@ -251,6 +262,12 @@
       <thead><tr><th>Дата</th><th>Название</th><th>Просмотры</th><th>Лайки</th><th>Комменты</th></tr></thead>
       <tbody id="ytVideosTable"></tbody>
     </table>
+  </div>
+
+  <div class="panel">
+    <h2>Удержание топ-видео <span class="sub" id="retentionVideoTitle"></span></h2>
+    <p class="traffic-note">Сплошная линия — какой процент зрителей ещё смотрит видео на каждой отметке его длительности. Пунктир — не средняя кривая, а перцентиль: насколько это видео удерживает зрителей лучше или хуже похожих по длительности роликов на YouTube (50% — на уровне медианы, 100% — лучше всех, 0% — хуже всех).</p>
+    <canvas id="ytRetentionChart" height="120"></canvas>
   </div>
 
   <div class="panel">
@@ -487,6 +504,89 @@ function renderYouTube(history, latest) {
       }
     }
   });
+
+  const subStatusLabelMap = { SUBSCRIBED: 'Подписчики', UNSUBSCRIBED: 'Новые зрители' };
+  const subStatusRows = latest.analytics.subscribed_status || [];
+  new Chart(document.getElementById('ytSubStatusChart'), {
+    type: 'doughnut',
+    data: {
+      labels: subStatusRows.map(r => subStatusLabelMap[r[0]] || r[0]),
+      datasets: [{
+        data: subStatusRows.map(r => r[1]),
+        backgroundColor: subStatusRows.map(r => r[0] === 'SUBSCRIBED' ? '#552583' : '#FDB927'),
+        borderWidth: 0
+      }]
+    },
+    options: { plugins: { legend: { position: 'bottom' } } }
+  });
+
+  const sharingLabelMap = {
+    WHATS_APP: 'WhatsApp', TELEGRAM: 'Telegram', FACEBOOK: 'Facebook',
+    FACEBOOK_MESSENGER: 'Messenger', TWITTER: 'X (Twitter)', INSTAGRAM: 'Instagram',
+    INSTAGRAM_STORIES: 'Instagram Stories', COPY_PASTE: 'Копирование ссылки',
+    EMBED: 'Встраивание на сайт', MAIL: 'Email', GMAIL: 'Gmail',
+    REDDIT: 'Reddit', VKONTAKTE: 'ВКонтакте', SNAPCHAT: 'Snapchat',
+    LINKEDIN: 'LinkedIn', DISCORD: 'Discord', LINE: 'Line', KAKAO: 'KakaoTalk',
+    TEXT_MESSAGE: 'SMS', ANDROID_MESSENGER: 'Android-сообщения',
+    GOOGLE_APP: 'Google-приложение', SKYPE: 'Skype', VIBER: 'Viber',
+    TUMBLR: 'Tumblr', PINTEREST: 'Pinterest', OTHER: 'Другое', UNKNOWN: 'Неизвестно'
+  };
+  const sharingRows = (latest.analytics.sharing_services || []).slice(0, 8);
+  const sharingTotal = sharingRows.reduce((sum, r) => sum + r[1], 0) || 1;
+  const maxSharing = Math.max(...sharingRows.map(r => r[1]), 1);
+  document.getElementById('ytSharingBars').innerHTML = sharingRows.map(row => `
+    <div class="bar-row">
+      <div class="bar-label">${sharingLabelMap[row[0]] || row[0]}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(row[1] / maxSharing) * 100}%"></div></div>
+      <div class="bar-value">${Math.round((row[1] / sharingTotal) * 100)}%</div>
+    </div>
+  `).join('') || '<p class="empty-note">Недостаточно данных за период</p>';
+
+  const retention = latest.analytics.retention || {};
+  const retentionCurve = retention.curve || [];
+  document.getElementById('retentionVideoTitle').textContent = retention.video_title
+    ? '— ' + retention.video_title
+    : '';
+  if (retentionCurve.length) {
+    new Chart(document.getElementById('ytRetentionChart'), {
+      type: 'line',
+      data: {
+        labels: retentionCurve.map(r => Math.round(r[0] * 100) + '%'),
+        datasets: [
+          {
+            label: 'Это видео',
+            data: retentionCurve.map(r => (r[1] * 100).toFixed(1)),
+            borderColor: '#552583',
+            backgroundColor: 'rgba(85,37,131,0.08)',
+            fill: true,
+            tension: 0.2,
+            pointRadius: 0,
+            borderWidth: 2
+          },
+          {
+            label: 'Перцентиль относительно похожих видео',
+            data: retentionCurve.map(r => (r[2] * 100).toFixed(1)),
+            borderColor: '#C9A227',
+            borderDash: [4, 4],
+            fill: false,
+            tension: 0.2,
+            pointRadius: 0,
+            borderWidth: 1.5
+          }
+        ]
+      },
+      options: {
+        plugins: { legend: { position: 'bottom' } },
+        scales: {
+          x: { title: { display: true, text: 'Длительность видео' }, ticks: { maxTicksLimit: 10 }, grid: { display: false } },
+          y: { title: { display: true, text: '% зрителей' }, grid: { color: '#EEEEE9' } }
+        }
+      }
+    });
+  } else {
+    document.getElementById('ytRetentionChart').outerHTML =
+      '<p class="empty-note">Недостаточно данных для построения кривой удержания</p>';
+  }
 
   const ageLabelMap = { 'age13-17': '13–17', 'age18-24': '18–24', 'age25-34': '25–34', 'age35-44': '35–44', 'age45-54': '45–54', 'age55-64': '55–64', 'age65-': '65+' };
   const ageKeys = Object.keys(ageTotals).sort();
