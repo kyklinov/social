@@ -9,6 +9,13 @@
 
 ## Структура проекта
 
+collectors/youtube_collector.py — сбор статистики YouTube
+docs/index.html — дэшборд (Chart.js), публикуется через GitHub Pages
+docs/data/youtube/history.json — история роста подписчиков
+docs/data/youtube/latest.json — последний снимок статистики
+.github/workflows/collect-youtube.yml — ежедневный автосбор
+requirements.txt — зависимости Python
+
 ## Функционал дэшборда (сверху вниз)
 
 ### Карточки сверху
