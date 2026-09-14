@@ -1,5 +1,14 @@
 """
 Сбор статистики канала YouTube через YouTube Data API v3 + YouTube Analytics API.
+
+Что собирает:
+- рост числа подписчиков -> history.json
+- топ-10 видео по просмотрам за всё время
+- демография (возраст/пол), география, тип устройства за последние 28 дней
+- источники трафика (откуда приходят зрители)
+- глубина просмотра (watch time, средняя длительность, % досмотра)
+- показы превью и CTR
+- приток/отток подписчиков раздельно
 """
 
 import os
@@ -43,10 +52,12 @@ def get_channel_info(youtube):
     return resp["items"][0]
 
 
-def get_top_videos(youtube, uploads_playlist_id, count=10, scan=50):
+def get_all_public_videos(youtube, uploads_playlist_id):
+    """Полный проход по плейлисту загрузок — забирает ВСЕ видео канала
+    (не ограничиваясь последними N), затем оставляет только публичные."""
     video_ids = []
     page_token = None
-    while len(video_ids) < scan:
+    while True:
         resp = youtube.playlistItems().list(
             part="contentDetails",
             playlistId=uploads_playlist_id,
@@ -61,12 +72,12 @@ def get_top_videos(youtube, uploads_playlist_id, count=10, scan=50):
     videos = []
     for i in range(0, len(video_ids), 50):
         batch = video_ids[i:i + 50]
-        resp = youtube.videos().list(part="statistics,snippet", id=",".join(batch)).execute()
+        resp = youtube.videos().list(
+            part="statistics,snippet,status", id=",".join(batch)
+        ).execute()
         videos += resp.get("items", [])
 
-    videos_sorted = sorted(
-        videos, key=lambda v: int(v["statistics"].get("viewCount", 0)), reverse=True
-    )[:count]
+    public_videos = [v for v in videos if v.get("status", {}).get("privacyStatus") == "public"]
 
     return [
         {
@@ -78,8 +89,31 @@ def get_top_videos(youtube, uploads_playlist_id, count=10, scan=50):
             "comments": int(v["statistics"].get("commentCount", 0)),
             "url": f"https://youtube.com/watch?v={v['id']}",
         }
-        for v in videos_sorted
+        for v in public_videos
     ]
+
+
+def build_top_lists(all_videos, recent_days=30, recent_count=10):
+    all_time_sorted = sorted(all_videos, key=lambda v: v["views"], reverse=True)
+
+    cutoff = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=recent_days))
+    recent = [
+        v for v in all_videos
+        if datetime.datetime.fromisoformat(v["published_at"].replace("Z", "+00:00")) >= cutoff
+    ]
+    recent_sorted = sorted(recent, key=lambda v: v["views"], reverse=True)[:recent_count]
+
+    return all_time_sorted, recent_sorted
+
+
+def safe_query(youtube_analytics, **kwargs):
+    """Некоторые метрики (например, показы) доступны не на всех каналах —
+    не роняем весь сбор, если конкретный запрос отклонён."""
+    try:
+        return youtube_analytics.reports().query(**kwargs).execute()
+    except Exception as e:
+        print(f"Предупреждение: запрос аналитики не выполнен ({kwargs.get('metrics')}): {e}")
+        return {"rows": []}
 
 
 def get_analytics(youtube_analytics, channel_id, days=28):
@@ -88,25 +122,55 @@ def get_analytics(youtube_analytics, channel_id, days=28):
     end = today.isoformat()
     ids = f"channel=={channel_id}"
 
-    age_gender = youtube_analytics.reports().query(
-        ids=ids, startDate=start, endDate=end,
+    age_gender = safe_query(
+        youtube_analytics, ids=ids, startDate=start, endDate=end,
         metrics="viewerPercentage", dimensions="ageGroup,gender",
-    ).execute()
+    )
 
-    geography = youtube_analytics.reports().query(
-        ids=ids, startDate=start, endDate=end,
+    geography = safe_query(
+        youtube_analytics, ids=ids, startDate=start, endDate=end,
         metrics="views", dimensions="country", sort="-views", maxResults=10,
-    ).execute()
+    )
 
-    devices = youtube_analytics.reports().query(
-        ids=ids, startDate=start, endDate=end,
+    devices = safe_query(
+        youtube_analytics, ids=ids, startDate=start, endDate=end,
         metrics="views", dimensions="deviceType",
-    ).execute()
+    )
+
+    traffic_sources = safe_query(
+        youtube_analytics, ids=ids, startDate=start, endDate=end,
+        metrics="views", dimensions="insightTrafficSourceType", sort="-views", maxResults=10,
+    )
+
+    engagement = safe_query(
+        youtube_analytics, ids=ids, startDate=start, endDate=end,
+        metrics="estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained,subscribersLost",
+    )
+
+    impressions = safe_query(
+        youtube_analytics, ids=ids, startDate=start, endDate=end,
+        metrics="impressions,impressionsClickThroughRate",
+    )
+
+    engagement_row = engagement.get("rows", [[0, 0, 0, 0, 0]])[0]
+    impressions_row = impressions.get("rows", [[0, 0]])[0]
 
     return {
         "age_gender": age_gender.get("rows", []),
         "geography": geography.get("rows", []),
         "devices": devices.get("rows", []),
+        "traffic_sources": traffic_sources.get("rows", []),
+        "engagement": {
+            "estimated_minutes_watched": engagement_row[0],
+            "average_view_duration_seconds": engagement_row[1],
+            "average_view_percentage": engagement_row[2],
+            "subscribers_gained": engagement_row[3],
+            "subscribers_lost": engagement_row[4],
+        },
+        "impressions": {
+            "impressions": impressions_row[0],
+            "click_through_rate": impressions_row[1],
+        },
     }
 
 
@@ -120,7 +184,8 @@ def main():
     subscriber_count = int(channel["statistics"].get("subscriberCount", 0))
     uploads_playlist = channel["contentDetails"]["relatedPlaylists"]["uploads"]
 
-    top_videos = get_top_videos(youtube, uploads_playlist)
+    all_videos = get_all_public_videos(youtube, uploads_playlist)
+    all_time_videos, top_videos_30d = build_top_lists(all_videos)
     analytics = get_analytics(youtube_analytics, channel_id)
 
     today = datetime.date.today().isoformat()
@@ -132,7 +197,8 @@ def main():
         "subscriber_count": subscriber_count,
         "view_count": int(channel["statistics"].get("viewCount", 0)),
         "video_count": int(channel["statistics"].get("videoCount", 0)),
-        "top_videos": top_videos,
+        "top_videos_30d": top_videos_30d,
+        "all_time_videos": all_time_videos,
         "analytics": analytics,
     }
     with open(os.path.join(DATA_DIR, "latest.json"), "w", encoding="utf-8") as f:
