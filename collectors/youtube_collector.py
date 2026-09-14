@@ -159,6 +159,16 @@ def get_analytics(youtube_analytics, channel_id, days=28):
         metrics="impressions,impressionsClickThroughRate",
     )
 
+    subscribed_status = safe_query(
+        youtube_analytics, ids=ids, startDate=start, endDate=end,
+        metrics="views", dimensions="subscribedStatus",
+    )
+
+    sharing_services = safe_query(
+        youtube_analytics, ids=ids, startDate=start, endDate=end,
+        metrics="shares", dimensions="sharingService", sort="-shares", maxResults=10,
+    )
+
     engagement_rows = engagement.get("rows") or [[0, 0, 0, 0, 0]]
     impressions_rows = impressions.get("rows") or [[0, 0]]
     engagement_row = engagement_rows[0]
@@ -170,6 +180,8 @@ def get_analytics(youtube_analytics, channel_id, days=28):
         "devices": devices.get("rows", []),
         "operating_systems": operating_systems.get("rows", []),
         "traffic_sources": traffic_sources.get("rows", []),
+        "subscribed_status": subscribed_status.get("rows", []),
+        "sharing_services": sharing_services.get("rows", []),
         "engagement": {
             "estimated_minutes_watched": engagement_row[0],
             "average_view_duration_seconds": engagement_row[1],
@@ -182,6 +194,23 @@ def get_analytics(youtube_analytics, channel_id, days=28):
             "click_through_rate": impressions_row[1],
         },
     }
+
+
+def get_retention(youtube_analytics, channel_id, video_id, published_at):
+    """Кривая удержания для одного видео: на какой секунде зрители уходят.
+    Диапазон дат — с момента публикации видео до сегодня, чтобы захватить
+    все просмотры за всё время его существования."""
+    start = published_at[:10]
+    end = datetime.date.today().isoformat()
+    ids = f"channel=={channel_id}"
+
+    resp = safe_query(
+        youtube_analytics, ids=ids, startDate=start, endDate=end,
+        metrics="audienceWatchRatio,relativeRetentionPerformance",
+        dimensions="elapsedVideoTimeRatio",
+        filters=f"video=={video_id}",
+    )
+    return resp.get("rows", [])
 
 
 def main():
@@ -197,6 +226,22 @@ def main():
     all_videos = get_all_public_videos(youtube, uploads_playlist)
     all_time_videos, top_videos_30d = build_top_lists(all_videos)
     analytics = get_analytics(youtube_analytics, channel_id)
+
+    retention_video = (top_videos_30d[0] if top_videos_30d else
+                        (all_time_videos[0] if all_time_videos else None))
+    if retention_video:
+        retention_curve = get_retention(
+            youtube_analytics, channel_id,
+            retention_video["id"], retention_video["published_at"],
+        )
+        analytics["retention"] = {
+            "video_id": retention_video["id"],
+            "video_title": retention_video["title"],
+            "video_url": retention_video["url"],
+            "curve": retention_curve,
+        }
+    else:
+        analytics["retention"] = {"video_id": None, "video_title": None, "video_url": None, "curve": []}
 
     today = datetime.date.today().isoformat()
 
