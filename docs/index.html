@@ -89,6 +89,32 @@
     color: var(--text-muted);
     font-size: 12px;
   }
+  .panel > h2:first-child {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+  }
+  .panel > h2:first-child:hover {
+    color: var(--accent);
+  }
+  .panel-toggle-icon {
+    font-size: 11px;
+    color: var(--text-muted);
+    transition: transform 0.15s ease;
+    margin-left: 10px;
+    flex-shrink: 0;
+  }
+  .panel.collapsed > h2:first-child {
+    margin-bottom: 0;
+  }
+  .panel.collapsed > h2:first-child .panel-toggle-icon {
+    transform: rotate(-90deg);
+  }
+  .panel.collapsed > *:not(:first-child) {
+    display: none;
+  }
   .grid-2 {
     display: grid;
     grid-template-columns: 1.6fr 1fr;
@@ -224,8 +250,8 @@
 
   <div class="grid-2">
     <div class="panel">
-      <h2>Подписчики vs новые зрители <span class="sub">за последние 28 дней</span></h2>
-      <canvas id="ytSubStatusChart" height="140"></canvas>
+      <h2>Подписчики vs новые зрители <span class="sub">доля просмотров за 28 дней</span></h2>
+      <canvas id="ytSubStatusChart" height="90" style="max-width:260px;margin:0 auto;display:block;"></canvas>
     </div>
     <div class="panel">
       <h2>Куда репостят видео <span class="sub">за последние 28 дней</span></h2>
@@ -265,12 +291,6 @@
   </div>
 
   <div class="panel">
-    <h2>Удержание топ-видео <span class="sub" id="retentionVideoTitle"></span></h2>
-    <p class="traffic-note">Сплошная линия — какой процент зрителей ещё смотрит видео на каждой отметке его длительности. Пунктир — не средняя кривая, а перцентиль: насколько это видео удерживает зрителей лучше или хуже похожих по длительности роликов на YouTube (50% — на уровне медианы, 100% — лучше всех, 0% — хуже всех).</p>
-    <canvas id="ytRetentionChart" height="120"></canvas>
-  </div>
-
-  <div class="panel">
     <h2>Топ за всё время</h2>
     <table>
       <thead><tr><th>Дата</th><th>Название</th><th>Просмотры</th><th>Лайки</th><th>Комменты</th></tr></thead>
@@ -281,6 +301,12 @@
       <span class="page-info" id="atvPageInfo"></span>
       <button id="atvNext">Вперёд →</button>
     </div>
+  </div>
+
+  <div class="panel">
+    <h2>Удержание топ-видео <span class="sub" id="retentionVideoTitle"></span></h2>
+    <p class="traffic-note">Сплошная линия — какой процент зрителей ещё смотрит видео на каждой отметке его длительности. Пунктир — не средняя кривая, а перцентиль: насколько это видео удерживает зрителей лучше или хуже похожих по длительности роликов на YouTube (50% — на уровне медианы, 100% — лучше всех, 0% — хуже всех).</p>
+    <canvas id="ytRetentionChart" height="120"></canvas>
   </div>
 </main>
 
@@ -703,6 +729,14 @@ function setupAllTimePagination(videos) {
 
   renderPage();
 }
+
+// Сворачивание/разворачивание панелей по клику на заголовок
+document.querySelectorAll('.panel > h2:first-child').forEach(h2 => {
+  h2.insertAdjacentHTML('beforeend', '<span class="panel-toggle-icon">▾</span>');
+  h2.addEventListener('click', () => {
+    h2.closest('.panel').classList.toggle('collapsed');
+  });
+});
 
 loadYouTube().catch(err => {
   document.querySelector('main').innerHTML =
