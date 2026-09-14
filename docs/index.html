@@ -222,14 +222,19 @@
     </div>
   </div>
 
-  <div class="grid-3">
+  <div class="panel">
+    <h2>География и индустрия платежей <span class="sub">просмотры за 28 дней + IAP-рынок 2025</span></h2>
+    <p class="traffic-note">Колонка «Просмотры» — данные YouTube Analytics, обновляется автоматически. Колонки IAP — статические справочные данные, не обновляются автоматически. Выручка по странам: Allcorrect Games, «Mobile Game Market Index 2025» (App Store + Google Play, без учёта Android в Китае и D2C-платежей). Мировая IAP-выручка для расчёта доли: Sensor Tower, «State of Mobile 2026» — $81,75 млрд за 2025 год. Прочерк — данные по IAP для страны недоступны или несопоставимы с остальными (например, Россия исключена из-за ограничений App Store/Google Play с 2022 года).</p>
+    <table>
+      <thead><tr><th>Страна</th><th>Просмотры (YouTube)</th><th>IAP-выручка, 2025</th><th>% от мировой IAP-выручки</th></tr></thead>
+      <tbody id="geoIndustryTable"></tbody>
+    </table>
+  </div>
+
+  <div class="grid-2">
     <div class="panel">
       <h2>Возраст аудитории</h2>
       <div id="ytAgeBars"></div>
-    </div>
-    <div class="panel">
-      <h2>География (по просмотрам)</h2>
-      <table><thead><tr><th>Страна</th><th>Просмотры</th></tr></thead><tbody id="ytGeoTable"></tbody></table>
     </div>
     <div class="panel">
       <h2>Устройства</h2>
@@ -259,13 +264,6 @@
       <span class="page-info" id="atvPageInfo"></span>
       <button id="atvNext">Вперёд →</button>
     </div>
-  </div>  <div class="panel">
-    <h2>Индустрия: IAP-выручка мобильных игр по странам <span class="sub">2025 год, справочно</span></h2>
-    <p class="traffic-note">Статические данные, не обновляются автоматически. Выручка по странам: Allcorrect Games, «Mobile Game Market Index 2025» (App Store + Google Play, без учёта Android в Китае и D2C-платежей). Мировая IAP-выручка для расчёта доли: Sensor Tower, «State of Mobile 2026» — $81,75 млрд за 2025 год.</p>
-    <table>
-      <thead><tr><th>Страна</th><th>IAP-выручка, 2025</th><th>% от мировой IAP-выручки</th></tr></thead>
-      <tbody id="iapRevenueTable"></tbody>
-    </table>
   </div>
 </main>
 
@@ -317,6 +315,22 @@ function fmtDuration(seconds) {
   const s = Math.round(seconds % 60);
   return `${m}:${s.toString().padStart(2, '0')}`;
 }
+
+// Статические справочные данные: IAP-выручка мобильных игр по странам, 2025 год
+// Источник: Allcorrect Games, "Mobile Game Market Index 2025" (App Store + Google Play)
+const iapRevenueData = [
+  { country: 'США', revenueUsd: 24.2e9 },
+  { country: 'Япония', revenueUsd: 12.0e9 },
+  { country: 'Германия', revenueUsd: 2.43e9 },
+  { country: 'Великобритания', revenueUsd: 2.42e9 },
+  { country: 'Индонезия', revenueUsd: 1.61e9 },
+  { country: 'Индия', revenueUsd: 1.42e9 },
+  { country: 'Бразилия', revenueUsd: 1.41e9 },
+  { country: 'Франция', revenueUsd: 1.35e9 },
+  { country: 'Польша', revenueUsd: 0.554e9 },
+];
+// Мировая IAP-выручка мобильных игр за 2025 год (Sensor Tower, "State of Mobile 2026")
+const WORLD_IAP_REVENUE_2025 = 81.75e9;
 
 async function loadYouTube() {
   const [history, latest] = await Promise.all([
@@ -485,9 +499,26 @@ function renderYouTube(history, latest) {
   `).join('') || '<p class="empty-note">Недостаточно данных за период</p>';
 
   const geoRows = latest.analytics.geography || [];
-  document.getElementById('ytGeoTable').innerHTML = geoRows.map(row => `
-    <tr><td>${countryName(row[0])}</td><td>${fmt(row[1])}</td></tr>
-  `).join('') || '<tr><td colspan="2" class="empty-note">Нет данных</td></tr>';
+
+  // Объединённая таблица: просмотры по стране (YouTube) + справочные IAP-данные по индустрии
+  const iapByCountry = {};
+  iapRevenueData.forEach(r => { iapByCountry[r.country] = r.revenueUsd; });
+
+  document.getElementById('geoIndustryTable').innerHTML = geoRows.map(row => {
+    const name = countryName(row[0]);
+    const views = row[1];
+    const revenue = iapByCountry[name];
+    const revenueCell = revenue !== undefined ? `$${(revenue / 1e9).toFixed(2)} млрд` : '—';
+    const shareCell = revenue !== undefined ? `${((revenue / WORLD_IAP_REVENUE_2025) * 100).toFixed(1)}%` : '—';
+    return `
+      <tr>
+        <td>${name}</td>
+        <td>${fmt(views)}</td>
+        <td>${revenueCell}</td>
+        <td>${shareCell}</td>
+      </tr>
+    `;
+  }).join('') || '<tr><td colspan="4" class="empty-note">Нет данных</td></tr>';
 
   const deviceRows = latest.analytics.devices || [];
   const deviceTotal = deviceRows.reduce((sum, r) => sum + r[1], 0) || 1;
@@ -577,33 +608,6 @@ loadYouTube().catch(err => {
     '<p class="empty-note" style="color:#B4552F">Не удалось загрузить данные YouTube: ' + err.message + '</p>';
 });
 
-// ---- Статический справочный блок: IAP-выручка по странам, 2025 ----
-// Источник: Allcorrect Games, "Mobile Game Market Index 2025" (App Store + Google Play)
-const iapRevenueData = [
-  { country: 'США', revenueUsd: 24.2e9 },
-  { country: 'Япония', revenueUsd: 12.0e9 },
-  { country: 'Германия', revenueUsd: 2.43e9 },
-  { country: 'Великобритания', revenueUsd: 2.42e9 },
-  { country: 'Индонезия', revenueUsd: 1.61e9 },
-  { country: 'Индия', revenueUsd: 1.42e9 },
-  { country: 'Бразилия', revenueUsd: 1.41e9 },
-  { country: 'Франция', revenueUsd: 1.35e9 },
-  { country: 'Польша', revenueUsd: 0.554e9 },
-];
-
-(function renderIapRevenue() {
-  // Мировая IAP-выручка мобильных игр за 2025 год: $81,75 млрд
-  // Источник: Sensor Tower, "State of Mobile 2026" (+1,3% год к году)
-  const worldTotalUsd = 81.75e9;
-  const sorted = [...iapRevenueData].sort((a, b) => b.revenueUsd - a.revenueUsd);
-  document.getElementById('iapRevenueTable').innerHTML = sorted.map(r => `
-    <tr>
-      <td>${r.country}</td>
-      <td>$${(r.revenueUsd / 1e9).toFixed(2)} млрд</td>
-      <td>${((r.revenueUsd / worldTotalUsd) * 100).toFixed(1)}%</td>
-    </tr>
-  `).join('');
-})();
 </script>
 
 </body>
