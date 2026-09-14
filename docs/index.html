@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Статистика YouTube</title>
+<title>Данные YouTube CarX Technologies</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <style>
   :root {
@@ -83,6 +83,11 @@
     font-weight: 600;
     margin: 0 0 14px;
   }
+  .panel h2 .sub {
+    font-weight: 400;
+    color: var(--text-muted);
+    font-size: 12px;
+  }
   .grid-2 {
     display: grid;
     grid-template-columns: 1.6fr 1fr;
@@ -124,7 +129,7 @@
     margin-bottom: 8px;
     font-size: 13px;
   }
-  .bar-label { width: 130px; color: var(--text-muted); flex-shrink: 0; }
+  .bar-label { width: 150px; color: var(--text-muted); flex-shrink: 0; }
   .bar-track {
     flex: 1;
     background: var(--accent-soft);
@@ -133,7 +138,7 @@
     overflow: hidden;
   }
   .bar-fill { background: var(--accent); height: 100%; }
-  .bar-value { width: 44px; text-align: right; flex-shrink: 0; }
+  .bar-value { width: 60px; text-align: right; flex-shrink: 0; }
   footer {
     max-width: 1180px;
     margin: 0 auto;
@@ -155,7 +160,7 @@
 <body>
 
 <header>
-  <h1>Статистика YouTube</h1>
+  <h1>Данные YouTube CarX Technologies</h1>
   <p class="subtitle">Обновляется автоматически каждый день</p>
 </header>
 
@@ -170,6 +175,22 @@
     <div class="panel">
       <h2>Пол аудитории</h2>
       <canvas id="ytGenderChart" height="140"></canvas>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Вовлечённость и показы <span class="sub">за последние 28 дней</span></h2>
+    <div class="cards" id="ytEngagementCards" style="margin-bottom:0;"></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <h2>Источники трафика <span class="sub">за последние 28 дней</span></h2>
+      <div id="ytTrafficBars"></div>
+    </div>
+    <div class="panel">
+      <h2>Приток / отток подписчиков <span class="sub">за последние 28 дней</span></h2>
+      <canvas id="ytSubsChart" height="140"></canvas>
     </div>
   </div>
 
@@ -201,7 +222,49 @@
 
 <script>
 function fmt(n) {
-  return new Intl.NumberFormat('ru-RU').format(n);
+  return new Intl.NumberFormat('ru-RU').format(Math.round(n));
+}
+
+const countryNames = {
+  RU: 'Россия', US: 'США', GB: 'Великобритания', DE: 'Германия', FR: 'Франция',
+  IT: 'Италия', ES: 'Испания', PT: 'Португалия', NL: 'Нидерланды', BE: 'Бельгия',
+  CH: 'Швейцария', AT: 'Австрия', SE: 'Швеция', NO: 'Норвегия', DK: 'Дания',
+  FI: 'Финляндия', PL: 'Польша', CZ: 'Чехия', SK: 'Словакия', HU: 'Венгрия',
+  RO: 'Румыния', BG: 'Болгария', GR: 'Греция', UA: 'Украина', BY: 'Беларусь',
+  MD: 'Молдова', LT: 'Литва', LV: 'Латвия', EE: 'Эстония', IE: 'Ирландия',
+  IS: 'Исландия', HR: 'Хорватия', RS: 'Сербия', SI: 'Словения', BA: 'Босния и Герцеговина',
+  MK: 'Северная Македония', AL: 'Албания', ME: 'Черногория', LU: 'Люксембург', MT: 'Мальта',
+  CY: 'Кипр',
+  KZ: 'Казахстан', UZ: 'Узбекистан', KG: 'Киргизия', TJ: 'Таджикистан', TM: 'Туркменистан',
+  AM: 'Армения', AZ: 'Азербайджан', GE: 'Грузия',
+  CN: 'Китай', JP: 'Япония', KR: 'Южная Корея', KP: 'Северная Корея', IN: 'Индия',
+  ID: 'Индонезия', TH: 'Таиланд', VN: 'Вьетнам', PH: 'Филиппины', MY: 'Малайзия',
+  SG: 'Сингапур', TW: 'Тайвань', HK: 'Гонконг', PK: 'Пакистан', BD: 'Бангладеш',
+  MM: 'Мьянма', KH: 'Камбоджа', LA: 'Лаос', NP: 'Непал', LK: 'Шри-Ланка',
+  MN: 'Монголия',
+  TR: 'Турция', IL: 'Израиль', SA: 'Саудовская Аравия', AE: 'ОАЭ', QA: 'Катар',
+  KW: 'Кувейт', IQ: 'Ирак', IR: 'Иран', JO: 'Иордания', LB: 'Ливан',
+  OM: 'Оман', BH: 'Бахрейн', YE: 'Йемен', SY: 'Сирия', AF: 'Афганистан',
+  CA: 'Канада', MX: 'Мексика', BR: 'Бразилия', AR: 'Аргентина', CL: 'Чили',
+  CO: 'Колумбия', PE: 'Перу', VE: 'Венесуэла', EC: 'Эквадор', BO: 'Боливия',
+  PY: 'Парагвай', UY: 'Уругвай', CR: 'Коста-Рика', PA: 'Панама', CU: 'Куба',
+  DO: 'Доминиканская Республика', GT: 'Гватемала', HN: 'Гондурас', SV: 'Сальвадор', NI: 'Никарагуа',
+  JM: 'Ямайка', TT: 'Тринидад и Тобаго',
+  AU: 'Австралия', NZ: 'Новая Зеландия',
+  EG: 'Египет', ZA: 'ЮАР', NG: 'Нигерия', KE: 'Кения', MA: 'Марокко',
+  DZ: 'Алжир', TN: 'Тунис', GH: 'Гана', ET: 'Эфиопия', TZ: 'Танзания',
+  UG: 'Уганда', SN: 'Сенегал', CI: 'Кот-д’Ивуар', CM: 'Камерун', ZW: 'Зимбабве',
+  ZM: 'Замбия', AO: 'Ангола', MZ: 'Мозамбик', LY: 'Ливия', SD: 'Судан'
+};
+
+function countryName(code) {
+  return countryNames[code] || code;
+}
+
+function fmtDuration(seconds) {
+  const m = Math.floor(seconds / 60);
+  const s = Math.round(seconds % 60);
+  return `${m}:${s.toString().padStart(2, '0')}`;
 }
 
 async function loadYouTube() {
@@ -221,9 +284,28 @@ function renderYouTube(history, latest) {
     { label: 'Подписчиков', value: fmt(latest.subscriber_count), delta: `+${growthPct}% за период` },
     { label: 'Просмотров всего', value: fmt(latest.view_count), delta: 'за всё время канала' },
     { label: 'Видео на канале', value: fmt(latest.video_count), delta: '' },
-    { label: 'Топ страна по просмотрам', value: (latest.analytics.geography[0] || [])[0] || '—', delta: 'за последние 28 дней' }
+    { label: 'Топ страна по просмотрам', value: countryName((latest.analytics.geography[0] || [])[0]) || '—', delta: 'за последние 28 дней' }
   ];
   document.getElementById('ytStatCards').innerHTML = cards.map(c => `
+    <div class="card">
+      <div class="label">${c.label}</div>
+      <div class="value">${c.value}</div>
+      <div class="delta">${c.delta}</div>
+    </div>
+  `).join('');
+
+  const eng = latest.analytics.engagement || {};
+  const imp = latest.analytics.impressions || {};
+  const watchHours = (eng.estimated_minutes_watched || 0) / 60;
+
+  const engCards = [
+    { label: 'Просмотрено часов', value: fmt(watchHours), delta: '' },
+    { label: 'Средняя длительность просмотра', value: fmtDuration(eng.average_view_duration_seconds || 0), delta: '' },
+    { label: 'Досматриваемость', value: (eng.average_view_percentage || 0).toFixed(1) + '%', delta: 'в среднем по ролику' },
+    { label: 'Показы превью', value: fmt(imp.impressions || 0), delta: '' },
+    { label: 'CTR превью', value: (imp.click_through_rate || 0).toFixed(1) + '%', delta: 'кликов по показам' }
+  ];
+  document.getElementById('ytEngagementCards').innerHTML = engCards.map(c => `
     <div class="card">
       <div class="label">${c.label}</div>
       <div class="value">${c.value}</div>
@@ -278,6 +360,53 @@ function renderYouTube(history, latest) {
     options: { plugins: { legend: { position: 'bottom' } } }
   });
 
+  const trafficLabelMap = {
+    YT_SEARCH: 'Поиск YouTube',
+    SUGGESTED_VIDEO: 'Рекомендации',
+    BROWSE: 'Главная / подписки',
+    EXTERNAL: 'Внешние сайты',
+    PLAYLIST: 'Плейлисты',
+    NOTIFICATION: 'Уведомления',
+    CHANNEL: 'Страница канала',
+    SHORTS: 'Shorts-лента',
+    PLAYBACK_RELATED: 'Похожие видео',
+    NO_LINK_OTHER: 'Прочее',
+    END_SCREEN: 'Конечная заставка',
+    ANNOTATION: 'Аннотации'
+  };
+  const trafficRows = (latest.analytics.traffic_sources || []).slice(0, 8);
+  const trafficTotal = trafficRows.reduce((sum, r) => sum + r[1], 0) || 1;
+  const maxTraffic = Math.max(...trafficRows.map(r => r[1]), 1);
+  document.getElementById('ytTrafficBars').innerHTML = trafficRows.map(row => `
+    <div class="bar-row">
+      <div class="bar-label">${trafficLabelMap[row[0]] || row[0]}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(row[1] / maxTraffic) * 100}%"></div></div>
+      <div class="bar-value">${Math.round((row[1] / trafficTotal) * 100)}%</div>
+    </div>
+  `).join('') || '<p class="empty-note">Недостаточно данных за период</p>';
+
+  const gained = eng.subscribers_gained || 0;
+  const lost = eng.subscribers_lost || 0;
+  new Chart(document.getElementById('ytSubsChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Подписалось', 'Отписалось'],
+      datasets: [{
+        data: [gained, lost],
+        backgroundColor: ['#2F6F5E', '#B4552F'],
+        borderRadius: 6
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { color: '#EEEEE9' } },
+        y: { grid: { display: false } }
+      }
+    }
+  });
+
   const ageLabelMap = { 'age13-17': '13–17', 'age18-24': '18–24', 'age25-34': '25–34', 'age35-44': '35–44', 'age45-54': '45–54', 'age55-64': '55–64', 'age65-': '65+' };
   const ageKeys = Object.keys(ageTotals).sort();
   const maxAge = Math.max(...Object.values(ageTotals), 1);
@@ -291,7 +420,7 @@ function renderYouTube(history, latest) {
 
   const geoRows = latest.analytics.geography || [];
   document.getElementById('ytGeoTable').innerHTML = geoRows.map(row => `
-    <tr><td>${row[0]}</td><td>${fmt(row[1])}</td></tr>
+    <tr><td>${countryName(row[0])}</td><td>${fmt(row[1])}</td></tr>
   `).join('') || '<tr><td colspan="2" class="empty-note">Нет данных</td></tr>';
 
   const deviceRows = latest.analytics.devices || [];
