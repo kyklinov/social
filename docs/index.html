@@ -210,10 +210,18 @@
   </div>
 
   <div class="panel">
-    <h2>Топ видео</h2>
+    <h2>Топ видео <span class="sub">за последние 30 дней</span></h2>
     <table>
       <thead><tr><th>Дата</th><th>Название</th><th>Просмотры</th><th>Лайки</th><th>Комменты</th></tr></thead>
       <tbody id="ytVideosTable"></tbody>
+    </table>
+  </div>
+
+  <div class="panel">
+    <h2>Топ за всё время</h2>
+    <table>
+      <thead><tr><th>Дата</th><th>Название</th><th>Просмотры</th><th>Лайки</th><th>Комменты</th></tr></thead>
+      <tbody id="ytAllTimeVideosTable"></tbody>
     </table>
   </div>
 </main>
@@ -430,7 +438,7 @@ function renderYouTube(history, latest) {
     <tr><td>${deviceLabelMap[row[0]] || row[0]}</td><td>${Math.round((row[1] / deviceTotal) * 100)}%</td></tr>
   `).join('') || '<tr><td colspan="2" class="empty-note">Нет данных</td></tr>';
 
-  document.getElementById('ytVideosTable').innerHTML = latest.top_videos.map(v => `
+  document.getElementById('ytVideosTable').innerHTML = (latest.top_videos_30d || []).map(v => `
     <tr>
       <td>${new Date(v.published_at).toLocaleDateString('ru-RU')}</td>
       <td class="post-text">${v.title}<br><a class="post-link" href="${v.url}" target="_blank">Открыть →</a></td>
@@ -438,7 +446,17 @@ function renderYouTube(history, latest) {
       <td>${fmt(v.likes)}</td>
       <td>${fmt(v.comments)}</td>
     </tr>
-  `).join('');
+  `).join('') || '<tr><td colspan="5" class="empty-note">Нет роликов, опубликованных за последние 30 дней</td></tr>';
+
+  document.getElementById('ytAllTimeVideosTable').innerHTML = (latest.all_time_videos || []).map(v => `
+    <tr>
+      <td>${new Date(v.published_at).toLocaleDateString('ru-RU')}</td>
+      <td class="post-text">${v.title}<br><a class="post-link" href="${v.url}" target="_blank">Открыть →</a></td>
+      <td>${fmt(v.views)}</td>
+      <td>${fmt(v.likes)}</td>
+      <td>${fmt(v.comments)}</td>
+    </tr>
+  `).join('') || '<tr><td colspan="5" class="empty-note">Нет данных</td></tr>';
 
   document.getElementById('footerNote').textContent =
     'Обновлено: ' + new Date(latest.date).toLocaleDateString('ru-RU');
