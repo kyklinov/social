@@ -89,32 +89,6 @@
     color: var(--text-muted);
     font-size: 12px;
   }
-  .panel > h2:first-child {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    user-select: none;
-  }
-  .panel > h2:first-child:hover {
-    color: var(--accent);
-  }
-  .panel-toggle-icon {
-    font-size: 11px;
-    color: var(--text-muted);
-    transition: transform 0.15s ease;
-    margin-left: 10px;
-    flex-shrink: 0;
-  }
-  .panel.collapsed > h2:first-child {
-    margin-bottom: 0;
-  }
-  .panel.collapsed > h2:first-child .panel-toggle-icon {
-    transform: rotate(-90deg);
-  }
-  .panel.collapsed > *:not(:first-child) {
-    display: none;
-  }
   .grid-2 {
     display: grid;
     grid-template-columns: 1.6fr 1fr;
@@ -260,7 +234,7 @@
   </div>
 
   <div class="panel">
-    <h2>География и индустрия платежей <span class="sub">просмотры за 28 дней + IAP-рынок 2025</span></h2>
+    <h2>География и платежи <span class="sub">просмотры за 28 дней + IAP-рынок 2025</span></h2>
     <p class="traffic-note">Колонка «Просмотры» — данные YouTube Analytics, обновляется автоматически. Колонки IAP — статические справочные данные, не обновляются автоматически. Выручка по странам: Allcorrect Games, «Mobile Game Market Index 2025» (App Store + Google Play, без учёта Android в Китае и D2C-платежей). Мировая IAP-выручка для расчёта доли: Sensor Tower, «State of Mobile 2026» — $81,75 млрд за 2025 год. Прочерк — данные по IAP для страны недоступны или несопоставимы с остальными (например, Россия исключена из-за ограничений App Store/Google Play с 2022 года).</p>
     <table>
       <thead><tr><th>Страна</th><th>Просмотры (YouTube)</th><th>IAP-выручка, 2025</th><th>% от мировой IAP-выручки</th></tr></thead>
@@ -729,14 +703,6 @@ function setupAllTimePagination(videos) {
 
   renderPage();
 }
-
-// Сворачивание/разворачивание панелей по клику на заголовок
-document.querySelectorAll('.panel > h2:first-child').forEach(h2 => {
-  h2.insertAdjacentHTML('beforeend', '<span class="panel-toggle-icon">▾</span>');
-  h2.addEventListener('click', () => {
-    h2.closest('.panel').classList.toggle('collapsed');
-  });
-});
 
 loadYouTube().catch(err => {
   document.querySelector('main').innerHTML =
