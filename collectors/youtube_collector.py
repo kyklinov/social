@@ -152,8 +152,10 @@ def get_analytics(youtube_analytics, channel_id, days=28):
         metrics="impressions,impressionsClickThroughRate",
     )
 
-    engagement_row = engagement.get("rows", [[0, 0, 0, 0, 0]])[0]
-    impressions_row = impressions.get("rows", [[0, 0]])[0]
+    engagement_rows = engagement.get("rows") or [[0, 0, 0, 0, 0]]
+    impressions_rows = impressions.get("rows") or [[0, 0]]
+    engagement_row = engagement_rows[0]
+    impressions_row = impressions_rows[0]
 
     return {
         "age_gender": age_gender.get("rows", []),
