@@ -5,7 +5,7 @@
 Дэшборд: `https://kyklinov.github.io/social/`
 Структура проекта
 ```
-collectors/youtube_collector.py       — сбор статистики YouTube
+collectors/youtube\_collector.py       — сбор статистики YouTube
 docs/index.html                       — дэшборд (Chart.js), публикуется через GitHub Pages
 docs/data/youtube/history.json        — история роста подписчиков
 docs/data/youtube/latest.json         — последний снимок статистики
@@ -47,10 +47,10 @@ IAP-выручка мобильных игр, 2025 и % от мировой IAP-
 Как проверить сбор данных вручную
 Actions → Collect YouTube stats → Run workflow — запускает сбор прямо сейчас, не дожидаясь расписания.
 Как изменить частоту сбора
-Файл `.github/workflows/collect-youtube.yml`, строка `cron: '15 6 * * *'` — стандартный формат cron-расписания (сейчас: каждый день в 06:15 UTC).
+Файл `.github/workflows/collect-youtube.yml`, строка `cron: '15 6 \* \* \*'` — стандартный формат cron-расписания (сейчас: каждый день в 06:15 UTC).
 Если понадобится заново настроить доступ к YouTube API
 Google Cloud Console → создать проект → включить YouTube Data API v3 и YouTube Analytics API.
 OAuth consent screen → тип External → добавить себя в Test users → перевести в статус Production через Publish App (иначе токен истекает каждые ~7 дней).
 Credentials → OAuth client ID → тип Desktop app → скачать JSON.
-Локально запустить `get_youtube_token.py` (использует `google-auth-oauthlib`, сам открывает браузер) — получить `client_id`, `client_secret`, `refresh_token`.
-Добавить в GitHub Secrets: `YOUTUBE_CLIENT_ID`, `YOUTUBE_CLIENT_SECRET`, `YOUTUBE_REFRESH_TOKEN`, `YOUTUBE_CHANNEL_ID`.
+Локально запустить `get\_youtube\_token.py` (использует `google-auth-oauthlib`, сам открывает браузер) — получить `client\_id`, `client\_secret`, `refresh\_token`.
+Добавить в GitHub Secrets: `YOUTUBE\_CLIENT\_ID`, `YOUTUBE\_CLIENT\_SECRET`, `YOUTUBE\_REFRESH\_TOKEN`, `YOUTUB
