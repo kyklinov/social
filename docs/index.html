@@ -549,7 +549,7 @@ function renderYouTube(history, latest) {
   };
   const osRows = latest.analytics.operating_systems || [];
   const osTotal = osRows.reduce((sum, r) => sum + r[1], 0) || 1;
-  document.getElementById('ytOsTable').innerHTML = osRows.map(row => `
+  document.getElementById('ytOsTable').innerHTML = osRows.slice(0, 5).map(row => `
     <tr><td>${osLabelMap[row[0]] || row[0]}</td><td>${Math.round((row[1] / osTotal) * 100)}%</td></tr>
   `).join('') || '<tr><td colspan="2" class="empty-note">Нет данных</td></tr>';
 
