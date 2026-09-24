@@ -1,24 +1,24 @@
 {
-  "date": "2026-09-23",
+  "date": "2026-09-24",
   "subscriber_count": 444000,
-  "view_count": 31101293,
-  "video_count": 418,
+  "view_count": 31109327,
+  "video_count": 420,
   "top_videos_30d": [
     {
       "id": "9WJJ9BbQ9PM",
       "title": "CarX Rally - Official Announcement Trailer",
       "published_at": "2026-09-09T13:27:31Z",
-      "views": 274405,
-      "likes": 6177,
-      "comments": 987,
+      "views": 275608,
+      "likes": 6183,
+      "comments": 988,
       "url": "https://youtube.com/watch?v=9WJJ9BbQ9PM"
     },
     {
       "id": "2GsMSPHTEmY",
       "title": "CarX Street - Redline Shift Update Teaser",
       "published_at": "2026-08-28T20:56:43Z",
-      "views": 114812,
-      "likes": 1532,
+      "views": 114899,
+      "likes": 1533,
       "comments": 359,
       "url": "https://youtube.com/watch?v=2GsMSPHTEmY"
     },
@@ -26,8 +26,8 @@
       "id": "u4lMq4B32dY",
       "title": "🔥CarX Street Redline Shift Update is here! #carxstreet #carxtechnologies",
       "published_at": "2026-09-11T11:19:26Z",
-      "views": 78417,
-      "likes": 2791,
+      "views": 80600,
+      "likes": 2798,
       "comments": 263,
       "url": "https://youtube.com/watch?v=u4lMq4B32dY"
     },
@@ -35,17 +35,17 @@
       "id": "dQI9TLB8v4o",
       "title": "CarX Street - Redline Shift Update Official Trailer",
       "published_at": "2026-09-03T12:16:21Z",
-      "views": 74083,
-      "likes": 1934,
-      "comments": 435,
+      "views": 74266,
+      "likes": 1937,
+      "comments": 434,
       "url": "https://youtube.com/watch?v=dQI9TLB8v4o"
     },
     {
       "id": "jUb888cSbxc",
       "title": "CarX Drift Racing Online 2 - South Port Official Trailer",
       "published_at": "2026-09-01T15:06:45Z",
-      "views": 25461,
-      "likes": 456,
+      "views": 25533,
+      "likes": 459,
       "comments": 67,
       "url": "https://youtube.com/watch?v=jUb888cSbxc"
     },
@@ -53,17 +53,26 @@
       "id": "5YiKfb2N5Kk",
       "title": "CarX Street: Обновление Redline Shift с разработчиками",
       "published_at": "2026-09-05T04:41:31Z",
-      "views": 24987,
+      "views": 25054,
       "likes": 198,
       "comments": 24,
       "url": "https://youtube.com/watch?v=5YiKfb2N5Kk"
     },
     {
+      "id": "cFOs10VSRQc",
+      "title": "CarX Drift Racing 3 - Official 1.17.0 Update Trailer",
+      "published_at": "2026-09-23T13:28:59Z",
+      "views": 19484,
+      "likes": 265,
+      "comments": 67,
+      "url": "https://youtube.com/watch?v=cFOs10VSRQc"
+    },
+    {
       "id": "hDNc7ha_i8g",
       "title": "Drag Races are here now!",
       "published_at": "2026-09-10T11:38:54Z",
-      "views": 13566,
-      "likes": 835,
+      "views": 13706,
+      "likes": 837,
       "comments": 51,
       "url": "https://youtube.com/watch?v=hDNc7ha_i8g"
     },
@@ -71,28 +80,19 @@
       "id": "fXo_HB6rGz8",
       "title": "Introducing Vankel R7D in CarX Drift Racing Online 2!",
       "published_at": "2026-09-07T11:27:05Z",
-      "views": 10185,
-      "likes": 528,
-      "comments": 33,
+      "views": 10349,
+      "likes": 533,
+      "comments": 34,
       "url": "https://youtube.com/watch?v=fXo_HB6rGz8"
     },
     {
       "id": "7WsToVLLZM4",
       "title": "Introducing Kyoto YRS in CarX Drift Racing Online 2!",
       "published_at": "2026-09-01T13:27:47Z",
-      "views": 8937,
-      "likes": 403,
-      "comments": 33,
+      "views": 9015,
+      "likes": 405,
+      "comments": 34,
       "url": "https://youtube.com/watch?v=7WsToVLLZM4"
-    },
-    {
-      "id": "xORMpFR2bFs",
-      "title": "Meet Nishimo Z37!",
-      "published_at": "2026-09-04T14:18:15Z",
-      "views": 6555,
-      "likes": 369,
-      "comments": 17,
-      "url": "https://youtube.com/watch?v=xORMpFR2bFs"
     }
   ],
   "all_time_videos": [
@@ -100,7 +100,7 @@
       "id": "0tdeegiiXP0",
       "title": "CarX Drift Racing game promo",
       "published_at": "2015-04-27T19:02:53Z",
-      "views": 9227139,
+      "views": 9227156,
       "likes": 3318,
       "comments": 163,
       "url": "https://youtube.com/watch?v=0tdeegiiXP0"
@@ -109,7 +109,7 @@
       "id": "tGg_Xn2zf2g",
       "title": "\"CarX Drift Racing\" game for iOS and Androids",
       "published_at": "2014-02-15T12:59:40Z",
-      "views": 6047876,
+      "views": 6047895,
       "likes": 3931,
       "comments": 360,
       "url": "https://youtube.com/watch?v=tGg_Xn2zf2g"
@@ -118,7 +118,7 @@
       "id": "YOdnJtl3tXI",
       "title": "CarX Street Gameplay",
       "published_at": "2022-04-22T14:39:26Z",
-      "views": 2789758,
+      "views": 2789789,
       "likes": 33234,
       "comments": 2816,
       "url": "https://youtube.com/watch?v=YOdnJtl3tXI"
@@ -127,8 +127,8 @@
       "id": "zCHxo7goXUE",
       "title": "CarX Drift Racing 2 Gameplay",
       "published_at": "2018-11-30T15:01:07Z",
-      "views": 2474628,
-      "likes": 3570,
+      "views": 2474681,
+      "likes": 3571,
       "comments": 167,
       "url": "https://youtube.com/watch?v=zCHxo7goXUE"
     },
@@ -136,7 +136,7 @@
       "id": "h1GuwyroVHA",
       "title": "CarX Drift Racing 3: Car Damage Demo",
       "published_at": "2023-12-11T09:51:12Z",
-      "views": 493274,
+      "views": 493330,
       "likes": 8696,
       "comments": 806,
       "url": "https://youtube.com/watch?v=h1GuwyroVHA"
@@ -145,7 +145,7 @@
       "id": "PycHBg7dGZ4",
       "title": "CarX Street PC - Official Gameplay Trailer",
       "published_at": "2024-08-27T12:35:35Z",
-      "views": 438542,
+      "views": 438641,
       "likes": 11911,
       "comments": 1794,
       "url": "https://youtube.com/watch?v=PycHBg7dGZ4"
@@ -154,7 +154,7 @@
       "id": "JijLrJVJMTc",
       "title": "CarX Street First Look",
       "published_at": "2021-11-10T17:10:14Z",
-      "views": 325142,
+      "views": 325147,
       "likes": 11701,
       "comments": 901,
       "url": "https://youtube.com/watch?v=JijLrJVJMTc"
@@ -172,16 +172,16 @@
       "id": "9WJJ9BbQ9PM",
       "title": "CarX Rally - Official Announcement Trailer",
       "published_at": "2026-09-09T13:27:31Z",
-      "views": 274405,
-      "likes": 6177,
-      "comments": 987,
+      "views": 275608,
+      "likes": 6183,
+      "comments": 988,
       "url": "https://youtube.com/watch?v=9WJJ9BbQ9PM"
     },
     {
       "id": "vEU_q3qSmVA",
       "title": "CarX Rally Gameplay Trailer",
       "published_at": "2024-05-20T11:49:59Z",
-      "views": 271634,
+      "views": 271695,
       "likes": 1116,
       "comments": 185,
       "url": "https://youtube.com/watch?v=vEU_q3qSmVA"
@@ -190,8 +190,8 @@
       "id": "gKQ8TM-ivkw",
       "title": "CarX Street - Official Console Gameplay Trailer",
       "published_at": "2025-06-04T09:58:31Z",
-      "views": 262952,
-      "likes": 9800,
+      "views": 262977,
+      "likes": 9801,
       "comments": 1132,
       "url": "https://youtube.com/watch?v=gKQ8TM-ivkw"
     },
@@ -199,7 +199,7 @@
       "id": "jcIwFzNuC1Y",
       "title": "New CarX Drift Racing Online trailer",
       "published_at": "2021-03-17T13:45:17Z",
-      "views": 225942,
+      "views": 225950,
       "likes": 3936,
       "comments": 253,
       "url": "https://youtube.com/watch?v=jcIwFzNuC1Y"
@@ -208,7 +208,7 @@
       "id": "Gv_DmXbmqPY",
       "title": "CarX Drift Racing game author KILLS rear tires on his 350hp Nissan Skyline R34 GTT",
       "published_at": "2014-04-03T12:29:51Z",
-      "views": 220676,
+      "views": 220677,
       "likes": 3872,
       "comments": 339,
       "url": "https://youtube.com/watch?v=Gv_DmXbmqPY"
@@ -217,8 +217,8 @@
       "id": "Km2eMOQfm7Q",
       "title": "CarX Street - PC Version Official Teaser",
       "published_at": "2024-01-19T15:29:19Z",
-      "views": 198244,
-      "likes": 6840,
+      "views": 198246,
+      "likes": 6839,
       "comments": 866,
       "url": "https://youtube.com/watch?v=Km2eMOQfm7Q"
     },
@@ -235,7 +235,7 @@
       "id": "Icx6AoiFNho",
       "title": "CarX Drift Racing 3: Car Damage Demo №2",
       "published_at": "2024-10-07T08:02:07Z",
-      "views": 161522,
+      "views": 161527,
       "likes": 4960,
       "comments": 603,
       "url": "https://youtube.com/watch?v=Icx6AoiFNho"
@@ -244,7 +244,7 @@
       "id": "fpnsZEIwLwE",
       "title": "CarX Street Release Trailer (iOS).",
       "published_at": "2022-11-17T12:04:34Z",
-      "views": 158820,
+      "views": 158825,
       "likes": 4540,
       "comments": 1056,
       "url": "https://youtube.com/watch?v=fpnsZEIwLwE"
@@ -253,7 +253,7 @@
       "id": "WNDcRT_eysk",
       "title": "CarX 2.0 official trailer",
       "published_at": "2012-03-07T12:46:41Z",
-      "views": 154866,
+      "views": 154877,
       "likes": 1774,
       "comments": 114,
       "url": "https://youtube.com/watch?v=WNDcRT_eysk"
@@ -262,7 +262,7 @@
       "id": "NhrJUNStlf4",
       "title": "CarX Drift Racing 3: Customization Demo",
       "published_at": "2023-12-08T10:47:44Z",
-      "views": 146944,
+      "views": 146983,
       "likes": 3630,
       "comments": 398,
       "url": "https://youtube.com/watch?v=NhrJUNStlf4"
@@ -271,7 +271,7 @@
       "id": "gtl2q1gLbGY",
       "title": "CarX Drift Racing 3: Official Teaser",
       "published_at": "2024-09-26T08:34:57Z",
-      "views": 135433,
+      "views": 135435,
       "likes": 3260,
       "comments": 440,
       "url": "https://youtube.com/watch?v=gtl2q1gLbGY"
@@ -280,8 +280,8 @@
       "id": "IU-nssPEz2Q",
       "title": "CarX Street - Official Speedway Update 1.4.0 Trailer",
       "published_at": "2024-07-24T12:00:22Z",
-      "views": 127441,
-      "likes": 3774,
+      "views": 127451,
+      "likes": 3773,
       "comments": 581,
       "url": "https://youtube.com/watch?v=IU-nssPEz2Q"
     },
@@ -289,7 +289,7 @@
       "id": "hMm_Rkeg4wY",
       "title": "CarX Street PC - Official Launch Trailer",
       "published_at": "2024-08-29T07:16:52Z",
-      "views": 126983,
+      "views": 126998,
       "likes": 2100,
       "comments": 455,
       "url": "https://youtube.com/watch?v=hMm_Rkeg4wY"
@@ -298,8 +298,8 @@
       "id": "2GsMSPHTEmY",
       "title": "CarX Street - Redline Shift Update Teaser",
       "published_at": "2026-08-28T20:56:43Z",
-      "views": 114812,
-      "likes": 1532,
+      "views": 114899,
+      "likes": 1533,
       "comments": 359,
       "url": "https://youtube.com/watch?v=2GsMSPHTEmY"
     },
@@ -307,7 +307,7 @@
       "id": "7dNAN6n_XgE",
       "title": "CarX Drift racing 3: Single Campaign Demo",
       "published_at": "2024-02-14T10:36:46Z",
-      "views": 88623,
+      "views": 88624,
       "likes": 2331,
       "comments": 256,
       "url": "https://youtube.com/watch?v=7dNAN6n_XgE"
@@ -316,16 +316,25 @@
       "id": "BPxs9NyV-z4",
       "title": "CarX Street - PC Version Official Teaser №2.",
       "published_at": "2024-07-26T14:30:10Z",
-      "views": 81266,
-      "likes": 3306,
+      "views": 81268,
+      "likes": 3307,
       "comments": 616,
       "url": "https://youtube.com/watch?v=BPxs9NyV-z4"
+    },
+    {
+      "id": "u4lMq4B32dY",
+      "title": "🔥CarX Street Redline Shift Update is here! #carxstreet #carxtechnologies",
+      "published_at": "2026-09-11T11:19:26Z",
+      "views": 80600,
+      "likes": 2798,
+      "comments": 263,
+      "url": "https://youtube.com/watch?v=u4lMq4B32dY"
     },
     {
       "id": "4whkZX0gEv0",
       "title": "CarX Street: Official Update 1.0.0 Trailer",
       "published_at": "2023-09-22T11:48:09Z",
-      "views": 79321,
+      "views": 79325,
       "likes": 2575,
       "comments": 471,
       "url": "https://youtube.com/watch?v=4whkZX0gEv0"
@@ -334,25 +343,16 @@
       "id": "UJbVm4ljvwk",
       "title": "CarX Drift Racing 3: Release Date Reveal",
       "published_at": "2024-11-22T07:35:43Z",
-      "views": 78960,
+      "views": 78967,
       "likes": 2602,
       "comments": 556,
       "url": "https://youtube.com/watch?v=UJbVm4ljvwk"
     },
     {
-      "id": "u4lMq4B32dY",
-      "title": "🔥CarX Street Redline Shift Update is here! #carxstreet #carxtechnologies",
-      "published_at": "2026-09-11T11:19:26Z",
-      "views": 78417,
-      "likes": 2791,
-      "comments": 263,
-      "url": "https://youtube.com/watch?v=u4lMq4B32dY"
-    },
-    {
       "id": "BR0NGvdaMHY",
       "title": "CarX Street - Official Christmas 1.2.0 Update Trailer",
       "published_at": "2023-12-21T15:00:16Z",
-      "views": 74504,
+      "views": 74509,
       "likes": 3037,
       "comments": 539,
       "url": "https://youtube.com/watch?v=BR0NGvdaMHY"
@@ -361,17 +361,17 @@
       "id": "dQI9TLB8v4o",
       "title": "CarX Street - Redline Shift Update Official Trailer",
       "published_at": "2026-09-03T12:16:21Z",
-      "views": 74083,
-      "likes": 1934,
-      "comments": 435,
+      "views": 74266,
+      "likes": 1937,
+      "comments": 434,
       "url": "https://youtube.com/watch?v=dQI9TLB8v4o"
     },
     {
       "id": "N2Vu8zM0xbY",
       "title": "CarX Street Mobile - Official Trailer",
       "published_at": "2026-07-28T14:11:50Z",
-      "views": 71056,
-      "likes": 1491,
+      "views": 71194,
+      "likes": 1493,
       "comments": 572,
       "url": "https://youtube.com/watch?v=N2Vu8zM0xbY"
     },
@@ -379,8 +379,8 @@
       "id": "I3_bB6THbBY",
       "title": "CarX Drift Racing 3: Release Date Reveal.",
       "published_at": "2024-11-22T15:08:51Z",
-      "views": 70968,
-      "likes": 3593,
+      "views": 71028,
+      "likes": 3594,
       "comments": 155,
       "url": "https://youtube.com/watch?v=I3_bB6THbBY"
     },
@@ -397,7 +397,7 @@
       "id": "jT2aBdWdBMs",
       "title": "CarX Drift Racing Online 2 - Official Announcement Trailer",
       "published_at": "2025-08-27T14:04:45Z",
-      "views": 68972,
+      "views": 68992,
       "likes": 2568,
       "comments": 522,
       "url": "https://youtube.com/watch?v=jT2aBdWdBMs"
@@ -406,7 +406,7 @@
       "id": "hWbrGysg09o",
       "title": "CarX Street PC - Official Announcement Trailer",
       "published_at": "2024-08-15T08:30:28Z",
-      "views": 67560,
+      "views": 67562,
       "likes": 3583,
       "comments": 657,
       "url": "https://youtube.com/watch?v=hWbrGysg09o"
@@ -415,16 +415,16 @@
       "id": "o37PvvCsXu0",
       "title": "CarX Street - Wangan Highways Update Official Trailer",
       "published_at": "2026-06-05T14:00:06Z",
-      "views": 65994,
+      "views": 66018,
       "likes": 2143,
-      "comments": 523,
+      "comments": 524,
       "url": "https://youtube.com/watch?v=o37PvvCsXu0"
     },
     {
       "id": "7xLksLkeBY4",
       "title": "CarX Street - Official 1.3.0 Update Trailer",
       "published_at": "2024-03-27T13:28:38Z",
-      "views": 64056,
+      "views": 64058,
       "likes": 2525,
       "comments": 639,
       "url": "https://youtube.com/watch?v=7xLksLkeBY4"
@@ -433,7 +433,7 @@
       "id": "C5qq5Jmz7mk",
       "title": "Car X Drift Racing 2 New Trailer.",
       "published_at": "2020-03-03T09:28:30Z",
-      "views": 61928,
+      "views": 61929,
       "likes": 571,
       "comments": 0,
       "url": "https://youtube.com/watch?v=C5qq5Jmz7mk"
@@ -451,8 +451,8 @@
       "id": "0ik66VTOKe0",
       "title": "CarX Drift Racing 3: Release Trailer",
       "published_at": "2024-12-05T09:42:20Z",
-      "views": 57851,
-      "likes": 1822,
+      "views": 57856,
+      "likes": 1821,
       "comments": 364,
       "url": "https://youtube.com/watch?v=0ik66VTOKe0"
     },
@@ -460,7 +460,7 @@
       "id": "fEJNLkkkg5s",
       "title": "CarX Drift Racing 2: 1.30.0 Update",
       "published_at": "2023-12-23T08:55:14Z",
-      "views": 54971,
+      "views": 54972,
       "likes": 2227,
       "comments": 168,
       "url": "https://youtube.com/watch?v=fEJNLkkkg5s"
@@ -469,7 +469,7 @@
       "id": "oz-jBljb9kI",
       "title": "CarX Street Mobile - Gameplay Trailer",
       "published_at": "2025-07-28T10:33:49Z",
-      "views": 53580,
+      "views": 53598,
       "likes": 1194,
       "comments": 305,
       "url": "https://youtube.com/watch?v=oz-jBljb9kI"
@@ -478,7 +478,7 @@
       "id": "_RfVHuMV8oc",
       "title": "CarX Drift Racing 3: Release Trailer  #carxtechnologies #carx #carxdriftracing3",
       "published_at": "2024-12-06T06:48:04Z",
-      "views": 52769,
+      "views": 52780,
       "likes": 3215,
       "comments": 115,
       "url": "https://youtube.com/watch?v=_RfVHuMV8oc"
@@ -487,7 +487,7 @@
       "id": "fjsHeiFSq2s",
       "title": "CarX Drift Racing 3: Tuning Demo",
       "published_at": "2024-02-28T09:02:24Z",
-      "views": 49645,
+      "views": 49647,
       "likes": 2055,
       "comments": 255,
       "url": "https://youtube.com/watch?v=fjsHeiFSq2s"
@@ -497,7 +497,7 @@
       "title": "CarX Street - Official Trailer of the Frosty Overdrive 1.8.0 Update",
       "published_at": "2024-12-20T13:00:11Z",
       "views": 49499,
-      "likes": 2125,
+      "likes": 2124,
       "comments": 454,
       "url": "https://youtube.com/watch?v=8ZsmCsGqRds"
     },
@@ -505,7 +505,7 @@
       "id": "jsn5Pi42eeM",
       "title": "CarX Street - Official Showdown Update Trailer",
       "published_at": "2025-12-22T11:39:48Z",
-      "views": 49149,
+      "views": 49168,
       "likes": 1852,
       "comments": 428,
       "url": "https://youtube.com/watch?v=jsn5Pi42eeM"
@@ -523,7 +523,7 @@
       "id": "gZjBsi03kxE",
       "title": "CarX Street 0.9.3 Update",
       "published_at": "2023-08-07T07:24:29Z",
-      "views": 47778,
+      "views": 47781,
       "likes": 1976,
       "comments": 476,
       "url": "https://youtube.com/watch?v=gZjBsi03kxE"
@@ -532,7 +532,7 @@
       "id": "jIpKM7JQuWE",
       "title": "@MOZARacing & @CarX_Technologies: Moza R3 DD Racing Bundle for Xbox and PC! #mozaracing #carx",
       "published_at": "2024-06-19T08:29:41Z",
-      "views": 45706,
+      "views": 45729,
       "likes": 1194,
       "comments": 62,
       "url": "https://youtube.com/watch?v=jIpKM7JQuWE"
@@ -541,8 +541,8 @@
       "id": "7EhZpYlvOFc",
       "title": "Choose your first car wisely! #carxstreet",
       "published_at": "2025-06-17T15:23:13Z",
-      "views": 44186,
-      "likes": 1754,
+      "views": 44209,
+      "likes": 1756,
       "comments": 123,
       "url": "https://youtube.com/watch?v=7EhZpYlvOFc"
     },
@@ -550,8 +550,8 @@
       "id": "RubGPhgfO8A",
       "title": "CarX Drift Racing 2: 1.34.0 Update",
       "published_at": "2024-10-31T09:30:50Z",
-      "views": 42230,
-      "likes": 1447,
+      "views": 42236,
+      "likes": 1448,
       "comments": 137,
       "url": "https://youtube.com/watch?v=RubGPhgfO8A"
     },
@@ -577,16 +577,25 @@
       "id": "fPfxzoDdAMo",
       "title": "CarX Street Mobile - Official 1.19.1 Update Trailer",
       "published_at": "2026-05-28T07:20:43Z",
-      "views": 40910,
+      "views": 40923,
       "likes": 1211,
       "comments": 370,
       "url": "https://youtube.com/watch?v=fPfxzoDdAMo"
     },
     {
+      "id": "Q5bW4KgOdJ0",
+      "title": "CarX Street - Official Pursuit Mode Teaser",
+      "published_at": "2025-11-28T16:41:44Z",
+      "views": 40858,
+      "likes": 1835,
+      "comments": 550,
+      "url": "https://youtube.com/watch?v=Q5bW4KgOdJ0"
+    },
+    {
       "id": "2Z0c-Is-HvM",
       "title": "CarX Drift Racing 2: Official 1.29.0 Update Trailer",
       "published_at": "2023-10-26T13:54:09Z",
-      "views": 40838,
+      "views": 40839,
       "likes": 1560,
       "comments": 172,
       "url": "https://youtube.com/watch?v=2Z0c-Is-HvM"
@@ -595,8 +604,8 @@
       "id": "rxEndo9UEq8",
       "title": "CarX Drift Racing 3: Tandem",
       "published_at": "2025-01-15T15:35:25Z",
-      "views": 40568,
-      "likes": 2351,
+      "views": 40653,
+      "likes": 2354,
       "comments": 73,
       "url": "https://youtube.com/watch?v=rxEndo9UEq8"
     },
@@ -604,7 +613,7 @@
       "id": "QE0Afmn2A5o",
       "title": "CarX Street - Official Gymkhana Update Trailer",
       "published_at": "2025-10-01T07:36:53Z",
-      "views": 40481,
+      "views": 40485,
       "likes": 1279,
       "comments": 226,
       "url": "https://youtube.com/watch?v=QE0Afmn2A5o"
@@ -613,7 +622,7 @@
       "id": "sG7jM9D2Gx8",
       "title": "CarX Drift Racing 2: Official 1.28.0 Update Trailer",
       "published_at": "2023-10-10T14:29:01Z",
-      "views": 40216,
+      "views": 40219,
       "likes": 972,
       "comments": 116,
       "url": "https://youtube.com/watch?v=sG7jM9D2Gx8"
@@ -622,7 +631,7 @@
       "id": "I1S8cFymnsE",
       "title": "Welcome to Pacific Hills",
       "published_at": "2025-09-03T15:58:38Z",
-      "views": 39217,
+      "views": 39222,
       "likes": 2387,
       "comments": 104,
       "url": "https://youtube.com/watch?v=I1S8cFymnsE"
@@ -631,10 +640,19 @@
       "id": "MApuCmrfYSs",
       "title": "CarX Street - Official Dynamic Weather Update Trailer",
       "published_at": "2026-04-28T13:04:10Z",
-      "views": 39186,
+      "views": 39209,
       "likes": 1299,
       "comments": 303,
       "url": "https://youtube.com/watch?v=MApuCmrfYSs"
+    },
+    {
+      "id": "gF2hkCu0lWU",
+      "title": "CarX Drift Racing Online 2: Official Early Access Gameplay Trailer",
+      "published_at": "2026-04-22T15:19:51Z",
+      "views": 37389,
+      "likes": 1434,
+      "comments": 236,
+      "url": "https://youtube.com/watch?v=gF2hkCu0lWU"
     },
     {
       "id": "bQm8-1YK2Gs",
@@ -649,19 +667,10 @@
       "id": "E8hOXUncNTI",
       "title": "CarX Street - Official Ghost Road Update Trailer",
       "published_at": "2025-10-30T16:03:08Z",
-      "views": 37261,
+      "views": 37263,
       "likes": 695,
       "comments": 209,
       "url": "https://youtube.com/watch?v=E8hOXUncNTI"
-    },
-    {
-      "id": "gF2hkCu0lWU",
-      "title": "CarX Drift Racing Online 2: Official Early Access Gameplay Trailer",
-      "published_at": "2026-04-22T15:19:51Z",
-      "views": 37210,
-      "likes": 1430,
-      "comments": 236,
-      "url": "https://youtube.com/watch?v=gF2hkCu0lWU"
     },
     {
       "id": "o2gzGdhENm0",
@@ -676,8 +685,8 @@
       "id": "6METaHD-KpA",
       "title": "CarX Drift Racing Online 2: Demo Announcement",
       "published_at": "2025-10-10T21:17:52Z",
-      "views": 34803,
-      "likes": 1496,
+      "views": 34805,
+      "likes": 1497,
       "comments": 232,
       "url": "https://youtube.com/watch?v=6METaHD-KpA"
     },
@@ -694,7 +703,7 @@
       "id": "NDbqDa4ZIVQ",
       "title": "CarX Drift Racing Online 2: Practice Run Demo",
       "published_at": "2025-10-03T17:41:33Z",
-      "views": 34254,
+      "views": 34255,
       "likes": 1276,
       "comments": 178,
       "url": "https://youtube.com/watch?v=NDbqDa4ZIVQ"
@@ -712,8 +721,8 @@
       "id": "0B3c0_NPzG8",
       "title": "CarX Street - Official Mac Trailer",
       "published_at": "2026-01-23T14:14:09Z",
-      "views": 33720,
-      "likes": 1020,
+      "views": 33728,
+      "likes": 1021,
       "comments": 229,
       "url": "https://youtube.com/watch?v=0B3c0_NPzG8"
     },
@@ -721,7 +730,7 @@
       "id": "2LrljvymWb4",
       "title": "CarX Drift Racing Online: New Trailer",
       "published_at": "2025-02-25T13:10:20Z",
-      "views": 33122,
+      "views": 33125,
       "likes": 1135,
       "comments": 161,
       "url": "https://youtube.com/watch?v=2LrljvymWb4"
@@ -739,7 +748,7 @@
       "id": "O0yHQ9Z7oOE",
       "title": "CarX Technologies: Tokyo Game Show 2025",
       "published_at": "2025-09-22T15:22:43Z",
-      "views": 31947,
+      "views": 31948,
       "likes": 939,
       "comments": 139,
       "url": "https://youtube.com/watch?v=O0yHQ9Z7oOE"
@@ -748,7 +757,7 @@
       "id": "ZBys9zC8a-Q",
       "title": "CarX Street - Sony PlayStation Launch Trailer",
       "published_at": "2025-07-24T10:08:48Z",
-      "views": 31050,
+      "views": 31051,
       "likes": 763,
       "comments": 171,
       "url": "https://youtube.com/watch?v=ZBys9zC8a-Q"
@@ -757,7 +766,7 @@
       "id": "NkdAEEoFqHY",
       "title": "CarX Street Showdown Update is available!",
       "published_at": "2025-12-25T07:15:53Z",
-      "views": 30906,
+      "views": 30908,
       "likes": 2046,
       "comments": 157,
       "url": "https://youtube.com/watch?v=NkdAEEoFqHY"
@@ -766,8 +775,8 @@
       "id": "XyWZ7U1_JCo",
       "title": "Customize and upgrade!",
       "published_at": "2025-09-08T06:42:24Z",
-      "views": 30751,
-      "likes": 1140,
+      "views": 30773,
+      "likes": 1141,
       "comments": 63,
       "url": "https://youtube.com/watch?v=XyWZ7U1_JCo"
     },
@@ -775,7 +784,7 @@
       "id": "pH6tnTz6gkk",
       "title": "CarX Drift Racing 3: Ebisu fun",
       "published_at": "2025-01-17T15:24:05Z",
-      "views": 30685,
+      "views": 30714,
       "likes": 2077,
       "comments": 99,
       "url": "https://youtube.com/watch?v=pH6tnTz6gkk"
@@ -784,7 +793,7 @@
       "id": "Z83b4ssI520",
       "title": "CarX Street - Official Halloween 1.7.0 Update Trailer",
       "published_at": "2024-11-01T12:50:12Z",
-      "views": 30372,
+      "views": 30373,
       "likes": 1260,
       "comments": 248,
       "url": "https://youtube.com/watch?v=Z83b4ssI520"
@@ -802,7 +811,7 @@
       "id": "KM6s7A2RpgE",
       "title": "Drift Racing Online Fan Video",
       "published_at": "2020-04-24T16:02:49Z",
-      "views": 28544,
+      "views": 28545,
       "likes": 646,
       "comments": 35,
       "url": "https://youtube.com/watch?v=KM6s7A2RpgE"
@@ -811,7 +820,7 @@
       "id": "rN-ZwSo5yGc",
       "title": "CarX Street - Xbox Pre-Order Announcement",
       "published_at": "2025-05-23T13:29:07Z",
-      "views": 28457,
+      "views": 28459,
       "likes": 1102,
       "comments": 280,
       "url": "https://youtube.com/watch?v=rN-ZwSo5yGc"
@@ -820,7 +829,7 @@
       "id": "QgSVRS9PJqo",
       "title": "CarX Street Mobile - Official 1.20.0 Update Trailer",
       "published_at": "2026-07-06T13:05:14Z",
-      "views": 28310,
+      "views": 28362,
       "likes": 783,
       "comments": 359,
       "url": "https://youtube.com/watch?v=QgSVRS9PJqo"
@@ -829,7 +838,7 @@
       "id": "Sby_ojxAlJo",
       "title": "CarX Drift Racing 3: New Official Trailer",
       "published_at": "2025-10-17T11:16:23Z",
-      "views": 28211,
+      "views": 28239,
       "likes": 640,
       "comments": 109,
       "url": "https://youtube.com/watch?v=Sby_ojxAlJo"
@@ -838,8 +847,8 @@
       "id": "BcaydtRcHeo",
       "title": "CarX Drift Racing Online 2 VS CarX Drift Racing Online - Chaser Run №2",
       "published_at": "2026-05-07T13:46:21Z",
-      "views": 27993,
-      "likes": 607,
+      "views": 28061,
+      "likes": 608,
       "comments": 23,
       "url": "https://youtube.com/watch?v=BcaydtRcHeo"
     },
@@ -847,7 +856,7 @@
       "id": "EzGPKnKIGIk",
       "title": "CarX Highway Racing - Announcement Trailer - Nintendo Switch",
       "published_at": "2024-03-11T15:00:30Z",
-      "views": 27928,
+      "views": 27955,
       "likes": 621,
       "comments": 98,
       "url": "https://youtube.com/watch?v=EzGPKnKIGIk"
@@ -856,7 +865,7 @@
       "id": "B4jtOLh3MeA",
       "title": "Get ready to drift!",
       "published_at": "2025-07-31T06:49:45Z",
-      "views": 27890,
+      "views": 27902,
       "likes": 952,
       "comments": 47,
       "url": "https://youtube.com/watch?v=B4jtOLh3MeA"
@@ -883,7 +892,7 @@
       "id": "9-4lB1rs8Ls",
       "title": "CarX Street Mobile - Official Snowfest Update Trailer",
       "published_at": "2025-12-25T15:12:01Z",
-      "views": 26932,
+      "views": 26937,
       "likes": 847,
       "comments": 200,
       "url": "https://youtube.com/watch?v=9-4lB1rs8Ls"
@@ -901,7 +910,7 @@
       "id": "cYEM7Oc_N0g",
       "title": "CarX Drift Racing 2: Curse of the Springstone Event",
       "published_at": "2025-11-01T13:40:45Z",
-      "views": 26423,
+      "views": 26427,
       "likes": 1187,
       "comments": 51,
       "url": "https://youtube.com/watch?v=cYEM7Oc_N0g"
@@ -910,7 +919,7 @@
       "id": "JQPWATtwroo",
       "title": "CarX Drift Racing 2: 1.33.0 Update",
       "published_at": "2024-08-30T10:09:02Z",
-      "views": 26339,
+      "views": 26341,
       "likes": 1086,
       "comments": 137,
       "url": "https://youtube.com/watch?v=JQPWATtwroo"
@@ -919,7 +928,7 @@
       "id": "dX_1jOiMowI",
       "title": "CarX Drift Racing 3: Damage system update",
       "published_at": "2025-10-24T13:37:38Z",
-      "views": 26217,
+      "views": 26228,
       "likes": 668,
       "comments": 156,
       "url": "https://youtube.com/watch?v=dX_1jOiMowI"
@@ -928,7 +937,7 @@
       "id": "igMJEKWrevk",
       "title": "CarX Street - Sunset Speedway DLC Trailer",
       "published_at": "2026-06-22T15:11:52Z",
-      "views": 26177,
+      "views": 26188,
       "likes": 806,
       "comments": 210,
       "url": "https://youtube.com/watch?v=igMJEKWrevk"
@@ -937,7 +946,7 @@
       "id": "BVlrrLYpR-0",
       "title": "CarX Drift Racing Online 2: Wishlist now!",
       "published_at": "2025-10-31T11:00:57Z",
-      "views": 25725,
+      "views": 25728,
       "likes": 2328,
       "comments": 90,
       "url": "https://youtube.com/watch?v=BVlrrLYpR-0"
@@ -946,8 +955,8 @@
       "id": "jUb888cSbxc",
       "title": "CarX Drift Racing Online 2 - South Port Official Trailer",
       "published_at": "2026-09-01T15:06:45Z",
-      "views": 25461,
-      "likes": 456,
+      "views": 25533,
+      "likes": 459,
       "comments": 67,
       "url": "https://youtube.com/watch?v=jUb888cSbxc"
     },
@@ -955,8 +964,8 @@
       "id": "tD6oXaezHds",
       "title": "True rally experience!",
       "published_at": "2024-07-08T11:53:11Z",
-      "views": 25076,
-      "likes": 1197,
+      "views": 25139,
+      "likes": 1198,
       "comments": 50,
       "url": "https://youtube.com/watch?v=tD6oXaezHds"
     },
@@ -964,7 +973,7 @@
       "id": "5YiKfb2N5Kk",
       "title": "CarX Street: Обновление Redline Shift с разработчиками",
       "published_at": "2026-09-05T04:41:31Z",
-      "views": 24987,
+      "views": 25054,
       "likes": 198,
       "comments": 24,
       "url": "https://youtube.com/watch?v=5YiKfb2N5Kk"
@@ -973,7 +982,7 @@
       "id": "4Y678TA1TQ4",
       "title": "CarX Drift Racing Online 2 VS CarX Drift Racing Online",
       "published_at": "2026-04-30T12:07:55Z",
-      "views": 24563,
+      "views": 24621,
       "likes": 652,
       "comments": 39,
       "url": "https://youtube.com/watch?v=4Y678TA1TQ4"
@@ -982,7 +991,7 @@
       "id": "PrT-Zd0FIlY",
       "title": "CarX Street Mobile - 1.18.0 Update Trailer",
       "published_at": "2026-04-08T12:49:06Z",
-      "views": 24385,
+      "views": 24391,
       "likes": 893,
       "comments": 301,
       "url": "https://youtube.com/watch?v=PrT-Zd0FIlY"
@@ -991,7 +1000,7 @@
       "id": "jTI3JrnFJI0",
       "title": "CarX Drift Racing 3: 1.1.0 Update",
       "published_at": "2024-12-24T14:23:16Z",
-      "views": 24308,
+      "views": 24309,
       "likes": 601,
       "comments": 173,
       "url": "https://youtube.com/watch?v=jTI3JrnFJI0"
@@ -1018,7 +1027,7 @@
       "id": "arj9am-QRec",
       "title": "CarX Drift Racing 3: 1.2.0 Update trailer",
       "published_at": "2025-02-27T10:53:24Z",
-      "views": 23630,
+      "views": 23631,
       "likes": 670,
       "comments": 203,
       "url": "https://youtube.com/watch?v=arj9am-QRec"
@@ -1027,7 +1036,7 @@
       "id": "ZcdPaZDdYlM",
       "title": "CarX Drift Racing Online 2: Kami Road Run",
       "published_at": "2025-11-05T13:56:54Z",
-      "views": 23105,
+      "views": 23108,
       "likes": 1892,
       "comments": 61,
       "url": "https://youtube.com/watch?v=ZcdPaZDdYlM"
@@ -1036,7 +1045,7 @@
       "id": "WZUm1fzJNoc",
       "title": "CarX Drift Racing 3: Kami Road",
       "published_at": "2024-08-13T13:11:50Z",
-      "views": 22079,
+      "views": 22081,
       "likes": 1025,
       "comments": 184,
       "url": "https://youtube.com/watch?v=WZUm1fzJNoc"
@@ -1045,7 +1054,7 @@
       "id": "UbWeXp2Bzh8",
       "title": "Play with your friends, no matter the platform!",
       "published_at": "2025-09-09T10:20:37Z",
-      "views": 22007,
+      "views": 22013,
       "likes": 1307,
       "comments": 102,
       "url": "https://youtube.com/watch?v=UbWeXp2Bzh8"
@@ -1054,7 +1063,7 @@
       "id": "bGEd98K9JDk",
       "title": "CarX Drift Racing 3: 1.4.0 Update",
       "published_at": "2025-06-30T15:39:44Z",
-      "views": 21889,
+      "views": 21891,
       "likes": 628,
       "comments": 125,
       "url": "https://youtube.com/watch?v=bGEd98K9JDk"
@@ -1063,7 +1072,7 @@
       "id": "199XKpQ5Vbs",
       "title": "Kami Road: CarX Drift Racing 3 & CarX Drift Racing 2 Comparison",
       "published_at": "2024-09-02T12:50:25Z",
-      "views": 21541,
+      "views": 21544,
       "likes": 792,
       "comments": 130,
       "url": "https://youtube.com/watch?v=199XKpQ5Vbs"
@@ -1072,7 +1081,7 @@
       "id": "dXQai--aTiQ",
       "title": "CarX Street Mobile - Final Charge Update Trailer",
       "published_at": "2026-02-18T14:07:21Z",
-      "views": 21337,
+      "views": 21341,
       "likes": 789,
       "comments": 270,
       "url": "https://youtube.com/watch?v=dXQai--aTiQ"
@@ -1081,8 +1090,8 @@
       "id": "ZfWa-5Dc7WA",
       "title": "CarX Street Wangan Highway Network: From Concept to Release",
       "published_at": "2026-07-23T15:00:06Z",
-      "views": 21154,
-      "likes": 1116,
+      "views": 21184,
+      "likes": 1119,
       "comments": 326,
       "url": "https://youtube.com/watch?v=ZfWa-5Dc7WA"
     },
@@ -1099,7 +1108,7 @@
       "id": "xJuzEoQmpSs",
       "title": "Red Rock Duel",
       "published_at": "2025-09-02T13:58:26Z",
-      "views": 20428,
+      "views": 20430,
       "likes": 1241,
       "comments": 95,
       "url": "https://youtube.com/watch?v=xJuzEoQmpSs"
@@ -1108,8 +1117,8 @@
       "id": "eaz004MHA0s",
       "title": "CarX Drift Racing Online 2 – Gunma Cycle Sport Center Circuit Official Trailer",
       "published_at": "2026-07-24T11:12:41Z",
-      "views": 20377,
-      "likes": 992,
+      "views": 20404,
+      "likes": 994,
       "comments": 129,
       "url": "https://youtube.com/watch?v=eaz004MHA0s"
     },
@@ -1117,7 +1126,7 @@
       "id": "n73QdAgYrBE",
       "title": "CarX Highway Racing - Gameplay Trailer - Nintendo Switch",
       "published_at": "2024-03-14T15:59:18Z",
-      "views": 20295,
+      "views": 20302,
       "likes": 767,
       "comments": 63,
       "url": "https://youtube.com/watch?v=n73QdAgYrBE"
@@ -1126,16 +1135,25 @@
       "id": "6nfYd7xGZ0c",
       "title": "CarX Store: Store Coin Update",
       "published_at": "2024-10-04T10:36:33Z",
-      "views": 20134,
+      "views": 20135,
       "likes": 1216,
       "comments": 70,
       "url": "https://youtube.com/watch?v=6nfYd7xGZ0c"
     },
     {
+      "id": "cFOs10VSRQc",
+      "title": "CarX Drift Racing 3 - Official 1.17.0 Update Trailer",
+      "published_at": "2026-09-23T13:28:59Z",
+      "views": 19484,
+      "likes": 265,
+      "comments": 67,
+      "url": "https://youtube.com/watch?v=cFOs10VSRQc"
+    },
+    {
       "id": "t4HigWPAUUU",
       "title": "CarX Drift Racing 3 - 1.3.0 Update",
       "published_at": "2025-06-03T15:48:06Z",
-      "views": 19453,
+      "views": 19455,
       "likes": 572,
       "comments": 164,
       "url": "https://youtube.com/watch?v=t4HigWPAUUU"
@@ -1144,8 +1162,8 @@
       "id": "oDzSCcowo0g",
       "title": "CarX Drift Racing 2: Introducing BoatRace 7 Sayaka Special",
       "published_at": "2026-08-11T08:02:28Z",
-      "views": 19390,
-      "likes": 192,
+      "views": 19444,
+      "likes": 193,
       "comments": 35,
       "url": "https://youtube.com/watch?v=oDzSCcowo0g"
     },
@@ -1153,7 +1171,7 @@
       "id": "MUJD-SkG214",
       "title": "Get ready to race!",
       "published_at": "2025-09-02T07:14:36Z",
-      "views": 19084,
+      "views": 19087,
       "likes": 846,
       "comments": 60,
       "url": "https://youtube.com/watch?v=MUJD-SkG214"
@@ -1171,8 +1189,8 @@
       "id": "MMsHKlZhLYA",
       "title": "CarX Drift Racing Online 2 | 0.20.0 Official Trailer",
       "published_at": "2026-08-20T15:18:41Z",
-      "views": 18879,
-      "likes": 584,
+      "views": 18938,
+      "likes": 585,
       "comments": 123,
       "url": "https://youtube.com/watch?v=MMsHKlZhLYA"
     },
@@ -1180,7 +1198,7 @@
       "id": "vUWCof0I7mM",
       "title": "Kami Road is the place you go, when she needs to talk",
       "published_at": "2026-03-02T07:59:59Z",
-      "views": 18723,
+      "views": 18724,
       "likes": 1068,
       "comments": 49,
       "url": "https://youtube.com/watch?v=vUWCof0I7mM"
@@ -1189,7 +1207,7 @@
       "id": "bWU1BDnN5Fw",
       "title": "CarX Street: Crossplay is available!",
       "published_at": "2025-07-25T06:17:06Z",
-      "views": 18313,
+      "views": 18319,
       "likes": 1050,
       "comments": 88,
       "url": "https://youtube.com/watch?v=bWU1BDnN5Fw"
@@ -1198,7 +1216,7 @@
       "id": "xM2Zxc7td80",
       "title": "CarX Drift Racing 3: 1.8.0 Update",
       "published_at": "2025-12-22T15:01:19Z",
-      "views": 18168,
+      "views": 18179,
       "likes": 472,
       "comments": 98,
       "url": "https://youtube.com/watch?v=xM2Zxc7td80"
@@ -1207,7 +1225,7 @@
       "id": "ZaZLQaQsm3g",
       "title": "CarX Street - Official Xbox Launch Trailer",
       "published_at": "2025-06-18T07:45:25Z",
-      "views": 18120,
+      "views": 18124,
       "likes": 676,
       "comments": 177,
       "url": "https://youtube.com/watch?v=ZaZLQaQsm3g"
@@ -1216,7 +1234,7 @@
       "id": "at-89nEZ8R4",
       "title": "Welcome to Sunset City! #carxstreet",
       "published_at": "2025-05-15T10:41:59Z",
-      "views": 17559,
+      "views": 17561,
       "likes": 1318,
       "comments": 74,
       "url": "https://youtube.com/watch?v=at-89nEZ8R4"
@@ -1225,7 +1243,7 @@
       "id": "Ds-vJpiAkoI",
       "title": "CarX Drift Racing Online: Midnight DLC Trailer",
       "published_at": "2025-11-17T12:54:23Z",
-      "views": 17178,
+      "views": 17181,
       "likes": 416,
       "comments": 84,
       "url": "https://youtube.com/watch?v=Ds-vJpiAkoI"
@@ -1261,8 +1279,8 @@
       "id": "5dy4lHaLFXo",
       "title": "Rule the street now!",
       "published_at": "2025-09-01T09:37:28Z",
-      "views": 16449,
-      "likes": 897,
+      "views": 16473,
+      "likes": 898,
       "comments": 85,
       "url": "https://youtube.com/watch?v=5dy4lHaLFXo"
     },
@@ -1270,7 +1288,7 @@
       "id": "Iv5bO3OeQlM",
       "title": "Car Drift Racing 3 new update is live!",
       "published_at": "2026-01-30T14:12:41Z",
-      "views": 16251,
+      "views": 16252,
       "likes": 976,
       "comments": 49,
       "url": "https://youtube.com/watch?v=Iv5bO3OeQlM"
@@ -1279,7 +1297,7 @@
       "id": "qknOC8Of_qA",
       "title": "CarX Street - Teaser for 1.12.0 Update",
       "published_at": "2026-04-15T12:52:25Z",
-      "views": 15921,
+      "views": 15926,
       "likes": 884,
       "comments": 270,
       "url": "https://youtube.com/watch?v=qknOC8Of_qA"
@@ -1288,7 +1306,7 @@
       "id": "-6QzUv4LdFY",
       "title": "CarX Drift Racing 2: Matsuri Drift Event",
       "published_at": "2023-11-16T16:00:14Z",
-      "views": 15845,
+      "views": 15846,
       "likes": 640,
       "comments": 27,
       "url": "https://youtube.com/watch?v=-6QzUv4LdFY"
@@ -1297,7 +1315,7 @@
       "id": "wd260IgLSFE",
       "title": "CarX Street: Meet the Kanjo Spirit Club",
       "published_at": "2025-07-23T10:41:33Z",
-      "views": 15799,
+      "views": 15805,
       "likes": 763,
       "comments": 39,
       "url": "https://youtube.com/watch?v=wd260IgLSFE"
@@ -1306,9 +1324,9 @@
       "id": "Q-9kIR5ErbU",
       "title": "CarX Street PC - Teaser for 1.12.0 Update",
       "published_at": "2026-04-15T13:42:22Z",
-      "views": 15753,
+      "views": 15757,
       "likes": 868,
-      "comments": 101,
+      "comments": 100,
       "url": "https://youtube.com/watch?v=Q-9kIR5ErbU"
     },
     {
@@ -1333,8 +1351,8 @@
       "id": "A_dbZaYde_E",
       "title": "CarX Drift Racing 3: South Port",
       "published_at": "2024-11-14T15:52:03Z",
-      "views": 15308,
-      "likes": 670,
+      "views": 15310,
+      "likes": 669,
       "comments": 112,
       "url": "https://youtube.com/watch?v=A_dbZaYde_E"
     },
@@ -1342,8 +1360,8 @@
       "id": "vnZJEPwh9mw",
       "title": "CarX Street: Xbox 50% Off Sale",
       "published_at": "2026-02-20T10:18:49Z",
-      "views": 15261,
-      "likes": 243,
+      "views": 15262,
+      "likes": 244,
       "comments": 62,
       "url": "https://youtube.com/watch?v=vnZJEPwh9mw"
     },
@@ -1351,7 +1369,7 @@
       "id": "0unCUNDCkX4",
       "title": "CarX Drift Racing 2: Latest addition to fleet!",
       "published_at": "2026-03-30T07:18:34Z",
-      "views": 15191,
+      "views": 15194,
       "likes": 781,
       "comments": 32,
       "url": "https://youtube.com/watch?v=0unCUNDCkX4"
@@ -1369,7 +1387,7 @@
       "id": "QaPDHJf1qzc",
       "title": "CarX Drift Racing 3: Fuji Speedway",
       "published_at": "2025-05-21T13:55:09Z",
-      "views": 15058,
+      "views": 15060,
       "likes": 584,
       "comments": 134,
       "url": "https://youtube.com/watch?v=QaPDHJf1qzc"
@@ -1378,7 +1396,7 @@
       "id": "GMPf6__dpXk",
       "title": "CarX Drift Racing 3: 1.6.1 Update trailer",
       "published_at": "2025-11-13T10:25:02Z",
-      "views": 14855,
+      "views": 14857,
       "likes": 524,
       "comments": 100,
       "url": "https://youtube.com/watch?v=GMPf6__dpXk"
@@ -1387,7 +1405,7 @@
       "id": "p5lIvxlPFqk",
       "title": "CarX Drift Racing 3: 1.4.5 Update is here!",
       "published_at": "2025-08-07T13:03:29Z",
-      "views": 14742,
+      "views": 14744,
       "likes": 921,
       "comments": 52,
       "url": "https://youtube.com/watch?v=p5lIvxlPFqk"
@@ -1414,7 +1432,7 @@
       "id": "xLvtnhfWt4s",
       "title": "CarX Drift Racing Online 2 VS CarX Drift Racing Online - Chaser Run",
       "published_at": "2026-05-06T10:51:45Z",
-      "views": 14544,
+      "views": 14556,
       "likes": 406,
       "comments": 16,
       "url": "https://youtube.com/watch?v=xLvtnhfWt4s"
@@ -1423,8 +1441,8 @@
       "id": "g96HEiM5_mw",
       "title": "CarX Drift Racing 2: It's tandem time!",
       "published_at": "2025-07-30T12:12:44Z",
-      "views": 14468,
-      "likes": 679,
+      "views": 14471,
+      "likes": 680,
       "comments": 23,
       "url": "https://youtube.com/watch?v=g96HEiM5_mw"
     },
@@ -1432,34 +1450,34 @@
       "id": "JglisydEO1U",
       "title": "CarX Drift Racing Online 2 is here!",
       "published_at": "2026-05-18T06:52:07Z",
-      "views": 14348,
+      "views": 14364,
       "likes": 855,
       "comments": 47,
       "url": "https://youtube.com/watch?v=JglisydEO1U"
     },
     {
+      "id": "Wo0_cKuQRCE",
+      "title": "CarX Drift Racing Online 2 | 0.20.0 Official Trailer #carxtechnologies #carx #carxdriftracing",
+      "published_at": "2026-08-21T13:33:32Z",
+      "views": 14312,
+      "likes": 687,
+      "comments": 39,
+      "url": "https://youtube.com/watch?v=Wo0_cKuQRCE"
+    },
+    {
       "id": "naUixUgc2jc",
       "title": "CarX Drift Racing Online 2: Kami Road",
       "published_at": "2025-10-17T22:11:14Z",
-      "views": 14248,
+      "views": 14249,
       "likes": 584,
       "comments": 109,
       "url": "https://youtube.com/watch?v=naUixUgc2jc"
     },
     {
-      "id": "Wo0_cKuQRCE",
-      "title": "CarX Drift Racing Online 2 | 0.20.0 Official Trailer #carxtechnologies #carx #carxdriftracing",
-      "published_at": "2026-08-21T13:33:32Z",
-      "views": 14241,
-      "likes": 685,
-      "comments": 39,
-      "url": "https://youtube.com/watch?v=Wo0_cKuQRCE"
-    },
-    {
       "id": "epAepgcYuWA",
       "title": "Introducing the Nishimo LRL35 in CarX Drift Racing Online 2",
       "published_at": "2026-04-27T13:57:19Z",
-      "views": 14138,
+      "views": 14143,
       "likes": 1033,
       "comments": 20,
       "url": "https://youtube.com/watch?v=epAepgcYuWA"
@@ -1468,7 +1486,7 @@
       "id": "u4hfHLcLlvQ",
       "title": "CarX Street is now live on Xbox!",
       "published_at": "2025-06-18T14:21:05Z",
-      "views": 13958,
+      "views": 13960,
       "likes": 888,
       "comments": 97,
       "url": "https://youtube.com/watch?v=u4hfHLcLlvQ"
@@ -1477,8 +1495,8 @@
       "id": "dqFKFxsWRqE",
       "title": "CarX Drift Racing Online 2 VS CarX Drift Racing Online №2",
       "published_at": "2026-05-02T16:22:10Z",
-      "views": 13800,
-      "likes": 579,
+      "views": 13813,
+      "likes": 581,
       "comments": 26,
       "url": "https://youtube.com/watch?v=dqFKFxsWRqE"
     },
@@ -1501,10 +1519,19 @@
       "url": "https://youtube.com/watch?v=_ihm8odlUXw"
     },
     {
+      "id": "hDNc7ha_i8g",
+      "title": "Drag Races are here now!",
+      "published_at": "2026-09-10T11:38:54Z",
+      "views": 13706,
+      "likes": 837,
+      "comments": 51,
+      "url": "https://youtube.com/watch?v=hDNc7ha_i8g"
+    },
+    {
       "id": "thJdEvG2Puc",
       "title": "Just a Thursday night at L.A. Block...",
       "published_at": "2025-09-05T06:51:35Z",
-      "views": 13628,
+      "views": 13630,
       "likes": 870,
       "comments": 59,
       "url": "https://youtube.com/watch?v=thJdEvG2Puc"
@@ -1522,25 +1549,16 @@
       "id": "ruZQqM-l9J8",
       "title": "CarX Street is now available on Sony PlayStation!",
       "published_at": "2025-07-24T10:31:29Z",
-      "views": 13599,
+      "views": 13600,
       "likes": 916,
       "comments": 83,
       "url": "https://youtube.com/watch?v=ruZQqM-l9J8"
     },
     {
-      "id": "hDNc7ha_i8g",
-      "title": "Drag Races are here now!",
-      "published_at": "2026-09-10T11:38:54Z",
-      "views": 13566,
-      "likes": 835,
-      "comments": 51,
-      "url": "https://youtube.com/watch?v=hDNc7ha_i8g"
-    },
-    {
       "id": "nqXxIBTNnbM",
       "title": "CarX Drift Racing Online 2 first ever content update in Early Access is here!",
       "published_at": "2026-07-02T07:08:59Z",
-      "views": 13507,
+      "views": 13521,
       "likes": 753,
       "comments": 36,
       "url": "https://youtube.com/watch?v=nqXxIBTNnbM"
@@ -1549,7 +1567,7 @@
       "id": "IPjpowP80aM",
       "title": "CarX Drift Racing Online 2: Intro Cutscene",
       "published_at": "2025-10-13T17:32:16Z",
-      "views": 13286,
+      "views": 13290,
       "likes": 624,
       "comments": 161,
       "url": "https://youtube.com/watch?v=IPjpowP80aM"
@@ -1558,7 +1576,7 @@
       "id": "N-Dh2h_9B7U",
       "title": "CarX Drift Racing Online 2 Early Access Launch countdown: 3 Days!",
       "published_at": "2026-05-04T13:42:10Z",
-      "views": 13251,
+      "views": 13254,
       "likes": 561,
       "comments": 34,
       "url": "https://youtube.com/watch?v=N-Dh2h_9B7U"
@@ -1567,10 +1585,19 @@
       "id": "QNEKjPOQqUs",
       "title": "CarX Street: Обновление Pursuit Mode",
       "published_at": "2026-03-21T05:14:11Z",
-      "views": 13070,
+      "views": 13074,
       "likes": 167,
       "comments": 12,
       "url": "https://youtube.com/watch?v=QNEKjPOQqUs"
+    },
+    {
+      "id": "0EgS5SVzADQ",
+      "title": "CarX Drift Racing 3: Livery contest Results (ENG + RU)",
+      "published_at": "2026-08-06T14:14:26Z",
+      "views": 13057,
+      "likes": 96,
+      "comments": 6,
+      "url": "https://youtube.com/watch?v=0EgS5SVzADQ"
     },
     {
       "id": "J8_Pe1--aCg",
@@ -1585,7 +1612,7 @@
       "id": "ntsq28xG5vk",
       "title": "CarX Drift Racing 2: 1.37.0 Update",
       "published_at": "2025-03-19T11:54:06Z",
-      "views": 12974,
+      "views": 12987,
       "likes": 942,
       "comments": 49,
       "url": "https://youtube.com/watch?v=ntsq28xG5vk"
@@ -1594,52 +1621,43 @@
       "id": "IB2jkjFvg04",
       "title": "CarX Drift Racing 3: Official 1.13.0 Update Trailer",
       "published_at": "2026-05-27T11:52:33Z",
-      "views": 12945,
+      "views": 12966,
       "likes": 336,
       "comments": 99,
       "url": "https://youtube.com/watch?v=IB2jkjFvg04"
     },
     {
-      "id": "0EgS5SVzADQ",
-      "title": "CarX Drift Racing 3: Livery contest Results (ENG + RU)",
-      "published_at": "2026-08-06T14:14:26Z",
-      "views": 12932,
-      "likes": 96,
-      "comments": 6,
-      "url": "https://youtube.com/watch?v=0EgS5SVzADQ"
-    },
-    {
-      "id": "Z9Ta1M62tnw",
-      "title": "CarX Store Update: Promo code update",
-      "published_at": "2024-11-13T12:19:50Z",
-      "views": 12910,
-      "likes": 169,
-      "comments": 29,
-      "url": "https://youtube.com/watch?v=Z9Ta1M62tnw"
-    },
-    {
       "id": "Jawc8PqIneo",
       "title": "CarX Street: Meet the Wild Juniors Club",
       "published_at": "2025-07-21T20:04:03Z",
-      "views": 12892,
+      "views": 12921,
       "likes": 747,
       "comments": 48,
       "url": "https://youtube.com/watch?v=Jawc8PqIneo"
     },
     {
+      "id": "Z9Ta1M62tnw",
+      "title": "CarX Store Update: Promo code update",
+      "published_at": "2024-11-13T12:19:50Z",
+      "views": 12920,
+      "likes": 169,
+      "comments": 29,
+      "url": "https://youtube.com/watch?v=Z9Ta1M62tnw"
+    },
+    {
       "id": "iA_0P_5ZMlw",
       "title": "CarX Drift Racing 3: Mercury S23 @driftingsayakatube7290 Special",
       "published_at": "2026-01-12T10:47:49Z",
-      "views": 12890,
+      "views": 12893,
       "likes": 662,
-      "comments": 50,
+      "comments": 49,
       "url": "https://youtube.com/watch?v=iA_0P_5ZMlw"
     },
     {
       "id": "OQI7ZfXtvTY",
       "title": "Choose your engine!",
       "published_at": "2025-08-29T15:53:22Z",
-      "views": 12870,
+      "views": 12871,
       "likes": 669,
       "comments": 36,
       "url": "https://youtube.com/watch?v=OQI7ZfXtvTY"
@@ -1648,7 +1666,7 @@
       "id": "LOViOKso6Gk",
       "title": "CarX Drift Racing 3: 1.10.0 Update",
       "published_at": "2026-02-20T12:35:11Z",
-      "views": 12856,
+      "views": 12857,
       "likes": 799,
       "comments": 43,
       "url": "https://youtube.com/watch?v=LOViOKso6Gk"
@@ -1657,7 +1675,7 @@
       "id": "9VCk0r_Zusw",
       "title": "CarX Drift Racing Online 2 is now available in Early Access on Steam!",
       "published_at": "2026-05-07T19:08:42Z",
-      "views": 12846,
+      "views": 12851,
       "likes": 660,
       "comments": 28,
       "url": "https://youtube.com/watch?v=9VCk0r_Zusw"
@@ -1666,7 +1684,7 @@
       "id": "xAuSQprdzcc",
       "title": "Gymkhana action!",
       "published_at": "2026-02-16T07:39:12Z",
-      "views": 12702,
+      "views": 12704,
       "likes": 760,
       "comments": 44,
       "url": "https://youtube.com/watch?v=xAuSQprdzcc"
@@ -1675,7 +1693,7 @@
       "id": "dyk6FdKSJjk",
       "title": "CarX Drift Racing 3: Nishimo S13C",
       "published_at": "2024-12-25T11:01:59Z",
-      "views": 12667,
+      "views": 12668,
       "likes": 547,
       "comments": 110,
       "url": "https://youtube.com/watch?v=dyk6FdKSJjk"
@@ -1684,7 +1702,7 @@
       "id": "EFPEoDram6Y",
       "title": "CarX Drift Racing Online 2 Early Access Launch countdown: 1 Day!",
       "published_at": "2026-05-06T15:20:15Z",
-      "views": 12611,
+      "views": 12615,
       "likes": 732,
       "comments": 49,
       "url": "https://youtube.com/watch?v=EFPEoDram6Y"
@@ -1693,7 +1711,7 @@
       "id": "GrFwWD_ETEs",
       "title": "CarX Drift Racing 3: Nishimo SI4",
       "published_at": "2025-04-11T12:50:04Z",
-      "views": 12579,
+      "views": 12594,
       "likes": 530,
       "comments": 34,
       "url": "https://youtube.com/watch?v=GrFwWD_ETEs"
@@ -1702,7 +1720,7 @@
       "id": "igLX_lydsJI",
       "title": "CarX Drift Racing Online 2 is now available in Early Access!",
       "published_at": "2026-05-16T09:07:03Z",
-      "views": 12536,
+      "views": 12543,
       "likes": 599,
       "comments": 20,
       "url": "https://youtube.com/watch?v=igLX_lydsJI"
@@ -1711,7 +1729,7 @@
       "id": "wZUmKncYHrY",
       "title": "What do you think of neon lights? 👀",
       "published_at": "2025-04-11T13:03:22Z",
-      "views": 12468,
+      "views": 12469,
       "likes": 618,
       "comments": 37,
       "url": "https://youtube.com/watch?v=wZUmKncYHrY"
@@ -1729,10 +1747,19 @@
       "id": "MO4cc-_CWwY",
       "title": "CarX Drift Racing 3: Official 1.10.0 Update Trailer",
       "published_at": "2026-02-20T12:32:24Z",
-      "views": 12259,
+      "views": 12264,
       "likes": 380,
       "comments": 89,
       "url": "https://youtube.com/watch?v=MO4cc-_CWwY"
+    },
+    {
+      "id": "GCq-QpHmUh0",
+      "title": "CarX Drift Racing 2: Hanami Event is back!",
+      "published_at": "2026-04-30T10:11:15Z",
+      "views": 12196,
+      "likes": 511,
+      "comments": 18,
+      "url": "https://youtube.com/watch?v=GCq-QpHmUh0"
     },
     {
       "id": "1nz7jwVz1RA",
@@ -1744,20 +1771,11 @@
       "url": "https://youtube.com/watch?v=1nz7jwVz1RA"
     },
     {
-      "id": "GCq-QpHmUh0",
-      "title": "CarX Drift Racing 2: Hanami Event is back!",
-      "published_at": "2026-04-30T10:11:15Z",
-      "views": 12172,
-      "likes": 511,
-      "comments": 18,
-      "url": "https://youtube.com/watch?v=GCq-QpHmUh0"
-    },
-    {
       "id": "-7CHHxvrMP8",
       "title": "Happy New Year From CarX Technologies Team!",
       "published_at": "2025-12-30T13:27:11Z",
-      "views": 12123,
-      "likes": 854,
+      "views": 12125,
+      "likes": 855,
       "comments": 264,
       "url": "https://youtube.com/watch?v=-7CHHxvrMP8"
     },
@@ -1765,7 +1783,7 @@
       "id": "R4OzC8uYuMU",
       "title": "CarX Drift Racing 3: New Intro Cutscene",
       "published_at": "2025-08-08T11:24:53Z",
-      "views": 12111,
+      "views": 12112,
       "likes": 300,
       "comments": 48,
       "url": "https://youtube.com/watch?v=R4OzC8uYuMU"
@@ -1774,7 +1792,7 @@
       "id": "56UQsOF-FHU",
       "title": "CarX Drift Racing 3: Official 1.9.0 Update Trailer",
       "published_at": "2026-01-30T14:12:21Z",
-      "views": 11988,
+      "views": 11989,
       "likes": 384,
       "comments": 93,
       "url": "https://youtube.com/watch?v=56UQsOF-FHU"
@@ -1783,7 +1801,7 @@
       "id": "2-GyeqjF4NE",
       "title": "CarX Drift Racing Online 2 – Car Damage Demo",
       "published_at": "2026-05-14T09:48:24Z",
-      "views": 11939,
+      "views": 11953,
       "likes": 564,
       "comments": 30,
       "url": "https://youtube.com/watch?v=2-GyeqjF4NE"
@@ -1792,7 +1810,7 @@
       "id": "ti6cDqH8jWQ",
       "title": "Nishimo 34R Primal Drive!",
       "published_at": "2026-02-24T15:25:14Z",
-      "views": 11929,
+      "views": 11931,
       "likes": 777,
       "comments": 48,
       "url": "https://youtube.com/watch?v=ti6cDqH8jWQ"
@@ -1801,7 +1819,7 @@
       "id": "iKpaCQ1MIuc",
       "title": "Introducing Kyoto TC100 - CarX Drift Racing Online 2",
       "published_at": "2026-04-08T15:19:39Z",
-      "views": 11879,
+      "views": 11883,
       "likes": 822,
       "comments": 33,
       "url": "https://youtube.com/watch?v=iKpaCQ1MIuc"
@@ -1828,7 +1846,7 @@
       "id": "ikFCXDjxT3k",
       "title": "Introducing the Nishimo S18 in CarX Drift Racing Online 2!",
       "published_at": "2026-04-22T06:55:20Z",
-      "views": 11770,
+      "views": 11773,
       "likes": 691,
       "comments": 22,
       "url": "https://youtube.com/watch?v=ikFCXDjxT3k"
@@ -1846,7 +1864,7 @@
       "id": "aVlX6I1r8R8",
       "title": "CarX Drift Racing Online 2 VS CarX Drift Racing Online №3",
       "published_at": "2026-05-04T06:53:42Z",
-      "views": 11738,
+      "views": 11742,
       "likes": 399,
       "comments": 13,
       "url": "https://youtube.com/watch?v=aVlX6I1r8R8"
@@ -1861,46 +1879,37 @@
       "url": "https://youtube.com/watch?v=yrfSNaKRo2E"
     },
     {
-      "id": "yrfSNaKRo2E",
-      "title": "CarX Street: Дрифт в открытом мире",
-      "published_at": "2025-11-29T04:47:09Z",
-      "views": 11717,
-      "likes": 170,
-      "comments": 18,
-      "url": "https://youtube.com/watch?v=yrfSNaKRo2E"
-    },
-    {
-      "id": "8ySctEvD3tQ",
-      "title": "Introducing Kyoto E86 - CarX Drift Racing Online 2",
-      "published_at": "2026-04-12T09:00:05Z",
-      "views": 11679,
-      "likes": 767,
-      "comments": 38,
-      "url": "https://youtube.com/watch?v=8ySctEvD3tQ"
-    },
-    {
-      "id": "soFD5JBllkk",
-      "title": "Introducing the Kyoto G86 in CarX Drift Racing Online 2!",
-      "published_at": "2026-04-16T09:44:19Z",
-      "views": 11678,
-      "likes": 916,
-      "comments": 21,
-      "url": "https://youtube.com/watch?v=soFD5JBllkk"
-    },
-    {
       "id": "MSb_sHyLhto",
       "title": "CarX Drift Racing 3: Official 1.14.0 Update Trailer",
       "published_at": "2026-06-30T10:28:41Z",
-      "views": 11669,
+      "views": 11685,
       "likes": 354,
       "comments": 102,
       "url": "https://youtube.com/watch?v=MSb_sHyLhto"
     },
     {
+      "id": "soFD5JBllkk",
+      "title": "Introducing the Kyoto G86 in CarX Drift Racing Online 2!",
+      "published_at": "2026-04-16T09:44:19Z",
+      "views": 11684,
+      "likes": 916,
+      "comments": 20,
+      "url": "https://youtube.com/watch?v=soFD5JBllkk"
+    },
+    {
+      "id": "8ySctEvD3tQ",
+      "title": "Introducing Kyoto E86 - CarX Drift Racing Online 2",
+      "published_at": "2026-04-12T09:00:05Z",
+      "views": 11681,
+      "likes": 767,
+      "comments": 38,
+      "url": "https://youtube.com/watch?v=8ySctEvD3tQ"
+    },
+    {
       "id": "VztKb_ZNnjQ",
       "title": "CarX Drift Racing 3: 1.7.0 Update",
       "published_at": "2025-11-24T15:35:50Z",
-      "views": 11637,
+      "views": 11643,
       "likes": 292,
       "comments": 88,
       "url": "https://youtube.com/watch?v=VztKb_ZNnjQ"
@@ -1909,7 +1918,7 @@
       "id": "-3TxLqXCCiU",
       "title": "Introducing BNM B46 Urban Spirit",
       "published_at": "2026-04-01T10:45:32Z",
-      "views": 11625,
+      "views": 11634,
       "likes": 761,
       "comments": 27,
       "url": "https://youtube.com/watch?v=-3TxLqXCCiU"
@@ -1918,7 +1927,7 @@
       "id": "Wu3dj2QSOLU",
       "title": "CarX Drift Racing 2: \"Get a Grip\" Event",
       "published_at": "2024-07-25T15:11:47Z",
-      "views": 11625,
+      "views": 11626,
       "likes": 1116,
       "comments": 26,
       "url": "https://youtube.com/watch?v=Wu3dj2QSOLU"
@@ -1927,34 +1936,34 @@
       "id": "p1NqfjlZbfc",
       "title": "CarX Drift Racing 3: 1.6.0 Update Trailer",
       "published_at": "2025-10-22T09:36:10Z",
-      "views": 11613,
+      "views": 11614,
       "likes": 370,
       "comments": 112,
       "url": "https://youtube.com/watch?v=p1NqfjlZbfc"
     },
     {
+      "id": "T6gHa8f5GFU",
+      "title": "CarX Drift Racing Online 2 – Early Access Launch Trailer",
+      "published_at": "2026-05-07T18:50:53Z",
+      "views": 11576,
+      "likes": 359,
+      "comments": 97,
+      "url": "https://youtube.com/watch?v=T6gHa8f5GFU"
+    },
+    {
       "id": "KJW2STWbHMc",
       "title": "CarX Drift Racing 3: Official 1.11.0 Update Trailer",
       "published_at": "2026-03-26T10:18:22Z",
-      "views": 11570,
+      "views": 11576,
       "likes": 458,
       "comments": 167,
       "url": "https://youtube.com/watch?v=KJW2STWbHMc"
     },
     {
-      "id": "T6gHa8f5GFU",
-      "title": "CarX Drift Racing Online 2 – Early Access Launch Trailer",
-      "published_at": "2026-05-07T18:50:53Z",
-      "views": 11559,
-      "likes": 358,
-      "comments": 97,
-      "url": "https://youtube.com/watch?v=T6gHa8f5GFU"
-    },
-    {
       "id": "E_ZpNdYRDCA",
       "title": "CarX Drift Racing 3: Official 1.12.0 Update Trailer",
       "published_at": "2026-04-24T09:55:23Z",
-      "views": 11399,
+      "views": 11409,
       "likes": 330,
       "comments": 109,
       "url": "https://youtube.com/watch?v=E_ZpNdYRDCA"
@@ -1972,7 +1981,7 @@
       "id": "29rTLXEGc2c",
       "title": "CarX Drift Racing Online 2 is here!",
       "published_at": "2026-05-10T10:25:58Z",
-      "views": 11281,
+      "views": 11288,
       "likes": 439,
       "comments": 21,
       "url": "https://youtube.com/watch?v=29rTLXEGc2c"
@@ -1981,7 +1990,7 @@
       "id": "M4arskh5mHM",
       "title": "CarX Drift Racing Online 2: Ebisu Complex",
       "published_at": "2025-11-20T10:07:59Z",
-      "views": 11042,
+      "views": 11046,
       "likes": 552,
       "comments": 84,
       "url": "https://youtube.com/watch?v=M4arskh5mHM"
@@ -2017,7 +2026,7 @@
       "id": "p7Mjx1yOhVA",
       "title": "CarX Drift Racing 2: Pacific Hills Run",
       "published_at": "2024-02-13T07:00:04Z",
-      "views": 10744,
+      "views": 10745,
       "likes": 844,
       "comments": 24,
       "url": "https://youtube.com/watch?v=p7Mjx1yOhVA"
@@ -2026,7 +2035,7 @@
       "id": "7xCEuBF1XlQ",
       "title": "CarX Drift Racing 3 new update is already here!",
       "published_at": "2026-07-06T10:16:46Z",
-      "views": 10595,
+      "views": 10620,
       "likes": 575,
       "comments": 30,
       "url": "https://youtube.com/watch?v=7xCEuBF1XlQ"
@@ -2035,7 +2044,7 @@
       "id": "_bc9pWPM91U",
       "title": "Heads up! #carxdriftracing3",
       "published_at": "2025-04-30T15:35:38Z",
-      "views": 10541,
+      "views": 10542,
       "likes": 626,
       "comments": 49,
       "url": "https://youtube.com/watch?v=_bc9pWPM91U"
@@ -2044,7 +2053,7 @@
       "id": "z8NV1FAZTY0",
       "title": "Introducing Covert CC6 - CarX Drift Racing Online 2",
       "published_at": "2026-04-10T08:29:45Z",
-      "views": 10477,
+      "views": 10480,
       "likes": 866,
       "comments": 21,
       "url": "https://youtube.com/watch?v=z8NV1FAZTY0"
@@ -2053,10 +2062,19 @@
       "id": "--REV2udqI8",
       "title": "Introducing the Nishimo SI3 in CarX Drift Racing Online 2!",
       "published_at": "2026-04-18T17:22:17Z",
-      "views": 10442,
+      "views": 10445,
       "likes": 565,
       "comments": 34,
       "url": "https://youtube.com/watch?v=--REV2udqI8"
+    },
+    {
+      "id": "fXo_HB6rGz8",
+      "title": "Introducing Vankel R7D in CarX Drift Racing Online 2!",
+      "published_at": "2026-09-07T11:27:05Z",
+      "views": 10349,
+      "likes": 533,
+      "comments": 34,
+      "url": "https://youtube.com/watch?v=fXo_HB6rGz8"
     },
     {
       "id": "IPx7DD2oVZY",
@@ -2068,49 +2086,49 @@
       "url": "https://youtube.com/watch?v=IPx7DD2oVZY"
     },
     {
-      "id": "fXo_HB6rGz8",
-      "title": "Introducing Vankel R7D in CarX Drift Racing Online 2!",
-      "published_at": "2026-09-07T11:27:05Z",
-      "views": 10185,
-      "likes": 528,
-      "comments": 33,
-      "url": "https://youtube.com/watch?v=fXo_HB6rGz8"
+      "id": "43h_-P_hN9U",
+      "title": "CarX Drift Racing Online: Season Pass 6-Month Plan",
+      "published_at": "2026-08-07T15:21:36Z",
+      "views": 10122,
+      "likes": 255,
+      "comments": 19,
+      "url": "https://youtube.com/watch?v=43h_-P_hN9U"
     },
     {
       "id": "AOHf-LbW9JY",
       "title": "CarX Drift Racing 2: LienSense SL80 Sayaka SPL",
       "published_at": "2026-04-01T10:41:36Z",
-      "views": 9974,
+      "views": 9984,
       "likes": 567,
       "comments": 19,
       "url": "https://youtube.com/watch?v=AOHf-LbW9JY"
     },
     {
-      "id": "43h_-P_hN9U",
-      "title": "CarX Drift Racing Online: Season Pass 6-Month Plan",
-      "published_at": "2026-08-07T15:21:36Z",
-      "views": 9958,
-      "likes": 254,
-      "comments": 19,
-      "url": "https://youtube.com/watch?v=43h_-P_hN9U"
+      "id": "JuPuUPK8Rls",
+      "title": "POV: You are waiting for the Kyoto TM28 in CarX Drift Racing Online 2 #carxdriftracingonline2",
+      "published_at": "2026-08-07T06:38:00Z",
+      "views": 9907,
+      "likes": 495,
+      "comments": 45,
+      "url": "https://youtube.com/watch?v=JuPuUPK8Rls"
     },
     {
       "id": "KvJtpoqOQJY",
       "title": "CarX Drift Racing Online 2: Early Access Launch Announcement",
       "published_at": "2026-04-30T15:31:47Z",
-      "views": 9896,
+      "views": 9900,
       "likes": 334,
       "comments": 72,
       "url": "https://youtube.com/watch?v=KvJtpoqOQJY"
     },
     {
-      "id": "JuPuUPK8Rls",
-      "title": "POV: You are waiting for the Kyoto TM28 in CarX Drift Racing Online 2 #carxdriftracingonline2",
-      "published_at": "2026-08-07T06:38:00Z",
-      "views": 9869,
-      "likes": 495,
-      "comments": 45,
-      "url": "https://youtube.com/watch?v=JuPuUPK8Rls"
+      "id": "Eisyj7SrMII",
+      "title": "CarX Store: Система промокодов и реферальная программа.",
+      "published_at": "2024-11-13T12:23:48Z",
+      "views": 9768,
+      "likes": 104,
+      "comments": 18,
+      "url": "https://youtube.com/watch?v=Eisyj7SrMII"
     },
     {
       "id": "XIgmeK-O3P8",
@@ -2122,19 +2140,10 @@
       "url": "https://youtube.com/watch?v=XIgmeK-O3P8"
     },
     {
-      "id": "Eisyj7SrMII",
-      "title": "CarX Store: Система промокодов и реферальная программа.",
-      "published_at": "2024-11-13T12:23:48Z",
-      "views": 9764,
-      "likes": 104,
-      "comments": 18,
-      "url": "https://youtube.com/watch?v=Eisyj7SrMII"
-    },
-    {
       "id": "CXJ4sO1yE5o",
       "title": "Springstone is almost here!",
       "published_at": "2026-03-23T12:25:16Z",
-      "views": 9692,
+      "views": 9693,
       "likes": 519,
       "comments": 30,
       "url": "https://youtube.com/watch?v=CXJ4sO1yE5o"
@@ -2143,7 +2152,7 @@
       "id": "gKD4awHfgGI",
       "title": "CarX Street: Meet the Burnout Rangers Club",
       "published_at": "2025-07-22T12:32:20Z",
-      "views": 9690,
+      "views": 9691,
       "likes": 543,
       "comments": 42,
       "url": "https://youtube.com/watch?v=gKD4awHfgGI"
@@ -2152,7 +2161,7 @@
       "id": "vSSozwuHJ9g",
       "title": "CarX Drift Racing Online 2: Fuji Speedway",
       "published_at": "2026-03-10T21:20:48Z",
-      "views": 9618,
+      "views": 9620,
       "likes": 521,
       "comments": 124,
       "url": "https://youtube.com/watch?v=vSSozwuHJ9g"
@@ -2161,8 +2170,8 @@
       "id": "mOyk7f2vC40",
       "title": "80% off for CarX Drift Racing Online for Nintendo Switch (US)!",
       "published_at": "2026-04-16T09:59:24Z",
-      "views": 9588,
-      "likes": 436,
+      "views": 9605,
+      "likes": 437,
       "comments": 6,
       "url": "https://youtube.com/watch?v=mOyk7f2vC40"
     },
@@ -2179,7 +2188,7 @@
       "id": "ibNxbt8CtDE",
       "title": "Introducing the Nishimo SI5 in CarX Drift Racing Online 2!",
       "published_at": "2026-04-20T10:55:15Z",
-      "views": 9487,
+      "views": 9490,
       "likes": 500,
       "comments": 29,
       "url": "https://youtube.com/watch?v=ibNxbt8CtDE"
@@ -2188,7 +2197,7 @@
       "id": "nuhAUYFzaac",
       "title": "BX-13 Engine is coming to CarX Drift Racing Online!",
       "published_at": "2025-07-08T07:13:24Z",
-      "views": 9484,
+      "views": 9488,
       "likes": 656,
       "comments": 62,
       "url": "https://youtube.com/watch?v=nuhAUYFzaac"
@@ -2197,7 +2206,7 @@
       "id": "QbNe8TkQvsY",
       "title": "CarX Drift Racing Online: 2.26.0 Update",
       "published_at": "2025-07-22T07:28:45Z",
-      "views": 9477,
+      "views": 9480,
       "likes": 561,
       "comments": 56,
       "url": "https://youtube.com/watch?v=QbNe8TkQvsY"
@@ -2206,7 +2215,7 @@
       "id": "tm2K-65o3Hs",
       "title": "We Lost the Key to Our Game 😱#carxtechnologies #carxdriftracing #carxstreet",
       "published_at": "2026-06-26T14:43:53Z",
-      "views": 9434,
+      "views": 9443,
       "likes": 552,
       "comments": 95,
       "url": "https://youtube.com/watch?v=tm2K-65o3Hs"
@@ -2215,9 +2224,9 @@
       "id": "bH25ZfAMyIQ",
       "title": "CarX Drift Racing Online 2 | First Early Access Content Update | 0.19.1 Official Trailer",
       "published_at": "2026-07-01T14:18:09Z",
-      "views": 9433,
-      "likes": 364,
-      "comments": 92,
+      "views": 9440,
+      "likes": 366,
+      "comments": 93,
       "url": "https://youtube.com/watch?v=bH25ZfAMyIQ"
     },
     {
@@ -2233,7 +2242,7 @@
       "id": "mZjMg2mRTdo",
       "title": "Introducing Kyoto S80 - CarX Drift Racing Online 2",
       "published_at": "2026-04-14T14:56:58Z",
-      "views": 9280,
+      "views": 9283,
       "likes": 767,
       "comments": 21,
       "url": "https://youtube.com/watch?v=mZjMg2mRTdo"
@@ -2251,28 +2260,28 @@
       "id": "5s-fw9aN6Uo",
       "title": "CarX Drift Racing 3: Kami Road Tandem",
       "published_at": "2025-04-08T12:41:17Z",
-      "views": 9227,
+      "views": 9229,
       "likes": 630,
       "comments": 23,
       "url": "https://youtube.com/watch?v=5s-fw9aN6Uo"
     },
     {
-      "id": "tlnELvF1XjQ",
-      "title": "CarX Drift Racing Online 2: Customization process",
-      "published_at": "2026-05-05T14:35:58Z",
-      "views": 9191,
-      "likes": 526,
-      "comments": 21,
-      "url": "https://youtube.com/watch?v=tlnELvF1XjQ"
-    },
-    {
       "id": "B0VK8rxMuVU",
       "title": "Intdroducing BNM 36E in CarX Drift Racing Online 2!",
       "published_at": "2026-08-03T10:07:26Z",
-      "views": 9177,
+      "views": 9199,
       "likes": 541,
       "comments": 28,
       "url": "https://youtube.com/watch?v=B0VK8rxMuVU"
+    },
+    {
+      "id": "tlnELvF1XjQ",
+      "title": "CarX Drift Racing Online 2: Customization process",
+      "published_at": "2026-05-05T14:35:58Z",
+      "views": 9198,
+      "likes": 526,
+      "comments": 21,
+      "url": "https://youtube.com/watch?v=tlnELvF1XjQ"
     },
     {
       "id": "3sQMnubQGrY",
@@ -2296,34 +2305,25 @@
       "id": "swC5B_Am3Qk",
       "title": "CarX Drift Racing 3: Релизный трейлер",
       "published_at": "2024-12-05T09:42:05Z",
-      "views": 9096,
+      "views": 9097,
       "likes": 394,
       "comments": 118,
       "url": "https://youtube.com/watch?v=swC5B_Am3Qk"
     },
     {
-      "id": "5H0VCYPCoIs",
-      "title": "Trip to Fuji Speedway!",
-      "published_at": "2026-04-07T12:36:22Z",
-      "views": 8968,
-      "likes": 502,
-      "comments": 26,
-      "url": "https://youtube.com/watch?v=5H0VCYPCoIs"
-    },
-    {
       "id": "7WsToVLLZM4",
       "title": "Introducing Kyoto YRS in CarX Drift Racing Online 2!",
       "published_at": "2026-09-01T13:27:47Z",
-      "views": 8937,
-      "likes": 403,
-      "comments": 33,
+      "views": 9015,
+      "likes": 405,
+      "comments": 34,
       "url": "https://youtube.com/watch?v=7WsToVLLZM4"
     },
     {
       "id": "2uaISLaZ2is",
       "title": "CarX Drift Racing Online: Content from new the update",
       "published_at": "2025-07-03T05:25:53Z",
-      "views": 8900,
+      "views": 8905,
       "likes": 564,
       "comments": 40,
       "url": "https://youtube.com/watch?v=2uaISLaZ2is"
@@ -2332,7 +2332,7 @@
       "id": "ECXdoz6W6_U",
       "title": "Introducing the Joe’s MST20 in CarX Drift Racing Online 2!",
       "published_at": "2026-04-29T14:32:02Z",
-      "views": 8668,
+      "views": 8669,
       "likes": 707,
       "comments": 18,
       "url": "https://youtube.com/watch?v=ECXdoz6W6_U"
@@ -2350,7 +2350,7 @@
       "id": "hvFTAeZeGYQ",
       "title": "The sound of Sunset City!",
       "published_at": "2025-06-27T08:31:10Z",
-      "views": 8636,
+      "views": 8639,
       "likes": 528,
       "comments": 43,
       "url": "https://youtube.com/watch?v=hvFTAeZeGYQ"
@@ -2359,34 +2359,34 @@
       "id": "TJUDzEqYjYc",
       "title": "2.26.0 update is here!",
       "published_at": "2025-07-09T14:28:30Z",
-      "views": 8571,
+      "views": 8573,
       "likes": 658,
       "comments": 54,
       "url": "https://youtube.com/watch?v=TJUDzEqYjYc"
     },
     {
-      "id": "9WTTVs6AjuM",
-      "title": "CarX Drift Racing 3: Donut fun",
-      "published_at": "2025-03-21T13:57:09Z",
-      "views": 8533,
-      "likes": 666,
-      "comments": 29,
-      "url": "https://youtube.com/watch?v=9WTTVs6AjuM"
-    },
-    {
       "id": "JXk4QPGO9HY",
       "title": "Gunma Cycle Sport Center Circuit has arrived in CarX Drift Racing 3!",
       "published_at": "2026-07-03T12:28:26Z",
-      "views": 8512,
+      "views": 8542,
       "likes": 381,
       "comments": 12,
       "url": "https://youtube.com/watch?v=JXk4QPGO9HY"
     },
     {
+      "id": "9WTTVs6AjuM",
+      "title": "CarX Drift Racing 3: Donut fun",
+      "published_at": "2025-03-21T13:57:09Z",
+      "views": 8535,
+      "likes": 666,
+      "comments": 29,
+      "url": "https://youtube.com/watch?v=9WTTVs6AjuM"
+    },
+    {
       "id": "or1S3hCppho",
       "title": "CarX Drift Racing Online: 2.26.0 Update is here already!",
       "published_at": "2025-07-22T07:38:49Z",
-      "views": 8496,
+      "views": 8500,
       "likes": 435,
       "comments": 21,
       "url": "https://youtube.com/watch?v=or1S3hCppho"
@@ -2404,7 +2404,7 @@
       "id": "3r4wh6KNiAE",
       "title": "CarX Drift Racing 2: DTM 46 vs Nimble",
       "published_at": "2024-08-13T12:24:57Z",
-      "views": 8443,
+      "views": 8465,
       "likes": 636,
       "comments": 11,
       "url": "https://youtube.com/watch?v=3r4wh6KNiAE"
@@ -2413,7 +2413,7 @@
       "id": "vuqfVgLRPbU",
       "title": "CarX Street: Догонялки по Ванганам",
       "published_at": "2026-07-03T15:21:59Z",
-      "views": 8352,
+      "views": 8356,
       "likes": 224,
       "comments": 37,
       "url": "https://youtube.com/watch?v=vuqfVgLRPbU"
@@ -2432,7 +2432,7 @@
       "title": "CarX Drift Racing Online: Development Update (ep.10)",
       "published_at": "2024-11-20T12:19:00Z",
       "views": 8339,
-      "likes": 253,
+      "likes": 252,
       "comments": 116,
       "url": "https://youtube.com/watch?v=JC1Wb6pdW6k"
     },
@@ -2440,7 +2440,7 @@
       "id": "yay-YpYUObo",
       "title": "CarX Drift Racing Online: New content from the upcoming update",
       "published_at": "2025-07-07T07:05:25Z",
-      "views": 8326,
+      "views": 8328,
       "likes": 498,
       "comments": 43,
       "url": "https://youtube.com/watch?v=yay-YpYUObo"
@@ -2449,8 +2449,8 @@
       "id": "6eGSD5QSpB0",
       "title": "CarX Drift Racing Online is 80% off on Nintendo Switch (EU)!",
       "published_at": "2026-04-03T15:31:39Z",
-      "views": 8227,
-      "likes": 247,
+      "views": 8235,
+      "likes": 248,
       "comments": 19,
       "url": "https://youtube.com/watch?v=6eGSD5QSpB0"
     },
@@ -2464,6 +2464,15 @@
       "url": "https://youtube.com/watch?v=hb99Wj5_drs"
     },
     {
+      "id": "wkefQF36_3o",
+      "title": "CarX Drift Racing 2: Tandem action!",
+      "published_at": "2025-07-30T12:10:40Z",
+      "views": 8067,
+      "likes": 369,
+      "comments": 20,
+      "url": "https://youtube.com/watch?v=wkefQF36_3o"
+    },
+    {
       "id": "QiE8E3WukPU",
       "title": "CarX Drift Racing 2 1.28.0 Update: SL80",
       "published_at": "2023-10-13T13:03:05Z",
@@ -2473,19 +2482,10 @@
       "url": "https://youtube.com/watch?v=QiE8E3WukPU"
     },
     {
-      "id": "wkefQF36_3o",
-      "title": "CarX Drift Racing 2: Tandem action!",
-      "published_at": "2025-07-30T12:10:40Z",
-      "views": 8060,
-      "likes": 369,
-      "comments": 20,
-      "url": "https://youtube.com/watch?v=wkefQF36_3o"
-    },
-    {
       "id": "ZVs4VdrcLdw",
       "title": "CarX Street: Дрифт-квесты с разработчиками",
       "published_at": "2026-04-23T04:40:17Z",
-      "views": 8002,
+      "views": 8003,
       "likes": 163,
       "comments": 16,
       "url": "https://youtube.com/watch?v=ZVs4VdrcLdw"
@@ -2494,7 +2494,7 @@
       "id": "fJeelV5YEek",
       "title": "CarX Drift Racing Online 2 – Dominion Raceway Official Trailer",
       "published_at": "2026-06-08T13:38:13Z",
-      "views": 7996,
+      "views": 8001,
       "likes": 241,
       "comments": 70,
       "url": "https://youtube.com/watch?v=fJeelV5YEek"
@@ -2521,7 +2521,7 @@
       "id": "syY_M3DkoGo",
       "title": "Introducing the B46 in CarX Drift Racing Online 2!",
       "published_at": "2026-04-24T15:23:59Z",
-      "views": 7806,
+      "views": 7808,
       "likes": 556,
       "comments": 15,
       "url": "https://youtube.com/watch?v=syY_M3DkoGo"
@@ -2530,8 +2530,8 @@
       "id": "m0lUmnwwofI",
       "title": "CarX Drift Racing 3: Utah Motorsport Campus",
       "published_at": "2025-11-23T08:13:40Z",
-      "views": 7796,
-      "likes": 393,
+      "views": 7801,
+      "likes": 394,
       "comments": 78,
       "url": "https://youtube.com/watch?v=m0lUmnwwofI"
     },
@@ -2539,7 +2539,7 @@
       "id": "Gq1DdN-rdrs",
       "title": "CarX Drift Racing Online: Duel",
       "published_at": "2024-11-02T08:15:58Z",
-      "views": 7776,
+      "views": 7777,
       "likes": 497,
       "comments": 25,
       "url": "https://youtube.com/watch?v=Gq1DdN-rdrs"
@@ -2548,7 +2548,7 @@
       "id": "6LyaMPRCH-U",
       "title": "CarX Street music vibe check for you!",
       "published_at": "2025-06-13T20:57:15Z",
-      "views": 7707,
+      "views": 7708,
       "likes": 536,
       "comments": 32,
       "url": "https://youtube.com/watch?v=6LyaMPRCH-U"
@@ -2557,7 +2557,7 @@
       "id": "taGHqbLjErc",
       "title": "CarX Drift Racing 2 1.28.0 Update: X-Truck",
       "published_at": "2023-11-01T15:55:13Z",
-      "views": 7681,
+      "views": 7686,
       "likes": 678,
       "comments": 16,
       "url": "https://youtube.com/watch?v=taGHqbLjErc"
@@ -2584,10 +2584,19 @@
       "id": "F3j22KwvbWw",
       "title": "Meet Kyoto XS100 in CarX Drift Racing Online 2!",
       "published_at": "2026-08-03T13:09:06Z",
-      "views": 7482,
+      "views": 7503,
       "likes": 397,
       "comments": 36,
       "url": "https://youtube.com/watch?v=F3j22KwvbWw"
+    },
+    {
+      "id": "kpsFKyl650E",
+      "title": "CarX Drift Racing 3: Springstone Location Official Trailer (Single-Take)",
+      "published_at": "2026-03-13T16:01:40Z",
+      "views": 7457,
+      "likes": 338,
+      "comments": 79,
+      "url": "https://youtube.com/watch?v=kpsFKyl650E"
     },
     {
       "id": "UqX5YKsDe6A",
@@ -2599,19 +2608,10 @@
       "url": "https://youtube.com/watch?v=UqX5YKsDe6A"
     },
     {
-      "id": "kpsFKyl650E",
-      "title": "CarX Drift Racing 3: Springstone Location Official Trailer (Single-Take)",
-      "published_at": "2026-03-13T16:01:40Z",
-      "views": 7455,
-      "likes": 338,
-      "comments": 79,
-      "url": "https://youtube.com/watch?v=kpsFKyl650E"
-    },
-    {
       "id": "buhTqO31cYY",
       "title": "Daisho Color Mercury Sayaka SPL vs SL80 Sayaka Special",
       "published_at": "2023-11-03T08:06:34Z",
-      "views": 7454,
+      "views": 7455,
       "likes": 675,
       "comments": 15,
       "url": "https://youtube.com/watch?v=buhTqO31cYY"
@@ -2629,7 +2629,7 @@
       "id": "0K_dlCJBaVg",
       "title": "Sunset City is waiting! #carxstreet",
       "published_at": "2025-06-09T14:34:35Z",
-      "views": 7401,
+      "views": 7402,
       "likes": 602,
       "comments": 56,
       "url": "https://youtube.com/watch?v=0K_dlCJBaVg"
@@ -2647,7 +2647,7 @@
       "id": "RLO06uYl3yU",
       "title": "CarX Drift Racing Online: Cruising around",
       "published_at": "2024-10-29T13:53:04Z",
-      "views": 7371,
+      "views": 7372,
       "likes": 461,
       "comments": 16,
       "url": "https://youtube.com/watch?v=RLO06uYl3yU"
@@ -2656,7 +2656,7 @@
       "id": "hLrMZyinjRI",
       "title": "CarX Drift Racing 3 Special: FXZ34!",
       "published_at": "2026-07-29T10:30:04Z",
-      "views": 7248,
+      "views": 7280,
       "likes": 254,
       "comments": 18,
       "url": "https://youtube.com/watch?v=hLrMZyinjRI"
@@ -2666,7 +2666,7 @@
       "title": "CarX Street OST check!",
       "published_at": "2025-06-25T14:53:37Z",
       "views": 7226,
-      "likes": 375,
+      "likes": 374,
       "comments": 34,
       "url": "https://youtube.com/watch?v=7QeroOjfuIQ"
     },
@@ -2683,7 +2683,7 @@
       "id": "f-rVTga7VHY",
       "title": "Introducing BNM M4R \"Absolute Drift Machine\"!",
       "published_at": "2026-07-24T05:51:20Z",
-      "views": 7162,
+      "views": 7187,
       "likes": 412,
       "comments": 21,
       "url": "https://youtube.com/watch?v=f-rVTga7VHY"
@@ -2701,7 +2701,7 @@
       "id": "8UiJu4Xe8nE",
       "title": "Introducing the Nishimo 34R in CarX Drift Racing Online 2!",
       "published_at": "2026-04-28T07:01:10Z",
-      "views": 7145,
+      "views": 7146,
       "likes": 636,
       "comments": 20,
       "url": "https://youtube.com/watch?v=8UiJu4Xe8nE"
@@ -2725,6 +2725,15 @@
       "url": "https://youtube.com/watch?v=Qz_zuPw1yUA"
     },
     {
+      "id": "C_4kGmU5DBE",
+      "title": "CarX Drift Racing Online 2: Tuning demo",
+      "published_at": "2026-05-06T06:34:55Z",
+      "views": 7011,
+      "likes": 391,
+      "comments": 7,
+      "url": "https://youtube.com/watch?v=C_4kGmU5DBE"
+    },
+    {
       "id": "d5QtEY2N8lg",
       "title": "CarX Drift Racing 2: Drift To The Sun Event",
       "published_at": "2023-11-27T16:01:23Z",
@@ -2734,19 +2743,10 @@
       "url": "https://youtube.com/watch?v=d5QtEY2N8lg"
     },
     {
-      "id": "C_4kGmU5DBE",
-      "title": "CarX Drift Racing Online 2: Tuning demo",
-      "published_at": "2026-05-06T06:34:55Z",
-      "views": 7005,
-      "likes": 391,
-      "comments": 7,
-      "url": "https://youtube.com/watch?v=C_4kGmU5DBE"
-    },
-    {
       "id": "zZUMlh4CfL0",
       "title": "CarX Drift Racing Online 2 – Car Damage Demo",
       "published_at": "2026-05-14T09:47:39Z",
-      "views": 6989,
+      "views": 6999,
       "likes": 197,
       "comments": 76,
       "url": "https://youtube.com/watch?v=zZUMlh4CfL0"
@@ -2755,7 +2755,7 @@
       "id": "UhMmR4V5558",
       "title": "CarX Drift Racing 2 1.28.0 Update: SL80 Special",
       "published_at": "2023-10-18T15:24:08Z",
-      "views": 6971,
+      "views": 6972,
       "likes": 583,
       "comments": 19,
       "url": "https://youtube.com/watch?v=UhMmR4V5558"
@@ -2791,7 +2791,7 @@
       "id": "ZH5dYoOAQlo",
       "title": "CarX Drift Racing Online update is now available!",
       "published_at": "2025-07-09T14:26:13Z",
-      "views": 6911,
+      "views": 6912,
       "likes": 486,
       "comments": 30,
       "url": "https://youtube.com/watch?v=ZH5dYoOAQlo"
@@ -2800,10 +2800,19 @@
       "id": "ZrjB13EoXT4",
       "title": "Nishimo SI3 Overload!",
       "published_at": "2026-02-20T14:59:06Z",
-      "views": 6874,
+      "views": 6876,
       "likes": 368,
       "comments": 22,
       "url": "https://youtube.com/watch?v=ZrjB13EoXT4"
+    },
+    {
+      "id": "ClH2e0CluCs",
+      "title": "You Asked. We Might Bring It Back. #carxtechnologies #driftracing #carx #carxdriftracing",
+      "published_at": "2026-07-31T15:32:04Z",
+      "views": 6870,
+      "likes": 430,
+      "comments": 64,
+      "url": "https://youtube.com/watch?v=ClH2e0CluCs"
     },
     {
       "id": "jw4cqZ0LoCY",
@@ -2815,19 +2824,10 @@
       "url": "https://youtube.com/watch?v=jw4cqZ0LoCY"
     },
     {
-      "id": "ClH2e0CluCs",
-      "title": "You Asked. We Might Bring It Back. #carxtechnologies #driftracing #carx #carxdriftracing",
-      "published_at": "2026-07-31T15:32:04Z",
-      "views": 6849,
-      "likes": 430,
-      "comments": 64,
-      "url": "https://youtube.com/watch?v=ClH2e0CluCs"
-    },
-    {
       "id": "INYG3OVcq4U",
       "title": "CarX Drift Racing Online 2 OST!",
       "published_at": "2026-05-05T08:41:50Z",
-      "views": 6845,
+      "views": 6850,
       "likes": 427,
       "comments": 12,
       "url": "https://youtube.com/watch?v=INYG3OVcq4U"
@@ -2836,7 +2836,7 @@
       "id": "D-QPIfOfxAw",
       "title": "Hachi-Roku vs Phoenix NX: Touge Drift",
       "published_at": "2024-07-18T13:30:52Z",
-      "views": 6775,
+      "views": 6777,
       "likes": 661,
       "comments": 24,
       "url": "https://youtube.com/watch?v=D-QPIfOfxAw"
@@ -2845,7 +2845,7 @@
       "id": "FxKAgCEzkQY",
       "title": "CarX Technologies on Steam 2026 Spring Sale!",
       "published_at": "2026-03-19T18:48:10Z",
-      "views": 6743,
+      "views": 6744,
       "likes": 240,
       "comments": 33,
       "url": "https://youtube.com/watch?v=FxKAgCEzkQY"
@@ -2854,10 +2854,19 @@
       "id": "wLkd27Idii4",
       "title": "CarX Drift Racing 2: Night Mode",
       "published_at": "2024-10-07T15:26:11Z",
-      "views": 6682,
+      "views": 6683,
       "likes": 552,
       "comments": 32,
       "url": "https://youtube.com/watch?v=wLkd27Idii4"
+    },
+    {
+      "id": "xORMpFR2bFs",
+      "title": "Meet Nishimo Z37!",
+      "published_at": "2026-09-04T14:18:15Z",
+      "views": 6637,
+      "likes": 369,
+      "comments": 17,
+      "url": "https://youtube.com/watch?v=xORMpFR2bFs"
     },
     {
       "id": "20ObvHi9Hqk",
@@ -2872,7 +2881,7 @@
       "id": "tk2cfv5EZAk",
       "title": "CarX Drift Racing Online presents: Flare ZR",
       "published_at": "2025-07-04T15:15:40Z",
-      "views": 6606,
+      "views": 6607,
       "likes": 429,
       "comments": 38,
       "url": "https://youtube.com/watch?v=tk2cfv5EZAk"
@@ -2881,25 +2890,16 @@
       "id": "Z438Ot62NtU",
       "title": "Flare ZR is here!",
       "published_at": "2025-07-09T14:43:20Z",
-      "views": 6574,
+      "views": 6575,
       "likes": 389,
       "comments": 33,
       "url": "https://youtube.com/watch?v=Z438Ot62NtU"
     },
     {
-      "id": "xORMpFR2bFs",
-      "title": "Meet Nishimo Z37!",
-      "published_at": "2026-09-04T14:18:15Z",
-      "views": 6555,
-      "likes": 369,
-      "comments": 17,
-      "url": "https://youtube.com/watch?v=xORMpFR2bFs"
-    },
-    {
       "id": "ozmsYfnxRQU",
       "title": "CarX Drift Racing 2: All Stars Event",
       "published_at": "2024-07-22T15:08:03Z",
-      "views": 6470,
+      "views": 6472,
       "likes": 240,
       "comments": 31,
       "url": "https://youtube.com/watch?v=ozmsYfnxRQU"
@@ -2935,7 +2935,7 @@
       "id": "XAdhHAhtUTI",
       "title": "CarX Drift Racing 3: 1.2.0 Update",
       "published_at": "2025-02-27T15:08:11Z",
-      "views": 6276,
+      "views": 6280,
       "likes": 457,
       "comments": 24,
       "url": "https://youtube.com/watch?v=XAdhHAhtUTI"
@@ -2944,7 +2944,7 @@
       "id": "ypP5hJlEt9E",
       "title": "Introducing Kyoto S80 Redline!",
       "published_at": "2026-07-23T10:32:24Z",
-      "views": 6255,
+      "views": 6274,
       "likes": 293,
       "comments": 26,
       "url": "https://youtube.com/watch?v=ypP5hJlEt9E"
@@ -3054,26 +3054,26 @@
       "published_at": "2026-03-15T07:06:12Z",
       "views": 5858,
       "likes": 274,
-      "comments": 63,
+      "comments": 61,
       "url": "https://youtube.com/watch?v=rsM25EMjD3k"
-    },
-    {
-      "id": "ygSjHcTJe1w",
-      "title": "CarX Drift Racing 3: Обновление 1.12.0 с командой разработки",
-      "published_at": "2026-04-29T04:20:24Z",
-      "views": 5729,
-      "likes": 127,
-      "comments": 23,
-      "url": "https://youtube.com/watch?v=ygSjHcTJe1w"
     },
     {
       "id": "zRFVH87wdS4",
       "title": "CarX Drift Racing 2: 2026 Hanami Event",
       "published_at": "2026-04-29T13:59:36Z",
-      "views": 5727,
+      "views": 5740,
       "likes": 171,
       "comments": 30,
       "url": "https://youtube.com/watch?v=zRFVH87wdS4"
+    },
+    {
+      "id": "ygSjHcTJe1w",
+      "title": "CarX Drift Racing 3: Обновление 1.12.0 с командой разработки",
+      "published_at": "2026-04-29T04:20:24Z",
+      "views": 5732,
+      "likes": 127,
+      "comments": 23,
+      "url": "https://youtube.com/watch?v=ygSjHcTJe1w"
     },
     {
       "id": "_8uxmASzi6s",
@@ -3097,7 +3097,7 @@
       "id": "rRXrTNheJn8",
       "title": "Introducing the Serafim S3 CarX Technologies Edition!",
       "published_at": "2026-04-23T13:03:31Z",
-      "views": 5561,
+      "views": 5569,
       "likes": 259,
       "comments": 34,
       "url": "https://youtube.com/watch?v=rRXrTNheJn8"
@@ -3106,7 +3106,7 @@
       "id": "tD2Yz9h_WO8",
       "title": "CarX Drift Racing 3: Стрим с разработчиками",
       "published_at": "2025-11-02T04:03:37Z",
-      "views": 5504,
+      "views": 5507,
       "likes": 157,
       "comments": 16,
       "url": "https://youtube.com/watch?v=tD2Yz9h_WO8"
@@ -3166,6 +3166,15 @@
       "url": "https://youtube.com/watch?v=eXK6iQdBVFA"
     },
     {
+      "id": "xENV9zn2XFA",
+      "title": "CarX Drift Racing 3: Developer Stream",
+      "published_at": "2026-07-24T03:52:44Z",
+      "views": 5289,
+      "likes": 140,
+      "comments": 15,
+      "url": "https://youtube.com/watch?v=xENV9zn2XFA"
+    },
+    {
       "id": "E-xX_mNfR6I",
       "title": "CarX Technologies: Drift Expo in October",
       "published_at": "2023-11-16T11:00:47Z",
@@ -3175,19 +3184,10 @@
       "url": "https://youtube.com/watch?v=E-xX_mNfR6I"
     },
     {
-      "id": "xENV9zn2XFA",
-      "title": "CarX Drift Racing 3: Developer Stream",
-      "published_at": "2026-07-24T03:52:44Z",
-      "views": 5273,
-      "likes": 140,
-      "comments": 15,
-      "url": "https://youtube.com/watch?v=xENV9zn2XFA"
-    },
-    {
       "id": "ZOIe62dwVek",
       "title": "CarX Drift Racing 2 1.28.0 Update: SL80 Special № 2",
       "published_at": "2023-10-20T11:30:50Z",
-      "views": 5226,
+      "views": 5227,
       "likes": 470,
       "comments": 13,
       "url": "https://youtube.com/watch?v=ZOIe62dwVek"
@@ -3196,7 +3196,7 @@
       "id": "RR03GMNJujc",
       "title": "CarX Drift Racing 3: Стрим от разработчиков по обновлению 1.8.0",
       "published_at": "2025-12-26T03:12:47Z",
-      "views": 5083,
+      "views": 5084,
       "likes": 144,
       "comments": 19,
       "url": "https://youtube.com/watch?v=RR03GMNJujc"
@@ -3214,7 +3214,7 @@
       "id": "fQ4WFJyJCoo",
       "title": "CarX Drift Racing 3: Developer stream on the 1.6.0 update",
       "published_at": "2025-10-24T04:01:39Z",
-      "views": 5044,
+      "views": 5045,
       "likes": 157,
       "comments": 14,
       "url": "https://youtube.com/watch?v=fQ4WFJyJCoo"
@@ -3232,7 +3232,7 @@
       "id": "_k8kBQoIxQQ",
       "title": "Vibe check! #carxstreet",
       "published_at": "2025-06-16T19:49:44Z",
-      "views": 4985,
+      "views": 4986,
       "likes": 385,
       "comments": 23,
       "url": "https://youtube.com/watch?v=_k8kBQoIxQQ"
@@ -3259,7 +3259,7 @@
       "id": "MR-GN9b1G5c",
       "title": "CarX Street: Дрифт в открытом мире Ч.2",
       "published_at": "2026-04-08T05:12:46Z",
-      "views": 4864,
+      "views": 4868,
       "likes": 131,
       "comments": 6,
       "url": "https://youtube.com/watch?v=MR-GN9b1G5c"
@@ -3268,7 +3268,7 @@
       "id": "MR-GN9b1G5c",
       "title": "CarX Street: Дрифт в открытом мире Ч.2",
       "published_at": "2026-04-08T05:12:46Z",
-      "views": 4864,
+      "views": 4868,
       "likes": 131,
       "comments": 6,
       "url": "https://youtube.com/watch?v=MR-GN9b1G5c"
@@ -3286,8 +3286,8 @@
       "id": "3yK_yj6AZgI",
       "title": "Summer Duel: Voodoo VS Razor ZX",
       "published_at": "2024-07-02T15:35:21Z",
-      "views": 4784,
-      "likes": 385,
+      "views": 4793,
+      "likes": 384,
       "comments": 22,
       "url": "https://youtube.com/watch?v=3yK_yj6AZgI"
     },
@@ -3295,7 +3295,7 @@
       "id": "S3yW8Zj7rCM",
       "title": "CarX Drift Racing Online 2: Технический тест с разработчиками",
       "published_at": "2026-04-03T05:19:01Z",
-      "views": 4777,
+      "views": 4783,
       "likes": 121,
       "comments": 24,
       "url": "https://youtube.com/watch?v=S3yW8Zj7rCM"
@@ -3331,7 +3331,7 @@
       "id": "kOLbIZ8HEhY",
       "title": "CarX Drift Racing 3: Стрим с разработчиками",
       "published_at": "2025-12-30T03:52:54Z",
-      "views": 4569,
+      "views": 4570,
       "likes": 115,
       "comments": 10,
       "url": "https://youtube.com/watch?v=kOLbIZ8HEhY"
@@ -3340,7 +3340,7 @@
       "id": "qHZ6fruLRHI",
       "title": "CarX Drift Racing Online 2: Стрим с разработчиками",
       "published_at": "2025-10-16T05:48:25Z",
-      "views": 4564,
+      "views": 4566,
       "likes": 193,
       "comments": 28,
       "url": "https://youtube.com/watch?v=qHZ6fruLRHI"
@@ -3349,7 +3349,7 @@
       "id": "XDMdKJijSjQ",
       "title": "New Update 1.11.0! - CarX Drift Racing 3 Developer Q&A",
       "published_at": "2026-04-07T03:47:44Z",
-      "views": 4555,
+      "views": 4556,
       "likes": 129,
       "comments": 10,
       "url": "https://youtube.com/watch?v=XDMdKJijSjQ"
@@ -3394,7 +3394,7 @@
       "id": "lkLJQU-HKSo",
       "title": "CarX Drift Racing 3: Прохождение кампании",
       "published_at": "2025-12-04T04:16:53Z",
-      "views": 4223,
+      "views": 4225,
       "likes": 85,
       "comments": 8,
       "url": "https://youtube.com/watch?v=lkLJQU-HKSo"
@@ -3403,7 +3403,7 @@
       "id": "zA2XThrJU_w",
       "title": "CarX Drift Racing 3: Стрим с разработчиками",
       "published_at": "2026-03-03T04:08:12Z",
-      "views": 4215,
+      "views": 4216,
       "likes": 94,
       "comments": 17,
       "url": "https://youtube.com/watch?v=zA2XThrJU_w"
@@ -3412,7 +3412,7 @@
       "id": "eutwMd1B4Ks",
       "title": "CarX Drift Racing 3: Developer Q&A Stream",
       "published_at": "2025-12-13T03:05:07Z",
-      "views": 4155,
+      "views": 4156,
       "likes": 108,
       "comments": 21,
       "url": "https://youtube.com/watch?v=eutwMd1B4Ks"
@@ -3439,7 +3439,7 @@
       "id": "WbX4YTX9JN4",
       "title": "CarX Drift Racing 3: Комьюнити стрим",
       "published_at": "2025-07-26T03:43:31Z",
-      "views": 3830,
+      "views": 3833,
       "likes": 66,
       "comments": 7,
       "url": "https://youtube.com/watch?v=WbX4YTX9JN4"
@@ -3448,7 +3448,7 @@
       "id": "tvKCRvBYx9g",
       "title": "CarX Drift Racing 3: Прохождение одиночной кампании",
       "published_at": "2025-10-04T06:00:37Z",
-      "views": 3800,
+      "views": 3804,
       "likes": 109,
       "comments": 8,
       "url": "https://youtube.com/watch?v=tvKCRvBYx9g"
@@ -3457,7 +3457,7 @@
       "id": "pVC1Ma7xeZQ",
       "title": "CarX Drift Racing 3: Developer Stream",
       "published_at": "2025-09-12T22:41:48Z",
-      "views": 3710,
+      "views": 3711,
       "likes": 112,
       "comments": 31,
       "url": "https://youtube.com/watch?v=pVC1Ma7xeZQ"
@@ -3475,7 +3475,7 @@
       "id": "WAbBzBj1Pvc",
       "title": "CarX Street: Стрим с разработчиками",
       "published_at": "2025-11-15T04:48:21Z",
-      "views": 3631,
+      "views": 3632,
       "likes": 111,
       "comments": 16,
       "url": "https://youtube.com/watch?v=WAbBzBj1Pvc"
@@ -3484,7 +3484,7 @@
       "id": "VVuLM-wI2es",
       "title": "CarX Street: Обновление 1.9.0",
       "published_at": "2025-11-01T04:44:50Z",
-      "views": 3631,
+      "views": 3629,
       "likes": 125,
       "comments": 13,
       "url": "https://youtube.com/watch?v=VVuLM-wI2es"
@@ -3493,7 +3493,7 @@
       "id": "I6XwTgUSY5M",
       "title": "CarX Drift Racing Online: Development Update (ep.5)",
       "published_at": "2024-07-05T14:46:39Z",
-      "views": 3563,
+      "views": 3564,
       "likes": 168,
       "comments": 45,
       "url": "https://youtube.com/watch?v=I6XwTgUSY5M"
@@ -3502,7 +3502,7 @@
       "id": "WleSz3Mo8_A",
       "title": "CarX Drift Racing 3: Над чем мы работаем прямо сейчас?",
       "published_at": "2026-03-13T03:50:34Z",
-      "views": 3558,
+      "views": 3561,
       "likes": 140,
       "comments": 33,
       "url": "https://youtube.com/watch?v=WleSz3Mo8_A"
@@ -3520,7 +3520,7 @@
       "id": "cyFYezuOExU",
       "title": "CarX Drift Racing 3: Новое обновление с командой разработки",
       "published_at": "2026-07-23T04:47:34Z",
-      "views": 3473,
+      "views": 3482,
       "likes": 94,
       "comments": 9,
       "url": "https://youtube.com/watch?v=cyFYezuOExU"
@@ -3529,7 +3529,7 @@
       "id": "wvxe2wlz78M",
       "title": "CarX Drift Racing Online 2: Стрим с разработчиками (+ специальный гость!)",
       "published_at": "2026-04-15T11:09:58Z",
-      "views": 3385,
+      "views": 3386,
       "likes": 95,
       "comments": 19,
       "url": "https://youtube.com/watch?v=wvxe2wlz78M"
@@ -3538,7 +3538,7 @@
       "id": "ma3Ezw-cL78",
       "title": "Get the CarX Drift Racing Online 2 vibe!",
       "published_at": "2026-05-02T16:32:28Z",
-      "views": 3325,
+      "views": 3328,
       "likes": 84,
       "comments": 5,
       "url": "https://youtube.com/watch?v=ma3Ezw-cL78"
@@ -3547,7 +3547,7 @@
       "id": "3hhdEshBHYw",
       "title": "Feel CarX Drift Racing Online 2 vibe!",
       "published_at": "2026-05-02T16:41:01Z",
-      "views": 3321,
+      "views": 3324,
       "likes": 114,
       "comments": 3,
       "url": "https://youtube.com/watch?v=3hhdEshBHYw"
@@ -3556,7 +3556,7 @@
       "id": "jfupDJWBQo0",
       "title": "CarX Drift Racing 3: Developer Stream",
       "published_at": "2026-07-02T16:00:15Z",
-      "views": 3227,
+      "views": 3231,
       "likes": 113,
       "comments": 15,
       "url": "https://youtube.com/watch?v=jfupDJWBQo0"
@@ -3583,7 +3583,7 @@
       "id": "lsTxJAYBdE4",
       "title": "Introducing the M92 in CarX Drift Racing Online 2!",
       "published_at": "2026-04-30T13:59:18Z",
-      "views": 3149,
+      "views": 3153,
       "likes": 128,
       "comments": 7,
       "url": "https://youtube.com/watch?v=lsTxJAYBdE4"
@@ -3610,10 +3610,19 @@
       "id": "UUMgGARNan0",
       "title": "CarX Drift Racing 3: Дуэли с разработчиками",
       "published_at": "2025-09-27T04:14:25Z",
-      "views": 2958,
+      "views": 2962,
       "likes": 115,
       "comments": 3,
       "url": "https://youtube.com/watch?v=UUMgGARNan0"
+    },
+    {
+      "id": "PJHppwPFjtQ",
+      "title": "Meet BoatRace 7 Sayaka Special in CarX Drift Racing 2!",
+      "published_at": "2026-09-21T12:02:08Z",
+      "views": 2961,
+      "likes": 85,
+      "comments": 4,
+      "url": "https://youtube.com/watch?v=PJHppwPFjtQ"
     },
     {
       "id": "_d8wVjJ9GOg",
@@ -3628,7 +3637,7 @@
       "id": "K9Yn4yyk0U8",
       "title": "CarX Drift Racing 3: Обновление 1.7.0",
       "published_at": "2025-11-26T03:29:42Z",
-      "views": 2916,
+      "views": 2918,
       "likes": 76,
       "comments": 14,
       "url": "https://youtube.com/watch?v=K9Yn4yyk0U8"
@@ -3661,6 +3670,15 @@
       "url": "https://youtube.com/watch?v=wGBlPOcyrGU"
     },
     {
+      "id": "jSUYU4hOET4",
+      "title": "New CarX Drift Racing 3 update is here!",
+      "published_at": "2026-09-23T15:49:00Z",
+      "views": 2813,
+      "likes": 184,
+      "comments": 18,
+      "url": "https://youtube.com/watch?v=jSUYU4hOET4"
+    },
+    {
       "id": "K08vIeY0gzo",
       "title": "Обновление 1.3.0 CarX Drift Racing 3: Стрим с разработчиком",
       "published_at": "2025-06-04T15:42:22Z",
@@ -3691,7 +3709,7 @@
       "id": "5XR4SvJRQ1Y",
       "title": "CarX Drift Racing 3: Стрим с командой разработки",
       "published_at": "2026-07-02T05:03:28Z",
-      "views": 2587,
+      "views": 2589,
       "likes": 81,
       "comments": 16,
       "url": "https://youtube.com/watch?v=5XR4SvJRQ1Y"
@@ -3718,7 +3736,7 @@
       "id": "oo8pslyH0xY",
       "title": "CarX Drift Racing Online 2: Стрим с разработчиками",
       "published_at": "2026-05-14T05:02:02Z",
-      "views": 2500,
+      "views": 2501,
       "likes": 100,
       "comments": 6,
       "url": "https://youtube.com/watch?v=oo8pslyH0xY"
@@ -3727,7 +3745,7 @@
       "id": "4WyEnjLUago",
       "title": "CarX Drift Racing 3: Developer Stream on 1.4.5 Update",
       "published_at": "2025-08-08T04:20:05Z",
-      "views": 2436,
+      "views": 2437,
       "likes": 87,
       "comments": 29,
       "url": "https://youtube.com/watch?v=4WyEnjLUago"
@@ -3763,7 +3781,7 @@
       "id": "oNvaUTA32QI",
       "title": "CarX Drift Racing 3: Community Stream",
       "published_at": "2025-06-27T03:20:31Z",
-      "views": 2269,
+      "views": 2270,
       "likes": 72,
       "comments": 11,
       "url": "https://youtube.com/watch?v=oNvaUTA32QI"
@@ -3778,19 +3796,10 @@
       "url": "https://youtube.com/watch?v=4mkBi-BsfAY"
     },
     {
-      "id": "PJHppwPFjtQ",
-      "title": "Meet BoatRace 7 Sayaka Special in CarX Drift Racing 2!",
-      "published_at": "2026-09-21T12:02:08Z",
-      "views": 2057,
-      "likes": 50,
-      "comments": 3,
-      "url": "https://youtube.com/watch?v=PJHppwPFjtQ"
-    },
-    {
       "id": "JKaXpEzLNKk",
       "title": "CarX Drift Racing 3: Ваши ливреи с художником игры",
       "published_at": "2025-09-04T03:59:49Z",
-      "views": 2018,
+      "views": 2019,
       "likes": 79,
       "comments": 5,
       "url": "https://youtube.com/watch?v=JKaXpEzLNKk"
@@ -3799,7 +3808,7 @@
       "id": "J1pOc9q4IO0",
       "title": "CarX Drift Racing 3: Итоги конкурса ливрей",
       "published_at": "2025-10-09T05:05:40Z",
-      "views": 1820,
+      "views": 1822,
       "likes": 44,
       "comments": 6,
       "url": "https://youtube.com/watch?v=J1pOc9q4IO0"
@@ -3835,7 +3844,7 @@
       "id": "TOuX20HqveU",
       "title": "CarX Drift Racing 3: Ваши ливреи с художником игры (Ч.1)",
       "published_at": "2025-10-30T03:41:44Z",
-      "views": 1467,
+      "views": 1469,
       "likes": 40,
       "comments": 3,
       "url": "https://youtube.com/watch?v=TOuX20HqveU"
@@ -3844,7 +3853,7 @@
       "id": "BKNnhfH2jNU",
       "title": "CarX Drift Racing 3: Стрим с разработчиками",
       "published_at": "2025-08-08T03:00:42Z",
-      "views": 1369,
+      "views": 1370,
       "likes": 55,
       "comments": 11,
       "url": "https://youtube.com/watch?v=BKNnhfH2jNU"
@@ -3869,7 +3878,7 @@
       [
         "age13-17",
         "male",
-        6.2
+        6.1
       ],
       [
         "age18-24",
@@ -3909,7 +3918,7 @@
       [
         "age35-44",
         "male",
-        18.7
+        18.8
       ],
       [
         "age35-44",
@@ -3954,7 +3963,7 @@
       [
         "age65-",
         "male",
-        0.8
+        0.7
       ],
       [
         "age65-",
@@ -3965,161 +3974,161 @@
     "geography": [
       [
         "IN",
-        96665
+        97709
       ],
       [
         "US",
-        71777
+        72048
       ],
       [
         "ID",
-        42038
+        42545
       ],
       [
         "BR",
-        38885
+        39232
       ],
       [
         "RU",
-        38021
+        38399
       ],
       [
         "JP",
-        28953
+        29118
       ],
       [
         "DE",
-        26824
+        26945
       ],
       [
         "FR",
-        25411
+        25562
       ],
       [
         "GB",
-        23645
+        23760
       ],
       [
         "PL",
-        17276
+        17423
       ]
     ],
     "devices": [
       [
         "DESKTOP",
-        189788
+        190769
       ],
       [
         "TV",
-        77555
+        78198
       ],
       [
         "MOBILE",
-        773966
+        777531
       ],
       [
         "TABLET",
-        34194
+        34262
       ]
     ],
     "operating_systems": [
       [
         "ANDROID",
-        712391
+        715174
       ],
       [
         "WINDOWS",
-        173622
+        174505
       ],
       [
         "IOS",
-        122970
+        123952
       ],
       [
         "SMART_TV",
-        13284
+        13394
       ],
       [
         "MACINTOSH",
-        11507
+        11600
       ],
       [
         "PLAYSTATION",
-        8325
+        8369
       ],
       [
         "WEBOS",
-        7622
+        7701
       ],
       [
         "ROKUOS",
-        6648
+        6782
       ],
       [
         "XBOX",
-        5784
+        5814
       ],
       [
         "AMAZON_FIREOS",
-        2757
+        2792
       ],
       [
         "CHROME_OS",
-        1483
+        1474
       ],
       [
         "VIDAA",
-        1163
+        1168
       ],
       [
         "NINTENDO_SWITCH",
-        506
+        505
       ],
       [
         "APPLE_TVOS",
-        427
+        431
       ],
       [
         "LINUX",
-        273
+        281
       ]
     ],
     "traffic_sources": [
       [
         "SUBSCRIBER",
-        434491
+        437318
       ],
       [
         "ADVERTISING",
-        325947
+        324770
       ],
       [
         "YT_SEARCH",
-        157776
+        161037
       ],
       [
         "YT_CHANNEL",
-        60473
+        60636
       ],
       [
         "EXT_URL",
-        40257
+        40326
       ],
       [
         "SHORTS",
-        19987
+        20156
       ],
       [
         "RELATED_VIDEO",
-        10982
+        10957
       ],
       [
         "NOTIFICATION",
-        10392
+        10346
       ],
       [
         "NO_LINK_OTHER",
-        9808
+        9843
       ],
       [
         "YT_OTHER_PAGE",
@@ -4129,41 +4138,41 @@
     "subscribed_status": [
       [
         "UNSUBSCRIBED",
-        899504
+        904106
       ],
       [
         "SUBSCRIBED",
-        177374
+        178018
       ]
     ],
     "sharing_services": [
       [
         "COPY_PASTE",
-        1161
+        1166
       ],
       [
         "WHATS_APP",
-        611
+        612
       ],
       [
         "OTHER",
-        510
+        496
       ],
       [
         "FACEBOOK_MESSENGER",
-        171
+        172
       ],
       [
         "TEXT_MESSAGE",
-        89
+        88
       ],
       [
         "DISCORD",
-        75
+        76
       ],
       [
         "TWITTER",
-        55
+        53
       ],
       [
         "INSTAGRAM",
@@ -4179,11 +4188,11 @@
       ]
     ],
     "engagement": {
-      "estimated_minutes_watched": 289121,
+      "estimated_minutes_watched": 289570,
       "average_view_duration_seconds": 37,
-      "average_view_percentage": 18.64,
-      "subscribers_gained": 12254,
-      "subscribers_lost": 3156
+      "average_view_percentage": 18.73,
+      "subscribers_gained": 12220,
+      "subscribers_lost": 3138
     },
     "impressions": {
       "impressions": 0,
@@ -4197,502 +4206,502 @@
         [
           0.01,
           0.9196,
-          0.34195
+          0.34185
         ],
         [
           0.02,
           0.9112,
-          0.32435
+          0.3241
         ],
         [
           0.03,
-          0.846,
-          0.30984999999999996
+          0.8458,
+          0.30945
         ],
         [
           0.04,
-          0.7861,
-          0.30245
+          0.7857,
+          0.302
         ],
         [
           0.05,
-          0.7545000000000001,
-          0.30105000000000004
+          0.7541,
+          0.30055
         ],
         [
           0.06,
-          0.7371,
-          0.30355
+          0.7367,
+          0.30305
         ],
         [
           0.07,
-          0.7209,
-          0.3089
+          0.7204999999999999,
+          0.3084
         ],
         [
           0.08,
-          0.7076,
-          0.31675
+          0.7071999999999999,
+          0.31625000000000003
         ],
         [
           0.09,
-          0.6973,
-          0.3267
+          0.6969,
+          0.32620000000000005
         ],
         [
           0.1,
-          0.6904,
-          0.33840000000000003
+          0.6899,
+          0.3379
         ],
         [
           0.11,
-          0.6848000000000001,
-          0.35155000000000003
+          0.6843,
+          0.35105
         ],
         [
           0.12,
-          0.6785,
-          0.3659
+          0.6781,
+          0.3654
         ],
         [
           0.13,
-          0.6665000000000001,
-          0.38134999999999997
+          0.6659999999999999,
+          0.38085
         ],
         [
           0.14,
-          0.6843,
-          0.3976
+          0.6838,
+          0.3971
         ],
         [
           0.15,
-          0.6919,
-          0.41455
+          0.6915,
+          0.4141
         ],
         [
           0.16,
-          0.6934999999999999,
-          0.43195
+          0.6931,
+          0.4315
         ],
         [
           0.17,
-          0.6901,
-          0.4493
-        ],
-        [
-          0.18,
-          0.6762999999999999,
-          0.4661
-        ],
-        [
-          0.19,
-          0.6670999999999999,
-          0.48205
-        ],
-        [
-          0.2,
-          0.6645,
-          0.49685
-        ],
-        [
-          0.21,
-          0.68,
-          0.5105
-        ],
-        [
-          0.22,
-          0.6799,
-          0.52265
-        ],
-        [
-          0.23,
-          0.6684,
-          0.53305
-        ],
-        [
-          0.24,
-          0.6623,
-          0.5416
-        ],
-        [
-          0.25,
-          0.6586,
-          0.54835
-        ],
-        [
-          0.26,
-          0.6722,
-          0.55325
-        ],
-        [
-          0.27,
-          0.6713,
-          0.55635
-        ],
-        [
-          0.28,
-          0.6633,
-          0.55765
-        ],
-        [
-          0.29,
-          0.6628000000000001,
-          0.55715
-        ],
-        [
-          0.3,
-          0.6681999999999999,
-          0.55475
-        ],
-        [
-          0.31,
-          0.6712,
-          0.55045
-        ],
-        [
-          0.32,
-          0.6759999999999999,
-          0.54415
-        ],
-        [
-          0.33,
-          0.6779999999999999,
-          0.5357
-        ],
-        [
-          0.34,
-          0.677,
-          0.52505
-        ],
-        [
-          0.35,
-          0.6901,
-          0.5122
-        ],
-        [
-          0.36,
-          0.6881,
-          0.49745
-        ],
-        [
-          0.37,
-          0.6812,
-          0.48115
-        ],
-        [
-          0.38,
-          0.6738,
-          0.4638
-        ],
-        [
-          0.39,
-          0.6809999999999999,
-          0.44595
-        ],
-        [
-          0.4,
-          0.6743000000000001,
-          0.42805
-        ],
-        [
-          0.41,
-          0.6651,
-          0.4106
-        ],
-        [
-          0.42,
-          0.6593000000000001,
-          0.39405
-        ],
-        [
-          0.43,
-          0.6541,
-          0.37865
-        ],
-        [
-          0.44,
-          0.6457999999999999,
-          0.36465000000000003
-        ],
-        [
-          0.45,
-          0.6386,
-          0.3522
-        ],
-        [
-          0.46,
-          0.6317,
-          0.34145000000000003
-        ],
-        [
-          0.47,
-          0.6261,
-          0.3327
-        ],
-        [
-          0.48,
-          0.6282,
-          0.3261
-        ],
-        [
-          0.49,
-          0.6214,
-          0.32195
-        ],
-        [
-          0.5,
-          0.6101,
-          0.32055
-        ],
-        [
-          0.51,
-          0.5936,
-          0.3219
-        ],
-        [
-          0.52,
-          0.5885,
-          0.32594999999999996
-        ],
-        [
-          0.53,
-          0.5771999999999999,
-          0.3325
-        ],
-        [
-          0.54,
-          0.5626,
-          0.3412
-        ],
-        [
-          0.55,
-          0.5574,
-          0.3519
-        ],
-        [
-          0.56,
-          0.5515,
-          0.36415
-        ],
-        [
-          0.57,
-          0.5457,
-          0.37745
-        ],
-        [
-          0.58,
-          0.5412,
-          0.39144999999999996
-        ],
-        [
-          0.59,
-          0.5356000000000001,
-          0.4057
-        ],
-        [
-          0.6,
-          0.5301,
-          0.4197
-        ],
-        [
-          0.61,
-          0.5364,
-          0.43285
-        ],
-        [
-          0.62,
-          0.5352,
-          0.44475
-        ],
-        [
-          0.63,
-          0.5339,
-          0.4554
-        ],
-        [
-          0.64,
-          0.5325,
-          0.4647
-        ],
-        [
-          0.65,
-          0.5307999999999999,
-          0.4725
-        ],
-        [
-          0.66,
-          0.5434,
-          0.47865
-        ],
-        [
-          0.67,
-          0.5435,
-          0.4832
-        ],
-        [
-          0.68,
-          0.5389,
-          0.486
-        ],
-        [
-          0.69,
-          0.5316,
-          0.487
-        ],
-        [
-          0.7,
-          0.5243,
-          0.4862
-        ],
-        [
-          0.71,
-          0.5217,
-          0.4837
-        ],
-        [
-          0.72,
-          0.5165,
-          0.47965
-        ],
-        [
-          0.73,
-          0.516,
-          0.47404999999999997
-        ],
-        [
-          0.74,
-          0.5097999999999999,
-          0.46725
-        ],
-        [
-          0.75,
-          0.5006,
-          0.45965
-        ],
-        [
-          0.76,
-          0.493,
-          0.4517
-        ],
-        [
-          0.77,
-          0.4875,
-          0.44384999999999997
-        ],
-        [
-          0.78,
-          0.48450000000000004,
-          0.4366
-        ],
-        [
-          0.79,
-          0.4815,
-          0.4304
-        ],
-        [
-          0.8,
-          0.47840000000000005,
-          0.4257
-        ],
-        [
-          0.81,
-          0.4833,
-          0.4228
-        ],
-        [
-          0.82,
-          0.48009999999999997,
-          0.42175
-        ],
-        [
-          0.83,
-          0.4729,
-          0.42235
-        ],
-        [
-          0.84,
-          0.465,
-          0.42395
-        ],
-        [
-          0.85,
-          0.46340000000000003,
-          0.42605
-        ],
-        [
-          0.86,
-          0.4568,
-          0.42845
-        ],
-        [
-          0.87,
-          0.4487,
-          0.431
-        ],
-        [
-          0.88,
-          0.4412,
-          0.4337
-        ],
-        [
-          0.89,
-          0.435,
-          0.43645
-        ],
-        [
-          0.9,
-          0.4361,
-          0.4392
-        ],
-        [
-          0.91,
-          0.4318,
-          0.4416
-        ],
-        [
-          0.92,
-          0.42460000000000003,
-          0.4436
-        ],
-        [
-          0.93,
-          0.4081,
-          0.44525000000000003
-        ],
-        [
-          0.94,
-          0.38659999999999994,
-          0.44684999999999997
-        ],
-        [
-          0.95,
-          0.3639,
+          0.6896,
           0.44884999999999997
         ],
         [
+          0.18,
+          0.6758,
+          0.4657
+        ],
+        [
+          0.19,
+          0.6666,
+          0.48160000000000003
+        ],
+        [
+          0.2,
+          0.6640999999999999,
+          0.4965
+        ],
+        [
+          0.21,
+          0.6795,
+          0.51015
+        ],
+        [
+          0.22,
+          0.6794,
+          0.5223
+        ],
+        [
+          0.23,
+          0.6679,
+          0.5327500000000001
+        ],
+        [
+          0.24,
+          0.6618,
+          0.54135
+        ],
+        [
+          0.25,
+          0.6579999999999999,
+          0.54805
+        ],
+        [
+          0.26,
+          0.6717,
+          0.55295
+        ],
+        [
+          0.27,
+          0.6709,
+          0.5561
+        ],
+        [
+          0.28,
+          0.6628000000000001,
+          0.5574
+        ],
+        [
+          0.29,
+          0.6622,
+          0.5569
+        ],
+        [
+          0.3,
+          0.6677,
+          0.5545
+        ],
+        [
+          0.31,
+          0.6706,
+          0.5502
+        ],
+        [
+          0.32,
+          0.6754000000000001,
+          0.5439
+        ],
+        [
+          0.33,
+          0.6775,
+          0.53545
+        ],
+        [
+          0.34,
+          0.6764,
+          0.52475
+        ],
+        [
+          0.35,
+          0.6896,
+          0.51185
+        ],
+        [
+          0.36,
+          0.6876000000000001,
+          0.49705
+        ],
+        [
+          0.37,
+          0.6806,
+          0.48075
+        ],
+        [
+          0.38,
+          0.6731999999999999,
+          0.46335
+        ],
+        [
+          0.39,
+          0.6804000000000001,
+          0.44545
+        ],
+        [
+          0.4,
+          0.6737000000000001,
+          0.42755
+        ],
+        [
+          0.41,
+          0.6645,
+          0.41005
+        ],
+        [
+          0.42,
+          0.6587000000000001,
+          0.3935
+        ],
+        [
+          0.43,
+          0.6536,
+          0.3781
+        ],
+        [
+          0.44,
+          0.6453,
+          0.3641
+        ],
+        [
+          0.45,
+          0.638,
+          0.3516
+        ],
+        [
+          0.46,
+          0.631,
+          0.3409
+        ],
+        [
+          0.47,
+          0.6254,
+          0.33215
+        ],
+        [
+          0.48,
+          0.6277,
+          0.32555
+        ],
+        [
+          0.49,
+          0.6208,
+          0.32145
+        ],
+        [
+          0.5,
+          0.6095,
+          0.32005
+        ],
+        [
+          0.51,
+          0.593,
+          0.3214
+        ],
+        [
+          0.52,
+          0.5879,
+          0.3255
+        ],
+        [
+          0.53,
+          0.5765,
+          0.33204999999999996
+        ],
+        [
+          0.54,
+          0.5619,
+          0.3408
+        ],
+        [
+          0.55,
+          0.5567,
+          0.35150000000000003
+        ],
+        [
+          0.56,
+          0.5508,
+          0.36375
+        ],
+        [
+          0.57,
+          0.545,
+          0.3771
+        ],
+        [
+          0.58,
+          0.5405,
+          0.3911
+        ],
+        [
+          0.59,
+          0.5349,
+          0.4054
+        ],
+        [
+          0.6,
+          0.5295000000000001,
+          0.4194
+        ],
+        [
+          0.61,
+          0.5357,
+          0.43255
+        ],
+        [
+          0.62,
+          0.5345,
+          0.4445
+        ],
+        [
+          0.63,
+          0.5333,
+          0.45515
+        ],
+        [
+          0.64,
+          0.5318999999999999,
+          0.46445000000000003
+        ],
+        [
+          0.65,
+          0.5302,
+          0.47225
+        ],
+        [
+          0.66,
+          0.5428999999999999,
+          0.4784
+        ],
+        [
+          0.67,
+          0.5428999999999999,
+          0.4829
+        ],
+        [
+          0.68,
+          0.5383,
+          0.4857
+        ],
+        [
+          0.69,
+          0.531,
+          0.48665
+        ],
+        [
+          0.7,
+          0.5236,
+          0.48585
+        ],
+        [
+          0.71,
+          0.5211,
+          0.4834
+        ],
+        [
+          0.72,
+          0.5159,
+          0.4793
+        ],
+        [
+          0.73,
+          0.5155,
+          0.4737
+        ],
+        [
+          0.74,
+          0.5092,
+          0.46685
+        ],
+        [
+          0.75,
+          0.4999,
+          0.4592
+        ],
+        [
+          0.76,
+          0.49229999999999996,
+          0.45125
+        ],
+        [
+          0.77,
+          0.4869,
+          0.44335
+        ],
+        [
+          0.78,
+          0.4838,
+          0.43605
+        ],
+        [
+          0.79,
+          0.48090000000000005,
+          0.4298
+        ],
+        [
+          0.8,
+          0.4778,
+          0.42505
+        ],
+        [
+          0.81,
+          0.4828,
+          0.42210000000000003
+        ],
+        [
+          0.82,
+          0.47950000000000004,
+          0.421
+        ],
+        [
+          0.83,
+          0.47229999999999994,
+          0.4216
+        ],
+        [
+          0.84,
+          0.4643,
+          0.4232
+        ],
+        [
+          0.85,
+          0.46270000000000006,
+          0.42535
+        ],
+        [
+          0.86,
+          0.4562,
+          0.4278
+        ],
+        [
+          0.87,
+          0.44799999999999995,
+          0.43045
+        ],
+        [
+          0.88,
+          0.44049999999999995,
+          0.43315000000000003
+        ],
+        [
+          0.89,
+          0.43420000000000003,
+          0.43595
+        ],
+        [
+          0.9,
+          0.4354,
+          0.43875
+        ],
+        [
+          0.91,
+          0.4311,
+          0.4412
+        ],
+        [
+          0.92,
+          0.4239,
+          0.44325000000000003
+        ],
+        [
+          0.93,
+          0.40740000000000004,
+          0.44495
+        ],
+        [
+          0.94,
+          0.3859,
+          0.4466
+        ],
+        [
+          0.95,
+          0.36329999999999996,
+          0.4486
+        ],
+        [
           0.96,
-          0.33770000000000006,
-          0.45175
+          0.3371,
+          0.45155
         ],
         [
           0.97,
-          0.3144,
-          0.45605
+          0.31370000000000003,
+          0.45585
         ],
         [
           0.98,
-          0.2933,
-          0.4617
+          0.2927,
+          0.4615
         ],
         [
           0.99,
-          0.28600000000000003,
-          0.4679
+          0.2854,
+          0.46775
         ],
         [
           1,
-          0.2871,
-          0.4732
+          0.2865,
+          0.47305
         ]
       ]
     }
